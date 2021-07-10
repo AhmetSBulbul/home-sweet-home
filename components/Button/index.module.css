@@ -1,0 +1,11 @@
+.base{
+    @apply
+    bg-blue-400
+    font-bold
+    text-white
+    px-6
+    py-2
+    h-10
+    w-56
+    
+}
