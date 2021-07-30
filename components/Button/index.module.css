@@ -1,11 +1,10 @@
-.base{
-    @apply
-    bg-blue-400
-    font-bold
-    text-white
+.base {
+  @apply font-bold
+    bg-primary-lightest
     px-6
     py-2
     h-10
-    w-56
-    
+    w-56;
+
+  box-shadow: 3px 3px 0 0 #000, 6px 6px 0 0 #c8c;
 }

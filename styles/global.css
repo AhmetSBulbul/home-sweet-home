@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .link {
+    @apply uppercase font-link text-secondary-lightest font-black text-sm;
+  }
+}
