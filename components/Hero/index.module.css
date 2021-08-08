@@ -1,0 +1,39 @@
+.outerContainer {
+  @apply w-screen min-h-screen bg-none px-4 md:px-10 flex;
+  @screen desktop {
+    @apply min-h-screen;
+  }
+}
+
+.innerContainer {
+  @apply w-full flex flex-col mt-20;
+  @screen desktop {
+    @apply grid my-auto container mx-auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "content fancy";
+  }
+}
+
+.fancySide {
+  @apply inline-block mx-auto;
+  grid-area: fancy;
+}
+
+.intro {
+  @apply flex flex-col gap-4 desktop:mt-20 desktop:mr-20;
+  grid-area: content;
+  .greetings {
+    @apply link;
+    @screen desktop {
+      @apply text-2xl;
+    }
+  }
+
+  .introDisplay {
+    @apply font-display text-3xl font-black uppercase text-white md:text-5xl desktop:text-6xl;
+  }
+
+  .socialIcons {
+    @apply text-white text-4xl flex gap-4 mt-2 ml-auto;
+  }
+}

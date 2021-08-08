@@ -1,0 +1,32 @@
+:root {
+  /* Color styles */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(10, 10, 10, 1);
+  --primary--lightest: rgba(23, 178, 181, 1);
+  --primary--lighter: rgba(19, 142, 144, 1);
+  --primary: rgba(15, 113, 115, 1);
+  --primary--darker: rgba(12, 89, 90, 1);
+  --primary--darkest: rgba(9, 71, 72, 1);
+  --secondary--lightest: rgba(246, 159, 142, 1);
+  --secondary--lighter: rgba(243, 127, 104, 1);
+  --secondary: rgba(240, 100, 73, 1);
+  --secondary--darker: rgba(238, 79, 47, 1);
+  --secondary--darkest: rgba(237, 63, 29, 1);
+  --messages--success: rgba(0, 173, 88, 1);
+  --messages--warning: rgba(229, 112, 0, 1);
+  --messages--error: rgba(255, 87, 87, 1);
+  --messages--info: rgba(0, 147, 255, 1);
+  --gray--10: rgba(254, 254, 254, 1);
+  --gray--20: rgba(245, 245, 245, 1);
+  --gray--30: rgba(235, 235, 235, 1);
+  --gray--40: rgba(224, 224, 224, 1);
+  --gray--50: rgba(214, 214, 214, 1);
+  --gray--70: rgba(173, 173, 173, 1);
+  --gray--80: rgba(153, 153, 153, 1);
+  --gray--90: rgba(133, 133, 133, 1);
+  --gray--100: rgba(112, 112, 112, 1);
+  --gray--110: rgba(82, 82, 82, 1);
+  --gray--120: rgba(61, 61, 61, 1);
+  --night: rgba(65, 83, 121, 1);
+  --dark: rgba(65, 70, 86, 1);
+}

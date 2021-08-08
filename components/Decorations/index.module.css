@@ -1,0 +1,38 @@
+.circle {
+  @apply rounded-full bg-primary-lightest absolute;
+  box-shadow: -9px 9px 5px var(--primary--lighter),
+    -18px 18px 0px var(--primary);
+
+  width: 875px;
+  top: -565px;
+  right: -565px;
+  z-index: -10;
+  aspect-ratio: 1/1;
+}
+
+.circleMedium {
+  width: 875px;
+  top: -420px;
+  right: -420px;
+}
+
+.circleBig {
+  width: 875px;
+  top: -420px;
+  right: -380px;
+}
+
+.circle-lg {
+}
+
+.dots {
+  @apply h-36 w-48;
+  background-image: radial-gradient(
+      #f06449 40%,
+      transparent 40%
+    ),
+    radial-gradient(#17b2b5 40%, transparent 40%);
+
+  background-position: 0 0, 2px 2px;
+  background-size: 50px 50px;
+}

@@ -1,0 +1,33 @@
+@layer components {
+  /*Typography*/
+  .link {
+    @apply uppercase font-link text-secondary-lightest font-black text-sm;
+  }
+
+  .text-button {
+  }
+  .text-tag {
+  }
+
+  .text-nav {
+  }
+
+  .text-section-title {
+  }
+
+  .text-icon {
+  }
+
+  .text-date {
+  }
+
+  .text-display {
+  }
+
+  /*layered shadow*/
+  .shadow-layered-primary {
+    box-shadow: 2px 2px 0px
+        var(--primary--lighter),
+      4px 4px 0px var(--primary);
+  }
+}

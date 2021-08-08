@@ -1,19 +1,19 @@
 import React from 'react';
-
-
-import { Header } from './Header';
+import Navigation from '../components/Navigation'
+import Button from '../components/Button';
+import Header from '../components/Header';
 
 export default {
-  title: 'Example/Header',
-  component: Header,
+  title: 'Example/Navigation',
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = (args) => <Navigation {...args}>
+  <Button>Hakkimda</Button>
+</Navigation>;
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
+export const Primary = Template.bind({});
+Primary.args = {
+  
 };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+export const Navbar = () => <Header/>;

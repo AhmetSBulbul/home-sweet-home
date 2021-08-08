@@ -1,1 +1,8 @@
+export { default as At } from './At'
+export { default as Codepen } from './Codepen'
+export { default as Github } from './Github'
+export { default as HandCursor } from './HandCursor'
 export { default as HeadShadow } from './HeadShadow'
+export { default as İnstagram } from './İnstagram'
+export { default as Linkedin } from './Linkedin'
+export { default as Twitter } from './Twitter'

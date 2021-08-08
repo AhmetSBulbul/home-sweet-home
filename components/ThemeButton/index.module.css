@@ -1,0 +1,23 @@
+.themeBtn {
+  @apply px-2 text-base h-12;
+}
+
+.primary {
+  @apply bg-primary-lightest text-gray-10 border-2 border-b-4 border-primary-light;
+}
+
+.primaryOutlined {
+  @apply bg-gray-10 border-2 text-primary border-primary;
+}
+
+.secondary {
+  @apply text-gray-10 bg-secondary border-2 border-b-4 border-secondary-dark rounded-md;
+}
+
+.secondaryOutlined {
+  @apply bg-gray-10 border-2 text-secondary border-secondary;
+}
+
+.stretch {
+  @apply w-full;
+}

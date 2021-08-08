@@ -9,4 +9,9 @@ My Personal Web Site.
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [Storybook](https://storybook.js.org/)
 
+## TODO
 
+- Re-factor
+- Re-factor
+- Re-factor
+- More re-factor

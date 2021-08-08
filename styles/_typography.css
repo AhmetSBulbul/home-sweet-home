@@ -1,0 +1,15 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  @apply text-base md:text-lg font-body;
+}
+
+h1 {
+  @apply text-2xl font-display font-bold;
+}
+
+p {
+  @apply text-base;
+}

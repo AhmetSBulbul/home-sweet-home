@@ -1,0 +1,39 @@
+.menuBtn {
+  @apply bg-none rounded-md px-1 py-1 border-2;
+}
+
+.stateActive {
+  @apply -translate-y-1;
+  div {
+    box-shadow: 0px 4px 2px var(--gray--70);
+  }
+}
+
+.dots {
+  @apply flex flex-row w-full h-full justify-between gap-1;
+  transition: transform 250ms;
+  div {
+    @apply rounded-full my-auto;
+    transition: box-shadow 250ms;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.white {
+  @apply border-white;
+  .dots {
+    div {
+      @apply bg-white;
+    }
+  }
+}
+
+.gray {
+  @apply border-gray-100;
+  .dots {
+    div {
+      @apply bg-gray-100;
+    }
+  }
+}

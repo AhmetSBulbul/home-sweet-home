@@ -1,0 +1,8 @@
+.icons {
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  gap: 12px;
+  padding: 4px;
+  font-size: 36px;
+}

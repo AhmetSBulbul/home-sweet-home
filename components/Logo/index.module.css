@@ -1,41 +1,24 @@
-@-webkit-keyframes halftone {
-  100% {
-    background-size: 2.375em 2.375em, 0.1em 0.1em;
-  }
-}
-
-@keyframes halftone {
-  100% {
-    background-size: 2.375em 2.375em, 0.1em 0.1em;
-  }
-}
-
-.base {
-  color: #9c89f7;
+.logo {
   @apply py-1
   link
   px-2
+  flex
+  flex-row
+  justify-center
   bg-none
   border-2
-  text-justify
-  border-b-4;
-  transition: color 1s;
+  rounded-md
+  font-semibold
+  border-gray-120
+  text-gray-120;
 
-  &:hover {
-    -webkit-animation: halftone 1s forwards;
-    animation: halftone 1s forwards;
-    background: radial-gradient(
-          circle,
-          #9c89f7 0.2em,
-          transparent 0.25em
-        )
-        0 0/1.25em 1.25em,
-      radial-gradient(
-          circle,
-          #9c89f7 0.2em,
-          transparent 0.25em
-        )
-        6.25em 6.25em/1.25em 1.25em;
-    color: #e4f789;
+  gap: 2px;
+  svg,
+  span {
+    @apply my-auto;
   }
+}
+
+.white {
+  @apply text-white border-white;
 }
