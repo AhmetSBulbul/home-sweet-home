@@ -1,6 +1,19 @@
-# Home Sweet Home
+<p align="center">
+  <a href="https://ahmetsafabulbul.com/">
+    <img alt="Ahmet Safa Bulbul" src="https://github.com/AhmetSBulbul/home-sweet-home/blob/main/public/myHead.png" width="300" />
+  </a>
+</p>
+<h1 align="center">
+  Home Sweet Home
+</h1>
 
-My Personal Web Site.
+---
+
+## My Personal Web Site
+
+---
+
+.
 
 ## Tools and Frameworks
 
@@ -15,3 +28,7 @@ My Personal Web Site.
 - Re-factor
 - Re-factor
 - More re-factor
+
+---
+
+Designed & Developed by [@AhmetSBulbul](https://ahmetsafabulbul.com/)
