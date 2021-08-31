@@ -7,11 +7,7 @@
   Home Sweet Home
 </h1>
 
----
-
 ## My Personal Web Site
-
----
 
 .
 
