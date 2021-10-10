@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Asset from '../components/assets';
 import FancyHead from '../components/MyHeadButFancy';
-import { DecorationCircle, DecorationDots } from '../components/Decorations';
+
 
 
 export default {

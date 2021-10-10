@@ -10,14 +10,18 @@ const Header = ({
   isCollapse = false,
 }) => {
   return (
-    <header className={styles.header}>
-      <Logo isWhite collapse={isCollapse} />
-      {/* Flat props */}
-      {isCollapse && (
-        <a className="leading-loose">yazilarim</a>
-      )}
+    <header className="bg-primary-darkest">
+      <div className={styles.header}>
+        <Logo isWhite collapse={isCollapse} />
+        {/* Flat props */}
+        {isCollapse && (
+          <a className="leading-loose">
+            yazilarim
+          </a>
+        )}
 
-      <Navigation />
+        <Navigation />
+      </div>
     </header>
   );
 };

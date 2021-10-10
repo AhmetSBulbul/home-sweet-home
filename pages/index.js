@@ -9,8 +9,6 @@ import Header from "../components/Header";
 import Image from "next/image";
 import myLovelyHead from "../public/myHead.png";
 import Wave from "../public/wave.svg";
-import LandingPage from "../components/LandingPage";
-import LandingPageParallax from "../components/LandingPageParallax";
 
 export default function Home() {
   return (
