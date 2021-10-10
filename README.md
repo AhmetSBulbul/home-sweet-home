@@ -9,7 +9,10 @@
 
 ## My Personal Web Site
 
-.
+## Under Development
+
+- Live Preview: [ahmetsafabulbul.com](https://ahmetsafabulbul.com/)
+  .
 
 ## Tools and Frameworks
 
@@ -20,10 +23,7 @@
 
 ## TODO
 
-- Re-factor
-- Re-factor
-- Re-factor
-- More re-factor
+
 
 ---
 
