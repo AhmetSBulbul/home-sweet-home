@@ -6,10 +6,12 @@ const Logo = ({
   isWhite = false,
   collapse = false,
 }) => {
+  const linkStyle = "link";
   return (
     <button
       className={cn([
         styles.logo,
+        linkStyle,
         isWhite && styles.white,
       ])}
     >

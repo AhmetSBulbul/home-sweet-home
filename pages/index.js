@@ -13,5 +13,15 @@ import LandingPage from "../components/LandingPage";
 import LandingPageParallax from "../components/LandingPageParallax";
 
 export default function Home() {
-  return <LandingPageParallax />;
+  return (
+    <>
+      <SectionHero />
+      <div className="container bg-white px-8 min-h-screen">
+        <h2> Son Paylaşılanlar</h2>
+      </div>
+      <div className="container bg-white px-8 min-h-screen">
+        <h2> Son Paylaşılanlar</h2>
+      </div>
+    </>
+  );
 }

@@ -14,6 +14,9 @@ module.exports = {
       display: ["Rubik", "sans-serif"],
       link: ["Rubik", "sans-serif"],
     },
+    container: {
+      center: true,
+    },
     colors: {
       night: "rgba(65, 83, 121, 1)",
       transparent: "transparent",
@@ -58,8 +61,12 @@ module.exports = {
     },
     extend: {
       screens: {
+        landscape: "640px",
         tablet: "768px",
-        desktop: "992px",
+        laptop: "1024px",
+        desktop: "1280px",
+        wide: "1536px",
+        "desktop-sm": "992px",
         "desktop-lg": "1280px",
       },
     },

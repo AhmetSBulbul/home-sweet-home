@@ -10,7 +10,7 @@ const Header = ({
   isCollapse = false,
 }) => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <Logo isWhite collapse={isCollapse} />
       {/* Flat props */}
       {isCollapse && (
@@ -18,7 +18,7 @@ const Header = ({
       )}
 
       <Navigation />
-    </div>
+    </header>
   );
 };
 

@@ -11,7 +11,7 @@ const SectionHero = ({ children }) => {
           <MyHeadButFancy />
         </div>
         <div className={styles.intro}>
-          <h2 className={styles.greetings}>
+          <h2 className="link desktop:text-2xl">
             Merhaba, ben Ahmet Safa Bülbül.
           </h2>
           <h1 className={styles.introDisplay}>

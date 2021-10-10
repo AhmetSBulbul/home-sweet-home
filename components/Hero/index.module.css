@@ -1,14 +1,14 @@
 .outerContainer {
-  @apply w-screen min-h-screen bg-none px-4 md:px-10 flex;
+  @apply w-screen min-h-screen bg-none px-4 md:px-10 flex bg-primary-darkest;
   @screen desktop {
     @apply min-h-screen;
   }
 }
 
 .innerContainer {
-  @apply w-full flex flex-col mt-20;
+  @apply w-full max-w-7xl mx-auto flex flex-col mt-20;
   @screen desktop {
-    @apply grid my-auto container mx-auto;
+    @apply grid my-auto;
     grid-template-columns: auto 1fr;
     grid-template-areas: "content fancy";
   }
@@ -20,17 +20,11 @@
 }
 
 .intro {
-  @apply flex flex-col gap-4 desktop:mt-20 desktop:mr-20;
+  @apply flex flex-col gap-4 desktop:mt-20 desktop:mr-20 leading-10;
   grid-area: content;
-  .greetings {
-    @apply link;
-    @screen desktop {
-      @apply text-2xl;
-    }
-  }
 
   .introDisplay {
-    @apply font-display text-3xl font-black uppercase text-white md:text-5xl desktop:text-6xl;
+    @apply font-display text-3xl font-black uppercase text-white desktop:text-5xl;
   }
 
   .socialIcons {
