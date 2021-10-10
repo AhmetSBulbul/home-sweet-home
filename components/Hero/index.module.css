@@ -1,14 +1,25 @@
 .outerContainer {
-  @apply w-screen min-h-screen bg-none px-4 md:px-10 flex bg-primary-darkest;
-  @screen desktop {
-    @apply min-h-screen;
+  @apply w-screen bg-none px-4 flex bg-primary-darkest relative;
+  &::after,
+  &::before {
+    background: url("../../public/wave.svg")
+      repeat-x;
+    content: " ";
+    background-size: contain;
+    background-position: bottom;
+    @apply absolute bottom-0 left-0 h-20 laptop:h-32 z-20 min-w-full;
+    width: 200vw;
+  }
+
+  &::before {
+    @apply -left-20 right-0 opacity-20;
   }
 }
 
 .innerContainer {
-  @apply w-full max-w-7xl mx-auto flex flex-col mt-20;
-  @screen desktop {
-    @apply grid my-auto;
+  @apply w-full max-w-7xl mx-auto flex flex-col pt-10 pb-44 laptop:py-32 laptop:pb-64 laptop:px-8;
+  @screen laptop {
+    @apply grid my-auto place-items-center;
     grid-template-columns: auto 1fr;
     grid-template-areas: "content fancy";
   }
@@ -16,12 +27,17 @@
 
 .fancySide {
   @apply inline-block mx-auto;
-  grid-area: fancy;
+  @screen laptop {
+    grid-area: fancy;
+  }
 }
 
 .intro {
-  @apply flex flex-col gap-4 desktop:mt-20 desktop:mr-20 leading-10;
-  grid-area: content;
+  @apply flex flex-col leading-10;
+  @screen laptop {
+    @apply mr-10;
+    grid-area: content;
+  }
 
   .introDisplay {
     @apply font-display text-3xl font-black uppercase text-white desktop:text-5xl;

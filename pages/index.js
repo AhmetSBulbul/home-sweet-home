@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <>
       <SectionHero />
-      <div className="container bg-white px-8 min-h-screen">
+      <div className="container px-8 min-h-screen">
         <h2> Son Paylaşılanlar</h2>
       </div>
-      <div className="container bg-white px-8 min-h-screen">
+      <div className="container px-8 min-h-screen">
         <h2> Son Paylaşılanlar</h2>
       </div>
     </>
