@@ -13,10 +13,25 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function About({ allPostsData }) {
   return (
     <>
-      <SectionHero />
+      <section className="max-w-6xl mx-auto px-8 laptop:px-10 min-h-screen">
+        <h2 className="font-body font-extrabold text-secondary-dark text-3xl">
+          Ben Ahmet Safa!
+        </h2>
+
+        <p className="font-body font-medium">
+          Sürekli yeni şeyler öğrenmeye kafasını
+          takmış, ekrana şekil çizdirebildiği
+          bütün platformlarda yazılım
+          geliştirmekten keyif alan ancak şartlar
+          gereği çoğunlukla cross-platform mobil
+          uygulamalar ve frontend yazılımları
+          geliştiren yazılım mühendisliği
+          öğrencisiyim.
+        </p>
+      </section>
     </>
   );
 }
