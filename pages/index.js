@@ -3,6 +3,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/dist/client/link";
 import Date from "../components/date";
 import ThemeButton from "../components/ThemeButton";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -16,6 +17,11 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <>
+      <Head>
+        <title>
+          Ahmet S. Bulbul | Frontend Developer
+        </title>
+      </Head>
       <SectionHero />
     </>
   );

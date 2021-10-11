@@ -2,6 +2,13 @@ import styles from "./index.module.css";
 import MyHeadButFancy from "../MyHeadButFancy";
 import * as Icon from "../icons";
 import ThemeButton from "../ThemeButton";
+import { ContactInfo } from "../../constants";
+
+const ContactLink = ({ href, children }) => (
+  <a href={href} target="_blank" rel="noreferrer">
+    {children}
+  </a>
+);
 
 const SectionHero = ({ children }) => {
   return (
@@ -22,11 +29,31 @@ const SectionHero = ({ children }) => {
             Bİrlİkte çalışalım
           </ThemeButton>
           <div className={styles.socialIcons}>
-            <Icon.Github />
-            <Icon.Linkedin />
-            <Icon.Twitter />
-            <Icon.İnstagram />
-            <Icon.Codepen />
+            <ContactLink
+              href={ContactInfo.github}
+            >
+              <Icon.Github />
+            </ContactLink>
+            <ContactLink
+              href={ContactInfo.linkedin}
+            >
+              <Icon.Linkedin />
+            </ContactLink>
+            <ContactLink
+              href={ContactInfo.twitter}
+            >
+              <Icon.Twitter />
+            </ContactLink>
+            <ContactLink
+              href={ContactInfo.instagram}
+            >
+              <Icon.İnstagram />
+            </ContactLink>
+            <ContactLink
+              href={ContactInfo.codepen}
+            >
+              <Icon.Codepen />
+            </ContactLink>
           </div>
         </div>
         {children}
