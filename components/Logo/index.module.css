@@ -1,8 +1,6 @@
 .logo {
   @apply py-1
   px-2
-  flex
-  flex-row
   justify-center
   bg-none
   border-2
@@ -10,12 +8,6 @@
   font-semibold
   border-gray-120
   text-gray-120;
-
-  gap: 2px;
-  svg,
-  span {
-    @apply my-auto;
-  }
 }
 
 .white {

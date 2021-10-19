@@ -5,7 +5,12 @@ import ThemeButton from "../ThemeButton";
 import { ContactInfo } from "../../constants";
 
 const ContactLink = ({ href, children }) => (
-  <a href={href} target="_blank" rel="noreferrer">
+  <a
+    href={href}
+    className="transition-transform transform hover:scale-110"
+    target="_blank"
+    rel="noreferrer"
+  >
     {children}
   </a>
 );

@@ -5,6 +5,7 @@ import Button from "../Button";
 import MenuButton from "../MenuButton";
 import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
+import { Routes } from "../../constants";
 
 const Navigation = ({ children }) => {
   const [isExpanded, setIsExpand] =
@@ -18,10 +19,16 @@ const Navigation = ({ children }) => {
           isExpanded && styles.expand,
         ])}
       >
-        <Button>Hakkimda</Button>
-        <Button>Yazilarim</Button>
-        <Button>Portfolyo</Button>
-        <ThemeButton secondary>
+        <Button href={Routes.about}>
+          Hakkimda
+        </Button>
+        <Button href={Routes.writings}>
+          Yazilarim
+        </Button>
+        <ThemeButton
+          href={Routes.contact}
+          secondary
+        >
           Bana Ulasin
         </ThemeButton>
       </nav>

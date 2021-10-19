@@ -1,3 +1,3 @@
 .button {
-  @apply font-link uppercase font-medium desktop:text-link;
+  @apply font-link uppercase font-medium desktop:text-link flex flex-row justify-center items-center;
 }

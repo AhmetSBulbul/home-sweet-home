@@ -4,6 +4,7 @@ import ThemeButton from "../ThemeButton";
 import Button from "../Button";
 import MenuButton from "../MenuButton";
 import Navigation from "../Navigation";
+import { Routes } from "../../constants";
 
 const Header = ({
   children,
@@ -12,7 +13,11 @@ const Header = ({
   return (
     <header className="bg-primary-darkest">
       <div className={styles.header}>
-        <Logo isWhite collapse={isCollapse} />
+        <Logo
+          href={Routes.home}
+          isWhite
+          collapse={isCollapse}
+        />
         {/* Flat props */}
         {isCollapse && (
           <a className="leading-loose">
