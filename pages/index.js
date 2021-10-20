@@ -4,6 +4,7 @@ import Link from "next/dist/client/link";
 import Date from "../components/date";
 import ThemeButton from "../components/ThemeButton";
 import Head from "next/head";
+import LaunchingSoon from "../components/LaunchingSoon";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -23,6 +24,7 @@ export default function Home({ allPostsData }) {
         </title>
       </Head>
       <SectionHero />
+      <LaunchingSoon />
     </>
   );
 }

@@ -2,7 +2,10 @@ import styles from "./index.module.css";
 import MyHeadButFancy from "../MyHeadButFancy";
 import * as Icon from "../icons";
 import ThemeButton from "../ThemeButton";
-import { ContactInfo } from "../../constants";
+import {
+  ContactInfo,
+  Routes,
+} from "../../constants";
 
 const ContactLink = ({ href, children }) => (
   <a
@@ -30,7 +33,11 @@ const SectionHero = ({ children }) => {
             MOBİL UYGULAMA & WEB ARAYÜZÜ YAZILIM
             GELİŞTİRİCİSİYİM
           </h1>
-          <ThemeButton secondary className="mt-5">
+          <ThemeButton
+            href={Routes.hireMe}
+            secondary
+            className="mt-5"
+          >
             Bİrlİkte çalışalım
           </ThemeButton>
           <div className={styles.socialIcons}>
