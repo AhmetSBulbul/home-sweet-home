@@ -23,6 +23,10 @@
 
 ## TODO
 
+- [ ] Mobile Nav Animation
+- [ ] Posts
+- [ ] Contact Form
+- [ ] Comment feature
 
 
 ---
