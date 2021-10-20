@@ -11,7 +11,7 @@
 
 ## Under Development
 
-- Live Preview: [ahmetsafabulbul.com](https://ahmetsafabulbul.com/)
+- Live Preview: [home-sweet-home-seven.vercel.app](https://home-sweet-home-seven.vercel.app/)
   .
 
 ## Tools and Frameworks
