@@ -1,9 +1,3 @@
-import SectionHero from "../components/Hero";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/dist/client/link";
-import Date from "../components/date";
-import ThemeButton from "../components/ThemeButton";
-
 export default function Contact() {
   return (
     <>
