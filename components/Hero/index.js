@@ -34,7 +34,7 @@ const SectionHero = ({ children }) => {
             GELİŞTİRİCİSİYİM
           </h1>
           <ThemeButton
-            href={Routes.hireMe}
+            href={Routes.contact}
             secondary
             className="mt-5"
           >

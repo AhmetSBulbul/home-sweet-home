@@ -5,7 +5,10 @@ import Button from "../Button";
 import MenuButton from "../MenuButton";
 import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
-import { Routes } from "../../constants";
+import {
+  Routes,
+  NavRoutes,
+} from "../../constants";
 import Link from "next/dist/client/link";
 import React from "react";
 
@@ -30,18 +33,17 @@ const Navigation = ({ children }) => {
           isExpanded && styles.expand,
         ])}
       >
-        <Button
-          href={Routes.about}
-          onClick={isExpanded && setIsExpand}
-        >
-          Hakkımda
-        </Button>
-        <Button
-          href={Routes.writings}
-          onClick={isExpanded && setIsExpand}
-        >
-          Yazilarim
-        </Button>
+        {NavRoutes.map((item) => {
+          return (
+            <Button
+              key={item.key}
+              href={item.path}
+              onClick={isExpanded && setIsExpand}
+            >
+              {item.title}
+            </Button>
+          );
+        })}
         <ThemeButton
           href={Routes.contact}
           onClick={isExpanded && setIsExpand}

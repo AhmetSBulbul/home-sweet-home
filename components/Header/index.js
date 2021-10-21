@@ -4,7 +4,6 @@ import ThemeButton from "../ThemeButton";
 import Button from "../Button";
 import MenuButton from "../MenuButton";
 import Navigation from "../Navigation";
-import { Routes } from "../../constants";
 
 const Header = ({
   children,
@@ -14,7 +13,7 @@ const Header = ({
     <header className="bg-primary-darkest">
       <div className={styles.header}>
         <Logo
-          href={Routes.home}
+          href="/"
           isWhite
           collapse={isCollapse}
         />
