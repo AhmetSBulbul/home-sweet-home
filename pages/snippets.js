@@ -1,17 +1,17 @@
 import LaunchingSoon from "../components/LaunchingSoon";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedSnippetsData } from "../lib/snippets";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allSnippetsData = getSortedSnippetsData();
   return {
     props: {
-      allPostsData,
+      allSnippetsData,
     },
   };
 }
 
 export default function Snippets({
-  allPostsData,
+  allSnippetsData,
 }) {
   return <LaunchingSoon />;
 }

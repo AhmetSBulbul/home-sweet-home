@@ -24,9 +24,15 @@
 ## TODO
 
 - [ ] Mobile Nav Animation
-- [ ] Posts
+- [x] Posts
+- [x] Snippets
 - [ ] Contact Form
 - [ ] Comment feature
+
+## Re-Factor
+
+- [ ] Better Content Management
+- [ ] Logo
 
 
 ---

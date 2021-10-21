@@ -19,6 +19,11 @@ const NavRoutes = [
     key: "cryptoCurrency",
     title: "Kripto Paralar",
   },
+  {
+    path: "/snippets",
+    key: "snippets",
+    title: "Snippets",
+  },
 ];
 
 export default NavRoutes;
