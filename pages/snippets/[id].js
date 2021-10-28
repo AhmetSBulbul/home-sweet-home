@@ -1,27 +1,26 @@
-import Layout from "../../components/layout";
 import {
-  getAllPostIds,
-  getPostData,
-} from "../../lib/posts";
+  getAllSnippetsIds,
+  getSnippetData,
+} from "../../lib/snippets";
 import Head from "next/head";
 import Date from "../../components/date";
 
-export default function Post({ postData }) {
+export default function Snippet({ snippetData }) {
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>{snippetData.title}</title>
       </Head>
-      {postData.title}
+      {snippetData.title}
       <br />
-      {postData.id}
+      {snippetData.id}
       <br />
-      <Date dateString={postData.date} />
+      <Date dateString={snippetData.date} />
       <br />
       <div
         className="prose"
         dangerouslySetInnerHTML={{
-          __html: postData.contentHtml,
+          __html: snippetData.contentHtml,
         }}
       />
     </>
@@ -30,7 +29,7 @@ export default function Post({ postData }) {
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
-  const paths = getAllPostIds();
+  const paths = getAllSnippetsIds();
   return {
     paths,
     fallback: false,
@@ -39,10 +38,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const snippetData = await getSnippetData(
+    params.id
+  );
   return {
     props: {
-      postData,
+      snippetData,
     },
   };
 }
