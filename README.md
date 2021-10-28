@@ -26,6 +26,8 @@
 - [ ] Mobile Nav Animation
 - [x] Posts
 - [x] Snippets
+- [ ] post url according to cattegory
+- [ ] more responsive head
 - [ ] Contact Form
 - [ ] Comment feature
 
