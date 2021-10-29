@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function useLockBodyScroll(
+export default function useLockBodyScrollToggle(
   toggle
 ) {
   useEffect(() => {

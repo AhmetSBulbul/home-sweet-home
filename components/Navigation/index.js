@@ -7,6 +7,7 @@ import {
   NavRoutes,
 } from "../../constants";
 import React from "react";
+import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
 
 /*const FunctionalLink = React.forwardRef(
   ({ onClick, href, children }, ref) => {
@@ -23,6 +24,7 @@ const Navigation = ({
   isActive,
   setToggle,
 }) => {
+  useLockBodyScrollToggle(isActive);
   return (
     <>
       <nav
