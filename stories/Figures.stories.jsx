@@ -13,4 +13,5 @@ export default {
 
 
 export const MyHeadButFancy = () => <div style={{margin:'auto', width: '100%', height:'100%'}}><FancyHead/></div>
+export const Wrapless = FancyHead
 

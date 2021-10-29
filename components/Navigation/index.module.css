@@ -8,9 +8,13 @@
 }
 
 .menuBtn {
-  @apply lg:hidden;
+  @apply desktop:hidden;
 }
 
 .expand {
   @apply translate-y-0;
+}
+
+.navLink {
+  @apply font-link text-lg antialiased laptop:text-sm laptop:my-auto;
 }

@@ -1,7 +1,35 @@
+---
+title: 'Nextjs Base Button Component'
+date: '2021-10-29'
+category:
+    - Nextjs
+    - Component
+---
+
+Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.
+
+### Parameters
+
+- onClick
+- href
+- className
+
+
+### Nasıl Çalışıyor?
+
+Eğer href parametresi kullanılırsa link, onClick parametresi kullanılırsa button componentlerini geri döndürüyor. Hem href hem de onClick parametreleri kullanılırsa Nextjs Link componentinin [dökümanına](https://nextjs.org/docs/api-reference/next/link) göre oluşturulmuş FunctionalLink componentini döndürüyor.
+
+### Bağımlılıklar
+
+- [ClassNames](https://github.com/JedWatson/classnames)
+
+### Kod
+
+```javascript
 import Link from "next/link";
-import styles from "./index.module.css";
 import cn from "classnames";
 import React from "react";
+
 
 const FunctionalLink = React.forwardRef(
   (
@@ -51,7 +79,7 @@ function LinkButton({
   );
 }
 
-function BaseButton({ children, ...props }) {
+function Button({ children, ...props }) {
   return (
     <button type="button" {...props}>
       {children}
@@ -59,7 +87,7 @@ function BaseButton({ children, ...props }) {
   );
 }
 
-const Button = ({
+const BaseButton = ({
   children,
   className,
   ...props
@@ -68,16 +96,14 @@ const Button = ({
     ? props.onClick
       ? FunctionalLinkButton
       : LinkButton
-    : BaseButton;
+    : Button;
 
   return (
-    <CurrBtn
-      className={cn([styles.button, className])}
-      {...props}
-    >
+    <CurrBtn className={className} {...props}>
       {children}
     </CurrBtn>
   );
 };
 
-export default Button;
+export default BaseButton;
+```

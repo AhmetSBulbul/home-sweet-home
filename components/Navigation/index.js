@@ -1,15 +1,11 @@
 import styles from "./index.module.css";
-import Logo from "../Logo";
-import ThemeButton from "../ThemeButton";
 import Button from "../Button";
 import MenuButton from "../MenuButton";
-import useToggle from "../../hooks/useToggle";
 import cn from "classnames";
 import {
   Routes,
   NavRoutes,
 } from "../../constants";
-import Link from "next/dist/client/link";
 import React from "react";
 
 /*const FunctionalLink = React.forwardRef(
@@ -22,15 +18,17 @@ import React from "react";
   }
 );
  */
-const Navigation = ({ children }) => {
-  const [isExpanded, setIsExpand] =
-    useToggle(false);
+const Navigation = ({
+  children,
+  isActive,
+  setToggle,
+}) => {
   return (
     <>
       <nav
         className={cn([
           styles.navbar,
-          isExpanded && styles.expand,
+          isActive && styles.expand,
         ])}
       >
         {NavRoutes.map((item) => {
@@ -38,25 +36,19 @@ const Navigation = ({ children }) => {
             <Button
               key={item.key}
               href={item.path}
-              onClick={isExpanded && setIsExpand}
+              onClick={isActive && setToggle}
+              className={styles.navLink}
             >
               {item.title}
             </Button>
           );
         })}
-        <ThemeButton
-          href={Routes.contact}
-          onClick={isExpanded && setIsExpand}
-          secondary
-        >
-          Bana Ulaşın
-        </ThemeButton>
       </nav>
       <MenuButton
         isWhite
-        isActive={isExpanded}
+        isActive={isActive}
         className={styles.menuBtn}
-        onClick={setIsExpand}
+        onClick={setToggle}
       />
     </>
   );
