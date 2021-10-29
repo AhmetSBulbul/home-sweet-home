@@ -13,15 +13,12 @@ export default function Snippet({ snippetData }) {
         <title>{snippetData.title}</title>
       </Head>
       <PageBody>
-        <article>
+        <article className="prose mx-auto mt-12">
           <h1>{snippetData.title}</h1>
-          <br />
-          {snippetData.id}
-          <br />
+
           <Date dateString={snippetData.date} />
-          <br />
+
           <div
-            className="prose"
             dangerouslySetInnerHTML={{
               __html: snippetData.contentHtml,
             }}

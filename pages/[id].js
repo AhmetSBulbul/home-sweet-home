@@ -13,15 +13,12 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <PageBody>
-        <article>
+        <article className="prose mx-auto mt-12">
           <h1>{postData.title}</h1>
-          <br />
-          {postData.id}
-          <br />
+
           <Date dateString={postData.date} />
-          <br />
+
           <div
-            className="prose"
             dangerouslySetInnerHTML={{
               __html: postData.contentHtml,
             }}

@@ -5,6 +5,7 @@ export default function PostLink({
   id,
   date,
   title,
+  category,
   children,
   ...props
 }) {
@@ -17,6 +18,7 @@ export default function PostLink({
         <h3 className="group-hover:text-night">
           {title}
         </h3>
+        <span>{category}</span>
         <p>{children}</p>
 
         <small>

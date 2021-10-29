@@ -34,12 +34,19 @@ export default function Home({ allPostsData }) {
           </h2>
           <ul className="flex flex-col">
             {allPostsData.map(
-              ({ id, date, title, excerpt }) => (
+              ({
+                id,
+                date,
+                title,
+                excerpt,
+                category,
+              }) => (
                 <li key={id}>
                   <PostLink
                     id={id}
                     title={title}
                     date={date}
+                    category={category}
                   >
                     {excerpt}
                   </PostLink>
