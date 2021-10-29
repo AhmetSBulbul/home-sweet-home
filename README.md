@@ -26,15 +26,15 @@
 - [ ] Mobile Nav Animation
 - [x] Posts
 - [x] Snippets
-- [ ] post url according to cattegory
 - [ ] more responsive head
 - [ ] Contact Form
 - [ ] Comment feature
 
 ## Re-Factor
 
-- [ ] Better Content Management
+- [x] Better Content Management
 - [ ] Logo
+- [ ] Components
 
 
 ---

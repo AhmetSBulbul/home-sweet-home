@@ -4,6 +4,7 @@ import {
 } from "../../lib/snippets";
 import Head from "next/head";
 import Date from "../../components/date";
+import PageBody from "../../components/PageBody";
 
 export default function Snippet({ snippetData }) {
   return (
@@ -11,18 +12,22 @@ export default function Snippet({ snippetData }) {
       <Head>
         <title>{snippetData.title}</title>
       </Head>
-      {snippetData.title}
-      <br />
-      {snippetData.id}
-      <br />
-      <Date dateString={snippetData.date} />
-      <br />
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{
-          __html: snippetData.contentHtml,
-        }}
-      />
+      <PageBody>
+        <article>
+          <h1>{snippetData.title}</h1>
+          <br />
+          {snippetData.id}
+          <br />
+          <Date dateString={snippetData.date} />
+          <br />
+          <div
+            className="prose"
+            dangerouslySetInnerHTML={{
+              __html: snippetData.contentHtml,
+            }}
+          />
+        </article>
+      </PageBody>
     </>
   );
 }

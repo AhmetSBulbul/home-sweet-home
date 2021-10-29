@@ -1,7 +1,7 @@
 @layer components {
   /*Typography*/
   .link {
-    @apply uppercase font-link text-secondary-lightest font-black text-sm;
+    @apply font-link text-secondary-lightest font-black text-sm;
   }
 
   .text-button {

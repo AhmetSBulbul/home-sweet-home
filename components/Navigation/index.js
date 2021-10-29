@@ -49,7 +49,7 @@ const Navigation = ({ children }) => {
           onClick={isExpanded && setIsExpand}
           secondary
         >
-          Bana Ulasin
+          Bana Ulaşın
         </ThemeButton>
       </nav>
       <MenuButton

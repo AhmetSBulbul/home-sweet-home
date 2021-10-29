@@ -4,6 +4,7 @@ import {
 } from "../lib/posts";
 import Head from "next/head";
 import Date from "../components/date";
+import PageBody from "../components/PageBody";
 
 export default function Post({ postData }) {
   return (
@@ -11,18 +12,22 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      <Date dateString={postData.date} />
-      <br />
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{
-          __html: postData.contentHtml,
-        }}
-      />
+      <PageBody>
+        <article>
+          <h1>{postData.title}</h1>
+          <br />
+          {postData.id}
+          <br />
+          <Date dateString={postData.date} />
+          <br />
+          <div
+            className="prose"
+            dangerouslySetInnerHTML={{
+              __html: postData.contentHtml,
+            }}
+          />
+        </article>
+      </PageBody>
     </>
   );
 }

@@ -60,18 +60,18 @@
   }
 
   a {
-    @apply uppercase font-link font-medium;
+    @apply font-link font-medium;
   }
 }
 
 @layer components {
   /*Typography*/
   .link {
-    @apply uppercase font-link text-secondary-lightest font-black text-sm;
+    @apply font-link text-secondary-lightest font-black text-sm;
   }
 
   .text-link {
-    @apply uppercase font-link font-semibold text-sm;
+    @apply font-link font-semibold text-base;
   }
 
   .button-border {
