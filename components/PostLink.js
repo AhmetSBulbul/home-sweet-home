@@ -5,15 +5,19 @@ export default function PostLink({
   id,
   date,
   title,
+  children,
   ...props
 }) {
   return (
     <Button
       href={`/${id}`}
-      className="my-2 inline-block"
+      className="my-2 inline-block group"
     >
-      <article>
-        <h3>{title}</h3>
+      <article className="prose-sm">
+        <h3 className="group-hover:text-night">
+          {title}
+        </h3>
+        <p>{children}</p>
 
         <small>
           <Date dateString={date} />
