@@ -40,10 +40,10 @@
   }
 
   .introDisplay {
-    @apply font-display text-3xl font-black uppercase text-white desktop:text-5xl;
+    @apply font-display text-3xl font-extrabold text-white desktop:text-4xl;
   }
 
   .socialIcons {
-    @apply text-white text-4xl flex gap-4 mt-2 ml-auto;
+    @apply text-white text-4xl flex gap-4 mt-4 mr-auto border-t-2 border-secondary-lightest py-4;
   }
 }
