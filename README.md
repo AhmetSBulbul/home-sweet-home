@@ -29,6 +29,7 @@
 - [ ] more responsive head
 - [ ] Contact Form
 - [ ] Comment feature
+- [ ] Tailwind config colors will be hex
 
 ## Re-Factor
 
