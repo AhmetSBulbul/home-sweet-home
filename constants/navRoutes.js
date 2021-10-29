@@ -5,24 +5,20 @@ const NavRoutes = [
     title: "Hakkımda",
   },
   {
-    path: "/yazilim",
-    key: "coding",
-    title: "Yazılım",
+    path: "/yazilar",
+    key: "writings",
+    title: "Yazılarım",
   },
-  {
-    path: "/kultur-sanat",
-    key: "cultureAndArt",
-    title: "Kültür Sanat",
-  },
-  {
-    path: "/kripto-paralar",
-    key: "cryptoCurrency",
-    title: "Kripto Paralar",
-  },
+
   {
     path: "/snippets",
     key: "snippets",
     title: "Snippets",
+  },
+  {
+    path: "/portfolyo",
+    key: "portfolio",
+    title: "Portfolyo",
   },
 ];
 

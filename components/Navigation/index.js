@@ -8,7 +8,7 @@ import {
 } from "../../constants";
 import React from "react";
 import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
-
+import useWindowSize from "../../hooks/useWindowSize";
 /*const FunctionalLink = React.forwardRef(
   ({ onClick, href, children }, ref) => {
     return (
@@ -24,7 +24,10 @@ const Navigation = ({
   isActive,
   setToggle,
 }) => {
-  useLockBodyScrollToggle(isActive);
+  const size = useWindowSize();
+  const amIMobile = size.width <= 768;
+  useLockBodyScrollToggle(amIMobile && isActive);
+  console.log(amIMobile);
   return (
     <>
       <nav
@@ -45,6 +48,9 @@ const Navigation = ({
             </Button>
           );
         })}
+        <Button className={styles.outlinedBtn}>
+          Birlikte Çalışalım
+        </Button>
       </nav>
       <MenuButton
         isWhite
