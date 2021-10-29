@@ -1,5 +1,5 @@
 .outerContainer {
-  @apply w-screen bg-none px-4 flex bg-primary-darkest relative;
+  @apply w-screen bg-none flex bg-primary-darkest relative;
   &::after,
   &::before {
     background: url("../../public/wave.svg")
@@ -17,7 +17,7 @@
 }
 
 .innerContainer {
-  @apply w-full container desktop:max-w-7xl mx-auto flex flex-col pt-10 pb-44 laptop:py-32 laptop:pb-64 laptop:px-8;
+  @apply w-full container desktop:max-w-7xl mx-auto flex flex-col px-4 pt-10 pb-44 laptop:py-32 laptop:pb-64;
   @screen laptop {
     @apply grid my-auto place-items-center;
     grid-template-columns: auto 1fr;

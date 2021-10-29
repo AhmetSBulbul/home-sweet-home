@@ -6,6 +6,7 @@ import Date from "../components/date";
 import ThemeButton from "../components/ThemeButton";
 import Head from "next/head";
 import LaunchingSoon from "../components/LaunchingSoon";
+import PostLink from "../components/PostLink";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -26,19 +27,20 @@ export default function Home({ allPostsData }) {
       </Head>
       <SectionHero />
       <PageBody>
-        <section className="laptop:px-4">
-          <h2> En Son Paylaşılanlar</h2>
+        <section>
+          <h2 className="font-display text-xl font-bold text-secondary-light antialiased mb-8">
+            {" "}
+            En Son Paylaşılanlar
+          </h2>
           <ul className="flex flex-col">
             {allPostsData.map(
               ({ id, date, title }) => (
                 <li key={id}>
-                  <Link href={`/${id}`}>
-                    <a>{title}</a>
-                  </Link>
-                  <br />
-                  <small>
-                    <Date dateString={date} />
-                  </small>
+                  <PostLink
+                    id={id}
+                    title={title}
+                    date={date}
+                  />
                 </li>
               )
             )}
