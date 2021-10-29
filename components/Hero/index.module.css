@@ -17,7 +17,7 @@
 }
 
 .innerContainer {
-  @apply w-full max-w-7xl mx-auto flex flex-col pt-10 pb-44 laptop:py-32 laptop:pb-64 laptop:px-8;
+  @apply w-full container desktop:max-w-7xl mx-auto flex flex-col pt-10 pb-44 laptop:py-32 laptop:pb-64 laptop:px-8;
   @screen laptop {
     @apply grid my-auto place-items-center;
     grid-template-columns: auto 1fr;
