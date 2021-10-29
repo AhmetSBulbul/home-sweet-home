@@ -48,7 +48,10 @@ const Navigation = ({
             </Button>
           );
         })}
-        <Button className={styles.outlinedBtn}>
+        <Button
+          className={styles.outlinedBtn}
+          href="/iletisim"
+        >
           Birlikte Çalışalım
         </Button>
       </nav>
