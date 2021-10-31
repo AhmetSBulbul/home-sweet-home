@@ -44,6 +44,6 @@
   }
 
   .socialIcons {
-    @apply text-white text-4xl flex gap-4 mt-4 mr-auto border-t-2 border-secondary-lightest py-4;
+    @apply text-white text-4xl flex space-x-4 mt-4 mr-auto border-t-2 border-secondary-lightest py-4;
   }
 }

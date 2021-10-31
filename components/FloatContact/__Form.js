@@ -72,8 +72,7 @@ export default function Form({ clickOuter }) {
           className="bg-night bg-opacity-80 font-link font-light subpixel-antialiased text-white rounded-md px-2 py-2 text-center"
         >
           Superpeer üzerinden ücretsiz olarak 1:1
-          görüşme talebi için randevu
-          alabilirsiniz.
+          görüşme için randevu alabilirsiniz.
         </a>
       </div>
     </div>
