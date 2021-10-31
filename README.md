@@ -27,6 +27,8 @@
 - [x] Posts
 - [x] Snippets
 - [x] Contact Form
+- [x] Superpeer link
+- [ ] Subscribe newsletter
 - [ ] Comment feature
 - [ ] Tailwind config colors will be hex
 - [ ] Post filter
