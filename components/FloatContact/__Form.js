@@ -1,50 +1,49 @@
 import styles from "./index.module.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
 import Button from "../Button";
+import FormField from "./__Field";
 
 export default function Form({ clickOuter }) {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const ref = useRef();
-  //useOnClickOutside(ref, clickOuter);
+  useOnClickOutside(ref, clickOuter);
   return (
     <div className={styles.formModalOuter}>
       <div className={styles.formModal} ref={ref}>
         <h2 className="font-display font-bold text-xl">
-          Bana Ulaşın! --- Geliştirilme Aşamasında
+          Bana Ulaşın! --- Geliştirilme Aşamasında{" "}
         </h2>
         <form className={styles.form}>
-          <label
-            htmlFor="fullname"
-            className={styles.label}
-          >
-            Ad Soyad
-          </label>
-          <input
-            type="text"
+          <FormField
+            labelText="Ad Soyad"
             name="fullname"
-            className={styles.input}
-          />
-          <label
-            htmlFor="email"
-            className={styles.label}
-          >
-            E-Posta
-          </label>
-          <input
-            type="email"
-            name="email"
-            className={styles.input}
-          />
-          <label
-            htmlFor="subject"
-            className={styles.label}
-          >
-            Konu
-          </label>
-          <input
             type="text"
+            value={fullname}
+            onChange={(e) =>
+              setFullname(e.target.value)
+            }
+          />
+          <FormField
+            labelText="E-Posta"
+            name="email"
+            type="email"
+            value={email}
+            onChange={(e) =>
+              setEmail(e.target.value)
+            }
+          />
+          <FormField
+            labelText="Konu"
             name="subject"
-            className={styles.input}
+            type="text"
+            value={subject}
+            onChange={(e) =>
+              setSubject(e.target.value)
+            }
           />
           <label
             htmlFor="message"
@@ -55,6 +54,10 @@ export default function Form({ clickOuter }) {
           <textarea
             name="message"
             className={styles.input}
+            value={message}
+            onChange={(e) =>
+              setMessage(e.target.value)
+            }
           />
           <div className="flex flex-row">
             <button className="bg-secondary w-full h-full text-center text-white font-link rounded-md antialiased px-4 py-2">
