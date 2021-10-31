@@ -36,8 +36,8 @@
 ## Re-Factor
 
 - [x] Better Content Management
-- [ ] Logo
-- [ ] Components
+- [x] Logo
+- [x] Components
 
 
 ---
