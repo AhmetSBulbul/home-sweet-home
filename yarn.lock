@@ -2171,6 +2171,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sendgrid/client@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "@sendgrid/client@npm:7.5.0"
+  dependencies:
+    "@sendgrid/helpers": ^7.5.0
+    axios: ^0.21.4
+  checksum: 23e991a2356db015df0da21fd1bbd30e6c4f830afb1f187c074664218acba4309b705fb0a0ebbb470949d26a62e1f9ba80eab5fce6bc4343722c0be97835736a
+  languageName: node
+  linkType: hard
+
+"@sendgrid/helpers@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "@sendgrid/helpers@npm:7.5.0"
+  dependencies:
+    deepmerge: ^4.2.2
+  checksum: 30caee4a240aa7d64f7676b7f34f6e77ac13c023e3ae3ca67a09a4a49ab655abf440f450ce1eddf7db9187c83b072f22caa5a4cf33e099a39cca28ea70fb099e
+  languageName: node
+  linkType: hard
+
+"@sendgrid/mail@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "@sendgrid/mail@npm:7.5.0"
+  dependencies:
+    "@sendgrid/client": ^7.5.0
+    "@sendgrid/helpers": ^7.5.0
+  checksum: 4f9b43d127b0daf56eb0cb8335240f917a7f6edd65e49c5a8ab23190a26ec057fcfd62de1bc9048f49cf0f99e8cf970b7282df811112d1f045fff3caa1646515
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:6.3.4, @storybook/addon-actions@npm:^6.3.4":
   version: 6.3.4
   resolution: "@storybook/addon-actions@npm:6.3.4"
@@ -4548,6 +4577,15 @@ __metadata:
   version: 4.2.3
   resolution: "axe-core@npm:4.2.3"
   checksum: 678a9fac7ad26f7ada1fb9b7241a56d8cc20bea7cfc5b238c8861d7e8ebaeec28ea811591d843f1c292e9d0b6fb62fb86216445907b9795744b29a8e07d0383c
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.21.4":
+  version: 0.21.4
+  resolution: "axios@npm:0.21.4"
+  dependencies:
+    follow-redirects: ^1.14.0
+  checksum: e6d42b269b599d36eb13be0671c237781f32e6ae72be824297c55a3e1ce63b22ba4f46bad5ab28da7d3bae50a72637d55c792cf803be1cf9de6a8bcd6d0dcc1a
   languageName: node
   linkType: hard
 
@@ -7674,6 +7712,16 @@ __metadata:
     inherits: ^2.0.3
     readable-stream: ^2.3.6
   checksum: b8fa1fbfadd5c4b6df3cf2c34b3c408fe508a2899c536bafa339f679de545689997e907bd4ff61dd292942f8044fb2f293a5956dd8b601f6a5601617842d0dda
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.0":
+  version: 1.14.5
+  resolution: "follow-redirects@npm:1.14.5"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 69c5dc6658d9a5ac337b82e2b4ab4af5ed4b0482b582b9517dc10fa132f781187febe4d28e1808866c299b1ca0083c1493e781364746376e89a24e15b4887a0c
   languageName: node
   linkType: hard
 
@@ -15417,6 +15465,7 @@ resolve@^2.0.0-next.3:
   resolution: "with-tailwindcss@workspace:."
   dependencies:
     "@babel/core": ^7.14.6
+    "@sendgrid/mail": ^7.5.0
     "@storybook/addon-actions": ^6.3.4
     "@storybook/addon-essentials": ^6.3.4
     "@storybook/addon-links": ^6.3.4
