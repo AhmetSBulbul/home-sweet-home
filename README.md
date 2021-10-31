@@ -30,6 +30,8 @@
 - [ ] Contact Form
 - [ ] Comment feature
 - [ ] Tailwind config colors will be hex
+- [ ] Post filter
+- [ ] Snippet filter
 
 ## Re-Factor
 
