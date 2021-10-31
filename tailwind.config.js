@@ -23,7 +23,7 @@ module.exports = {
       primary: {
         lightest: "rgba(23, 178, 181, 1)",
         light: "rgba(19, 142, 144, 1)",
-        DEFAULT: "rgba(15, 113, 115, 1)",
+        DEFAULT: "#094748",
         dark: "rgba(12, 89, 90, 1)",
         darkest: "rgba(9, 71, 72, 1)",
       },
@@ -50,7 +50,7 @@ module.exports = {
         120: "rgba(61, 61, 61, 1)",
       },
       white: "rgba(255, 255, 255, 1)",
-      black: "rgba(10, 10, 10, 1)",
+      black: "#000",
       messaging: {
         success: "rgba(0, 173, 88, 1)",
         info: "rgba(0, 147, 255, 1)",

@@ -3,17 +3,24 @@
 }
 
 .formModalOuter {
-  @apply fixed w-screen left-0 top-0 bottom-0 h-screen py-20 px-8 bg-night bg-opacity-40 flex flex-col justify-center items-center z-everest;
+  @apply fixed w-screen left-0 top-0 bottom-0 h-screen py-20 px-8 bg-black bg-opacity-40 flex flex-col justify-center items-center z-everest;
 }
 
 .formModal {
-  @apply w-full h-full bg-white flex flex-col px-4 py-6 rounded-lg;
+  @apply w-full bg-white flex flex-col px-4 py-6 rounded-lg;
+  @screen tablet {
+    @apply max-w-xl;
+  }
+}
+
+.form {
+  @apply px-2 py-4 flex flex-col;
 }
 
 .label {
-  @apply font-display font-medium;
+  @apply font-link text-gray-70 font-light;
 }
 
 .input {
-  @apply bg-transparent border-b focus:outline-none focus:ring-1 ring-primary-dark;
+  @apply bg-transparent border-b border-gray-70 focus:outline-none focus:border-none focus:ring-1 ring-primary-dark focus:rounded-sm px-1 py-1 mt-1 mb-4;
 }
