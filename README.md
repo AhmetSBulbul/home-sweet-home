@@ -26,12 +26,12 @@
 - [ ] Mobile Nav Animation
 - [x] Posts
 - [x] Snippets
-- [ ] more responsive head
-- [ ] Contact Form
+- [x] Contact Form
 - [ ] Comment feature
 - [ ] Tailwind config colors will be hex
 - [ ] Post filter
 - [ ] Snippet filter
+- [ ] SAFARI BUG AS ALWAYS *contact form modal on click outside hook runs while typing
 
 ## Re-Factor
 

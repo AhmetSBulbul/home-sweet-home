@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function Form({ clickOuter }) {
   const ref = useRef();
-  useOnClickOutside(ref, clickOuter);
+  //useOnClickOutside(ref, clickOuter);
   return (
     <div className={styles.formModalOuter}>
       <div className={styles.formModal} ref={ref}>
