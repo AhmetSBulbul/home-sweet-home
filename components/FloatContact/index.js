@@ -3,6 +3,7 @@ import Button from "../Button";
 import React, { useState } from "react";
 import cn from "classnames";
 import Form from "./__Form";
+import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
 
 const ChatSvg = () => (
   <svg
@@ -24,6 +25,8 @@ const ChatSvg = () => (
 export default function FloatContact() {
   const [isModalOpen, setModalOpen] =
     useState(false);
+
+  useLockBodyScrollToggle(isModalOpen);
 
   return (
     <>

@@ -3,9 +3,17 @@
 }
 
 .formModalOuter {
-  @apply fixed w-screen left-0 top-0 bottom-0 h-screen py-20 px-8 bg-night bg-opacity-20 flex flex-col justify-center items-center z-everest;
+  @apply fixed w-screen left-0 top-0 bottom-0 h-screen py-20 px-8 bg-night bg-opacity-40 flex flex-col justify-center items-center z-everest;
 }
 
 .formModal {
-  @apply w-full h-full bg-white flex;
+  @apply w-full h-full bg-white flex flex-col px-4 py-6 rounded-lg;
+}
+
+.label {
+  @apply font-display font-medium;
+}
+
+.input {
+  @apply bg-transparent border-b focus:outline-none focus:ring-1 ring-primary-dark;
 }

@@ -7,9 +7,27 @@ export default function Form({ clickOuter }) {
   useOnClickOutside(ref, clickOuter);
   return (
     <div className={styles.formModalOuter}>
-      <div className={styles.formModal} ref={ref}>
-        hey
-      </div>
+      <form
+        className={styles.formModal}
+        ref={ref}
+      >
+        <h2 className="font-display border-b-2 border-secondary-lightest font-bold text-lg">
+          Bana Ulaşın!
+        </h2>
+        <div className="flex flex-col px-2 py-4">
+          <label
+            htmlFor="fullname"
+            className={styles.label}
+          >
+            İsim Soyisim
+          </label>
+          <input
+            type="text"
+            name="fullname"
+            className={styles.input}
+          />
+        </div>
+      </form>
     </div>
   );
 }

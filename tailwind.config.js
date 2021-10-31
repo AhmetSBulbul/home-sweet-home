@@ -18,7 +18,7 @@ module.exports = {
       center: true,
     },
     colors: {
-      night: "rgba(65, 83, 121, 1)",
+      night: "#415379",
       transparent: "transparent",
       primary: {
         lightest: "rgba(23, 178, 181, 1)",
