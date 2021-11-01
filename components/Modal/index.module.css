@@ -1,0 +1,13 @@
+.background {
+  @apply fixed w-screen h-screen top-0 left-0 bottom-0 right-0 flex flex-col bg-black bg-opacity-40 justify-center items-center z-50;
+  @apply px-8;
+}
+
+.card {
+  @apply bg-white rounded-md flex flex-col px-4 py-6;
+  @apply w-full;
+  @screen tablet {
+    @apply max-w-2xl;
+  }
+  //TODO:Max-w gelicek
+}

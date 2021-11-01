@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import cn from "classnames";
 import Form from "./__Form";
 import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
+import Modal from "../Modal";
+import Message from "./__Message";
 
 const ChatSvg = () => (
   <svg
@@ -25,8 +27,21 @@ const ChatSvg = () => (
 export default function FloatContact() {
   const [isModalOpen, setModalOpen] =
     useState(false);
-
+  const [
+    showSuccessMessage,
+    setShowSuccessMessage,
+  ] = useState(false);
+  const [
+    showFailureMessage,
+    setShowFailureMessage,
+  ] = useState(false);
   useLockBodyScrollToggle(isModalOpen);
+
+  const resetState = () => {
+    setShowSuccessMessage(false);
+    setShowFailureMessage(false);
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -38,10 +53,33 @@ export default function FloatContact() {
         Bilgi Talebi
       </Button>
       {isModalOpen && (
-        <Form
-          clickOuter={() => setModalOpen(false)}
-        />
+        <Modal>
+          {!(
+            showFailureMessage ||
+            showSuccessMessage
+          ) ? (
+            <Form
+              onClickClose={resetState}
+              setShowFailureMessage={
+                setShowFailureMessage
+              }
+              setShowSuccessMessage={
+                setShowSuccessMessage
+              }
+            />
+          ) : (
+            <Message onClick={resetState}>
+              {showFailureMessage
+                ? "Bir Hata Oluştu"
+                : "Başarıyla Gönderildi! En Kısa Sürede Dönüş Yapacağım."}
+            </Message>
+          )}
+        </Modal>
       )}
     </>
   );
 }
+
+/*<Form
+          clickOuter={() => setModalOpen(false)}
+        />*/
