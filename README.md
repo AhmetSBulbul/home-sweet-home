@@ -20,6 +20,8 @@
 - [tailwindcss](https://tailwindcss.com/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 - [Storybook](https://storybook.js.org/)
+- [rss2json](https://rss2json.com/)
+- [sendgrid](https://sendgrid.com/)
 
 ## TODO
 
@@ -28,19 +30,20 @@
 - [x] Snippets
 - [x] Contact Form
 - [x] Superpeer link
-- [ ] Subscribe newsletter
 - [ ] Comment feature
 - [ ] Tailwind config colors will be hex
-- [ ] Post filter
 - [ ] Snippet filter
-- [ ] SAFARI BUG AS ALWAYS *contact form modal on click outside hook runs while typing
 - [ ] Auth0 integration
+- [x] Medium Feed
+- [ ] Medium Feed Components
+- [ ] Medium Post filter
 
 ## Re-Factor
 
 - [x] Better Content Management
 - [x] Logo
 - [x] Components
+- [ ] useContactForm
 
 
 ---

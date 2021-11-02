@@ -1,0 +1,22 @@
+.layout {
+  @apply w-full;
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @screen laptop {
+    grid-template-columns: auto 350px;
+  }
+}
+
+.mainContainer {
+  @apply w-full laptop:mr-4;
+}
+
+.sideContainer {
+  @apply hidden;
+  @screen laptop {
+    @apply flex flex-col w-full h-full;
+  }
+}
