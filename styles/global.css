@@ -93,4 +93,27 @@
         var(--primary--lighter),
       4px 4px 0px var(--primary);
   }
+
+  .post-list-section {
+    @apply w-full;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @screen laptop {
+      grid-template-columns: auto 350px;
+    }
+  }
+
+  .post-list-main-container {
+    @apply w-full laptop:mr-4;
+  }
+
+  .post-list-side-container {
+    @apply hidden;
+    @screen laptop {
+      @apply flex flex-col w-full h-full;
+    }
+  }
 }

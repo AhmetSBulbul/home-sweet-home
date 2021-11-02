@@ -20,21 +20,25 @@ export default function Writings() {
   const [category, setCategory] = useState("");
 
   return (
-    <div className="flex flex-col">
-      <h1>{feed.title}</h1>
-      {isLoaded && !error && (
-        <MediumCategoryList
-          categories={categories}
+    <div className="post-list-section container px-4 py-12">
+      <div className="post-list-main-container">
+        <h1>Yazılarım</h1>
+        <MediumFeedList
+          isLoaded={isLoaded}
+          posts={blogs}
+          error={error}
           category={category}
-          setCategory={setCategory}
         />
-      )}
-      <MediumFeedList
-        isLoaded={isLoaded}
-        posts={blogs}
-        error={error}
-        category={category}
-      />
+      </div>
+      <div className="post-list-side-container">
+        {isLoaded && !error && (
+          <MediumCategoryList
+            categories={categories}
+            category={category}
+            setCategory={setCategory}
+          />
+        )}
+      </div>
     </div>
   );
 }
