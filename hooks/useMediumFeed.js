@@ -5,6 +5,24 @@ export default function useMediumFeed() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [feed, setFeed] = useState([]);
   const [blogs, setBlogs] = useState([]);
+  const [categories, setCategories] = useState(
+    []
+  );
+
+  const allCategories = (posts) => {
+    let tags = [];
+    posts.forEach((item, index) => {
+      item.categories.forEach(
+        (categoryItem, index) => {
+          if (!tags.includes(categoryItem)) {
+            tags.push(categoryItem);
+          }
+        }
+      );
+    });
+
+    return tags;
+  };
 
   useEffect(() => {
     fetch(
@@ -16,6 +34,9 @@ export default function useMediumFeed() {
           setIsLoaded(true);
           setFeed(data.feed);
           setBlogs(data.items);
+          setCategories(
+            allCategories(data.items)
+          );
         },
         (error) => {
           setIsLoaded(true);
@@ -24,5 +45,11 @@ export default function useMediumFeed() {
       );
   }, []);
 
-  return [error, isLoaded, feed, blogs];
+  return [
+    error,
+    isLoaded,
+    feed,
+    blogs,
+    categories,
+  ];
 }
