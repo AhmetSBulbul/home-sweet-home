@@ -26,7 +26,7 @@ export default function MediumPostLink({ post }) {
       target="_blank"
     >
       <article>
-        <Thumbnail src={post.thumbnail} />
+        {/*<Thumbnail src={post.thumbnail} />*/}
         <h2>{post.title}</h2>
         <div
           dangerouslySetInnerHTML={{
