@@ -34,6 +34,7 @@
 - [ ] Post filter
 - [ ] Snippet filter
 - [ ] SAFARI BUG AS ALWAYS *contact form modal on click outside hook runs while typing
+- [ ] Auth0 integration
 
 ## Re-Factor
 
