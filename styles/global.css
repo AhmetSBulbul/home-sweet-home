@@ -106,6 +106,21 @@
     }
   }
 
+  .section-content-container {
+    @apply w-full container mx-auto flex flex-col px-4 py-12;
+    @screen tablet {
+      @apply flex flex-row justify-between;
+    }
+  }
+
+  .title {
+    @apply font-display font-bold text-lg;
+  }
+
+  .responsive-flex {
+    @apply w-full flex flex-col tablet:flex-row;
+  }
+
   .post-list-main-container {
     @apply w-full laptop:mr-4;
   }

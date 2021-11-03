@@ -6,11 +6,12 @@ const Thumbnail = ({ src }) => {
     <>
       {!src.includes("medium.com/_/stat?") && (
         <div>
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img
             src={src}
             width="150px"
             height="150px"
-            alt=""
+            alt="thumbnail"
           />
         </div>
       )}
@@ -24,11 +25,13 @@ export default function MediumPostLink({ post }) {
       href={post.link}
       rel="noreferrer"
       target="_blank"
+      className="my-2"
     >
-      <article>
+      <article className="flex flex-col">
         {/*<Thumbnail src={post.thumbnail} />*/}
-        <h2>{post.title}</h2>
+        <h2 className="mb-2">{post.title}</h2>
         <div
+          className="font-body font-light"
           dangerouslySetInnerHTML={{
             __html: firstParagraph(
               post.description

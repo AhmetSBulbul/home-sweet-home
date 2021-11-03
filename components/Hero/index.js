@@ -26,13 +26,13 @@ const SectionHero = ({ children }) => {
           <MyHeadButFancy />
         </div>
         <div className={styles.intro}>
-          <h2 className="font-display uppercase font-bold text-secondary-lightest desktop:mb-2">
-            Merhaba, Ben Ahmet Safa Bülbül.
-          </h2>
-          <h1 className={styles.introDisplay}>
-            Mobil Uygulama & Web Arayüz Yazılım
-            Geliştiricisiyim.
+          <h1 className="font-display font-bold text-secondary-lightest desktop:mb-2">
+            Freelance Yazılım Geliştirici
           </h1>
+          <h2 className={styles.introDisplay}>
+            Mobil Uygulama & Web Arayüzü Yazılım
+            Geliştiricisi.
+          </h2>
 
           <div className={styles.socialIcons}>
             <ContactLink

@@ -37,6 +37,10 @@
 - [x] Medium Feed
 - [ ] Medium Feed Components
 - [ ] Medium Post filter
+- [ ] Storybook components
+- [ ] Logo and hire me buttons hover animations
+- [ ] useMediumFeed hook return value will be object
+- [ ] home screen recent published snippets
 
 ## Re-Factor
 
