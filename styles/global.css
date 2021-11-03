@@ -117,6 +117,10 @@
     @apply font-display font-bold text-lg;
   }
 
+  .content-container {
+    @apply w-full container desktop:max-w-7xl mx-auto px-4;
+  }
+
   .responsive-flex {
     @apply w-full flex flex-col tablet:flex-row;
   }
