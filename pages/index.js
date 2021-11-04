@@ -30,7 +30,7 @@ export default function Home() {
         </title>
       </Head>
       <SectionHero />
-      <section className="responsive-flex py-12 content-container">
+      <section className="split-pair content-container">
         <div className="flex-1">
           <h2 className="font-display text-4xl font-extrabold">
             Flutter & Frontend Developer
