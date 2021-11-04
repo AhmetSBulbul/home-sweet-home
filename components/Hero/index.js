@@ -26,10 +26,10 @@ const SectionHero = ({ children }) => {
           <MyHeadButFancy />
         </div>
         <div className={styles.intro}>
-          <h1 className="font-display font-bold text-secondary-lightest desktop:mb-2">
+          <h1 className="text-xl text-secondary-lightest desktop:mb-2">
             Freelance Yazılım Geliştirici
           </h1>
-          <h2 className={styles.introDisplay}>
+          <h2 className="title text-white">
             Mobil Uygulama & Web Arayüzü Yazılım
             Geliştiricisi.
           </h2>

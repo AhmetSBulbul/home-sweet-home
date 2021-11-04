@@ -51,12 +51,13 @@
     scrollbar-width: none;
   }
 
-  h1 {
-    @apply text-2xl font-display font-bold;
+  h1,
+  h2 {
+    @apply font-display font-extrabold;
   }
 
   p {
-    @apply text-base;
+    @apply text-xl text-gray-120 font-semibold font-body;
   }
 
   a {
@@ -114,7 +115,7 @@
   }
 
   .title {
-    @apply font-display font-bold text-lg;
+    @apply text-4xl;
   }
 
   .split-pair {

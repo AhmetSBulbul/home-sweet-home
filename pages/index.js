@@ -12,6 +12,7 @@ import useMediumFeed from "../hooks/useMediumFeed";
 import Technologies from "../components/Technologies";
 import Image from "next/dist/client/image";
 import Button from "../components/Button";
+import TechLogos from "../constants/techs";
 
 export default function Home() {
   const [
@@ -30,16 +31,17 @@ export default function Home() {
         </title>
       </Head>
       <SectionHero />
-      <section className="split-pair content-container">
+      <section className="split-pair content-container py-12">
         <div className="flex-1">
-          <h2 className="font-display text-4xl font-extrabold">
+          <h2 className="title">
             Flutter & Frontend Developer
           </h2>
         </div>
-        <div className="flex-1 flex flex-col">
-          <p className="font-inter font-bold text-xl text-gray-110">
-            Freelance yazılım geliştiricisi Ahmet
-            Safa Bülbül. Mobil ve Web Uygulamaları
+        <div className="flex-1">
+          <p>
+            Freelance yazılım geliştiricisi{" "}
+            <b>Ahmet Safa Bülbül</b>. Mobil
+            uygulamalar ve web siteleri
             geliştirerek profesyonel yazılım
             çözümleri üretiyorum. İşletmenizi
             internete taşıyorum. Yazılım
@@ -47,18 +49,10 @@ export default function Home() {
             fikirlerinizi ürünlere dönüştürün,
             işletmenizi internet çağına taşıyın.
           </p>
-          <Button
-            href="/portfolyo"
-            className="bg-night text-white px-4 py-3 rounded-md flex ml-auto mt-6"
-          >
-            Portfolyo
-          </Button>
         </div>
       </section>
-      <section className="flex flex-col w-full justify-center text-center py-12 bg-gray-20">
-        <Technologies />
-      </section>
-      <section className="responsive-flex justify-center tablet:items-center py-12 content-container">
+
+      <section className="split-pair content-container pb-12 tablet:items-center">
         <div className="flex-1 block rounded-md overflow-hidden shadow-xl">
           <Image
             src="/me.png"
@@ -68,14 +62,12 @@ export default function Home() {
             height={280}
           />
         </div>
-        <div className="flex-1 tablet:ml-12">
+        <div className="flex-1">
           <p className="font-display font-medium text-sm uppercase">
             Merhaba, ben Ahmet 👋🏼
           </p>
-          <h2 className="font-display text-4xl font-extrabold">
-            Hakkımda
-          </h2>
-          <p className="font-body font-medium text-lg">
+          <h2 className="text-4xl">Hakkımda</h2>
+          <p>
             Frontend geliştirici olarak
             profesyonel yazılım hizmeti veriyorum.
             Müzik tutkunuyum, elimden geldiğince
