@@ -32,7 +32,7 @@ export default function Home() {
       <SectionHero />
       <section className="split-pair content-container">
         <div className="flex-1">
-          <h2 className="font-display text-4xl font-extrabold">
+          <h2 className="font-display text-4xl text-right font-extrabold">
             Flutter & Frontend Developer
           </h2>
         </div>
