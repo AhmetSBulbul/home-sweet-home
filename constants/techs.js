@@ -1,59 +1,59 @@
 const TechLogos = [
   {
     alt: "Flutter Logo",
-    src: "/flutter.svg",
+    src: "/technologies/flutter.png",
   },
   {
     alt: "React Logo",
-    src: "/react.svg",
+    src: "/technologies/react.png",
   },
   {
     alt: "Vercel Logo",
-    src: "/vercel.svg",
+    src: "/technologies/vercel.png",
   },
   {
     alt: "Auth0 Logo",
-    src: "/auth0.svg",
+    src: "/technologies/auth0.png",
   },
   {
     alt: "Shopify Logo",
-    src: "/shopify.svg",
+    src: "/technologies/shopify.png",
   },
   {
     alt: "Firebase Logo",
-    src: "/firebase.svg",
+    src: "/technologies/firebase.png",
   },
   {
     alt: "GatsbyJS Logo",
-    src: "/gatsbyjs.svg",
+    src: "/technologies/gatsbyjs.png",
   },
   {
     alt: "Sass Logo",
-    src: "/sass.svg",
+    src: "/technologies/sass.png",
   },
   {
     alt: "Sendgrid Logo",
-    src: "/sendgrid.svg",
+    src: "/technologies/sendgrid.png",
   },
   {
     alt: "PostCSS Logo",
-    src: "/postcss.svg",
+    src: "/technologies/postcss.png",
   },
   {
     alt: "Storybook Logo",
-    src: "/storybook.svg",
+    src: "/technologies/storybook.png",
   },
   {
     alt: "Tailwind Logo",
-    src: "/tailwind-css.svg",
+    src: "/technologies/tailwind.png",
   },
   {
     alt: "GraphQL Logo",
-    src: "/graphql.svg",
+    src: "/technologies/graphql.png",
   },
   {
     alt: "Google Analytics Logo",
-    src: "/google-analytics.svg",
+    src: "/technologies/google-analytics.png",
   },
 ];
 

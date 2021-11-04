@@ -2,20 +2,20 @@ import Image from "next/image";
 import techLogos from "../constants/techs";
 
 const LogoWrap = ({ src, alt }) => (
-  <div className="p-2">
+  <div>
     <Image
       src={src}
       alt={alt}
       layout="intrinsic"
-      width={200}
-      height={50}
+      width={110}
+      height={110}
     />
   </div>
 );
 
 export default function Technologies() {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-evenly">
       {techLogos.map((logo, index) => (
         <LogoWrap
           key={`${logo.alt}-${index}`}
