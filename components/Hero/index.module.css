@@ -40,7 +40,7 @@
   }
 
   .introDisplay {
-    @apply font-display text-3xl font-extrabold text-white desktop:text-4xl;
+    @apply font-inter text-3xl font-extrabold text-white desktop:text-4xl;
   }
 
   .socialIcons {

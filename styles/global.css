@@ -125,7 +125,7 @@
   }
 
   .content-container {
-    @apply w-full container desktop:max-w-7xl mx-auto px-4;
+    @apply w-full container desktop:max-w-6xl mx-auto px-4;
   }
 
   .responsive-flex {

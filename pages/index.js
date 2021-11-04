@@ -32,12 +32,12 @@ export default function Home() {
       <SectionHero />
       <section className="split-pair content-container">
         <div className="flex-1">
-          <h2 className="font-display text-4xl text-right font-extrabold">
+          <h2 className="font-display text-4xl font-extrabold">
             Flutter & Frontend Developer
           </h2>
         </div>
         <div className="flex-1 flex flex-col">
-          <p className="font-body font-bold text-lg">
+          <p className="font-inter font-bold text-xl text-gray-110">
             Freelance yazılım geliştiricisi Ahmet
             Safa Bülbül. Mobil ve Web Uygulamaları
             geliştirerek profesyonel yazılım
