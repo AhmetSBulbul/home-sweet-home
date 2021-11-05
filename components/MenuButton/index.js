@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./index.module.css";
 import cn from "classnames";
-import Button from "../Button";
+import BaseButton from "../BaseButton";
 
 const MenuButton = ({
   children,
@@ -11,7 +11,7 @@ const MenuButton = ({
   ...props
 }) => {
   return (
-    <Button
+    <BaseButton
       className={cn([
         styles.menuBtn,
         isWhite ? styles.white : styles.gray,
@@ -29,7 +29,7 @@ const MenuButton = ({
         <div />
         <div />
       </div>
-    </Button>
+    </BaseButton>
   );
 };
 

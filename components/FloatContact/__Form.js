@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import { useRef, useState } from "react";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
-import Button from "../Button";
+import BaseButton from "../BaseButton";
 import FormField from "./__Field";
 
 const CloseBtn = ({ onClick }) => {

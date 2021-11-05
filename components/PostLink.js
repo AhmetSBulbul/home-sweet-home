@@ -1,4 +1,4 @@
-import Button from "./Button";
+import BaseButton from "./BaseButton";
 import Date from "./date";
 
 export default function PostLink({
@@ -10,7 +10,7 @@ export default function PostLink({
   ...props
 }) {
   return (
-    <Button
+    <BaseButton
       href={`/${id}`}
       className="my-2 inline-block group"
     >
@@ -25,6 +25,6 @@ export default function PostLink({
           <Date dateString={date} />
         </small>
       </article>
-    </Button>
+    </BaseButton>
   );
 }

@@ -1,35 +1,29 @@
-import Link from "next/link";
-import styles from "./index.module.css";
+import BaseButton from "../BaseButton";
 import cn from "classnames";
-import Button from "../Button";
+import styles from "./index.module.css";
 
-const ThemeButton = ({
+export default function ThemeButton({
+  outlined = false,
+  secondary = false,
+  withIcon = false,
+  small = false,
   children,
   className,
-  secondary = false,
-  outlined = false,
-  stretch = false,
   ...props
-}) => {
+}) {
   return (
-    <Button
+    <BaseButton
       className={cn([
-        styles.themeBtn,
-        styles.primary,
+        styles.default,
         secondary && styles.secondary,
-        outlined
-          ? secondary
-            ? styles.secondaryOutlined
-            : styles.primaryOutlined
-          : styles.primary,
-        stretch && styles.stretch,
+        withIcon && styles.withIcon,
+        small && styles.small,
+        outlined && styles.outlined,
         className,
       ])}
       {...props}
     >
       {children}
-    </Button>
+    </BaseButton>
   );
-};
-
-export default ThemeButton;
+}

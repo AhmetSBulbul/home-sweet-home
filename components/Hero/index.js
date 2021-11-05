@@ -1,7 +1,6 @@
 import styles from "./index.module.css";
 import MyHeadButFancy from "../MyHeadButFancy";
 import * as Icon from "../icons";
-import ThemeButton from "../ThemeButton";
 import {
   ContactInfo,
   Routes,

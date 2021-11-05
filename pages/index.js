@@ -5,8 +5,9 @@ import Head from "next/head";
 import MediumFeedList from "../components/MediumFeedList";
 import useMediumFeed from "../hooks/useMediumFeed";
 import Technologies from "../components/Technologies";
-import Image from "next/dist/client/image";
-import Button from "../components/Button";
+import Image from "next/image";
+import ThemeButton from "../components/ThemeButton";
+import { Arrow } from "../components/icons";
 
 import { getSortedSnippetsData } from "../lib/snippets";
 import SnippetsFeedList from "../components/SnippetsFeedList";
@@ -31,12 +32,12 @@ export default function Home({
       </Head>
       <SectionHero />
       <section className="split-pair content-container py-12">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col justify-between">
           <h2 className="title">
             Flutter & Frontend Developer
           </h2>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col space-y-5">
           <p>
             Freelance yazılım geliştiricisi{" "}
             <b>Ahmet Safa Bülbül</b>. Mobil
@@ -48,6 +49,13 @@ export default function Home({
             fikirlerinizi ürünlere dönüştürün,
             işletmenizi internet çağına taşıyın.
           </p>
+          <ThemeButton
+            className="mr-auto"
+            href="/portfolyo"
+            withIcon
+          >
+            İşlerimi İnceleyin <Arrow />
+          </ThemeButton>
         </div>
       </section>
       <section className="flex flex-col content-container py-12">

@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import Button from "../Button";
+import BaseButton from "../BaseButton";
 import React, { useState } from "react";
 import cn from "classnames";
 import Form from "./__Form";
@@ -45,13 +45,13 @@ export default function FloatContact() {
 
   return (
     <>
-      <Button
+      <BaseButton
         className={styles.floatBtn}
         onClick={() => setModalOpen(true)}
       >
         <ChatSvg />
         Bilgi Talebi
-      </Button>
+      </BaseButton>
       {isModalOpen && (
         <Modal>
           {!(

@@ -52,7 +52,7 @@ function LinkButton({
   );
 }
 
-function BaseButton({ children, ...props }) {
+function Button({ children, ...props }) {
   return (
     <button type="button" {...props}>
       {children}
@@ -60,7 +60,7 @@ function BaseButton({ children, ...props }) {
   );
 }
 
-const Button = ({
+const BaseButton = ({
   children,
   className,
   ...props
@@ -69,7 +69,7 @@ const Button = ({
     ? props.onClick
       ? FunctionalLinkButton
       : LinkButton
-    : BaseButton;
+    : Button;
 
   return (
     <CurrBtn className={className} {...props}>
@@ -78,4 +78,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default BaseButton;

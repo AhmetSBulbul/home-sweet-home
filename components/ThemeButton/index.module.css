@@ -1,23 +1,22 @@
-.themeBtn {
-  @apply px-2 text-base h-12;
+.default {
+  @apply py-4 px-5 font-link text-lg font-medium antialiased bg-primary-darkest text-white rounded-md transition-colors hover:bg-primary-light inline-block;
 }
 
-.primary {
-  @apply bg-primary-lightest text-gray-10 border-2 border-b-4 border-primary-light;
+.withIcon {
+  @apply flex justify-center items-center;
+  svg {
+    @apply ml-4;
+  }
 }
 
-.primaryOutlined {
-  @apply bg-gray-10 border-2 text-primary border-primary;
+.outlined {
+  @apply bg-transparent border-2 border-gray-120 text-gray-120;
+}
+
+.small {
+  @apply text-sm py-3 px-3;
 }
 
 .secondary {
-  @apply text-gray-10 bg-secondary border-2 border-b-4 border-secondary-dark rounded-md;
-}
-
-.secondaryOutlined {
-  @apply bg-gray-10 border-2 text-secondary border-secondary;
-}
-
-.stretch {
-  @apply w-full;
+  @apply bg-secondary hover:bg-secondary-light;
 }

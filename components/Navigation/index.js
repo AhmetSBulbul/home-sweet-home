@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import Button from "../Button";
+import BaseButton from "../BaseButton";
 import MenuButton from "../MenuButton";
 import cn from "classnames";
 import {
@@ -38,22 +38,22 @@ const Navigation = ({
       >
         {NavRoutes.map((item) => {
           return (
-            <Button
+            <BaseButton
               key={item.key}
               href={item.path}
               onClick={isActive && setToggle}
               className={styles.navLink}
             >
               {item.title}
-            </Button>
+            </BaseButton>
           );
         })}
-        <Button
+        <BaseButton
           className={styles.outlinedBtn}
           href="/iletisim"
         >
           Birlikte Çalışalım
-        </Button>
+        </BaseButton>
       </nav>
       <MenuButton
         isWhite

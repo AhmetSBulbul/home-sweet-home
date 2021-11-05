@@ -3,7 +3,7 @@ import { getSortedSnippetsData } from "../../lib/snippets";
 import Link from "next/link";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";
-import Button from "../../components/Button";
+import BaseButton from "../../components/BaseButton";
 
 export async function getStaticProps() {
   const allSnippetsData = getSortedSnippetsData();
@@ -31,7 +31,7 @@ export default function Snippets({
           {allSnippetsData.map(
             ({ id, date, title }) => (
               <li key={id} className="my-4">
-                <Button
+                <BaseButton
                   href={`/snippets/${id}`}
                   className="group"
                 >
@@ -44,7 +44,7 @@ export default function Snippets({
                       <Date dateString={date} />
                     </small>
                   </article>
-                </Button>
+                </BaseButton>
               </li>
             )
           )}

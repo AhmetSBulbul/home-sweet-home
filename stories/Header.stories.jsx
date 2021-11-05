@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation'
-import Button from '../components/Button';
+import BaseButton from '../components/BaseButton';
 import Header from '../components/Header';
 
 export default {
@@ -8,7 +8,7 @@ export default {
 };
 
 const Template = (args) => <Navigation {...args}>
-  <Button>Hakkimda</Button>
+  <BaseButton>Hakkimda</BaseButton>
 </Navigation>;
 
 export const Primary = Template.bind({});

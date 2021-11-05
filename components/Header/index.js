@@ -1,8 +1,6 @@
 import styles from "./index.module.css";
 import Logo from "../Logo";
-import ThemeButton from "../ThemeButton";
-import Button from "../Button";
-import MenuButton from "../MenuButton";
+import BaseButton from "../BaseButton";
 import Navigation from "../Navigation";
 import useToggle from "../../hooks/useToggle";
 
@@ -15,12 +13,12 @@ const Header = ({
   return (
     <header className="bg-primary-darkest">
       <div className={styles.header}>
-        <Button
+        <BaseButton
           href="/"
           onClick={isExpanded && setIsExpand}
         >
           <Logo />
-        </Button>
+        </BaseButton>
         {/* Flat props */}
         {isCollapse && (
           <a className="leading-loose">
