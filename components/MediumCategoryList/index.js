@@ -7,10 +7,10 @@ export default function MediumCategoryList({
 }) {
   return (
     <>
-      <h3 className="font-display text-xl font-bold text-secondary-light antialiased mb-8">
+      <h3 className="font-display text-xl text-right font-bold text-secondary-light antialiased mb-8">
         Konu Etiketleri
       </h3>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-end">
         {categories.map((item, index) => {
           return (
             <button

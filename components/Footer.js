@@ -4,7 +4,7 @@ import { ContactInfo } from "../constants";
 export default function Footer({}) {
   return (
     <footer className="content-container flex flex-col">
-      <div className="responsive-flex space-y-2 tablet:space-y-0 justify-between items-center border-b-2 border-gray-30 py-4">
+      <div className="responsive-flex space-y-2 tablet:space-y-0 justify-between items-center border-b-2 border-t-2 border-gray-30 py-4">
         <div>
           <p className="text-sm font-bold">
             Copyright © 2021 Ahmet Safa Bülbül -

@@ -1,7 +1,21 @@
+import SubPageHero from "../components/SubPageHero";
 import LaunchingSoon from "../components/LaunchingSoon";
 
 export default function About() {
-  return <LaunchingSoon />;
+  return (
+    <>
+      <SubPageHero
+        title="Hakkımda"
+        intro="Selam, Ben Ahmet."
+      >
+        <p className="text-white">
+          Mobil Uygulama ve web geliştirici olarak
+          yazılım hizmeti sunuyorum.
+        </p>
+      </SubPageHero>
+      <LaunchingSoon />
+    </>
+  );
 }
 
 /* <section className="container px-8 min-h-screen">

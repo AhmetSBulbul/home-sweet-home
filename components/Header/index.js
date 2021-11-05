@@ -12,7 +12,7 @@ const Header = ({
     useToggle(false);
   return (
     <header className="bg-primary-darkest">
-      <div className={styles.header}>
+      <div className="content-container flex justify-between py-4 laptop:py-8">
         <BaseButton
           href="/"
           onClick={isExpanded && setIsExpand}

@@ -20,8 +20,8 @@ export default function Writings() {
   const [category, setCategory] = useState("");
 
   return (
-    <div className="post-list-section container px-4 py-12">
-      <div className="post-list-main-container">
+    <div className="post-list-section content-container py-12">
+      <div className="post-list-main-container flex-1">
         <h1>Yazılarım</h1>
         <MediumFeedList
           isLoaded={isLoaded}

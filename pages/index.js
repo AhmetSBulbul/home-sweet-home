@@ -32,12 +32,12 @@ export default function Home({
       </Head>
       <SectionHero />
       <section className="split-pair content-container py-12">
-        <div className="flex-1 flex flex-col justify-between">
+        <div className="flex-1">
           <h2 className="title">
             Flutter & Frontend Developer
           </h2>
         </div>
-        <div className="flex-1 flex flex-col space-y-5">
+        <div className="flex-1 flex flex-col space-y-8">
           <p>
             Freelance yazılım geliştiricisi{" "}
             <b>Ahmet Safa Bülbül</b>. Mobil
@@ -50,7 +50,7 @@ export default function Home({
             işletmenizi internet çağına taşıyın.
           </p>
           <ThemeButton
-            className="mr-auto"
+            className="ml-auto"
             href="/portfolyo"
             withIcon
           >
@@ -113,16 +113,20 @@ export default function Home({
           category=""
         />
       </section>
-      <section className="content-container py-12">
-        <h2 className="title text-4xl mb-4">
-          Snippets
-        </h2>
-        <SnippetsFeedList
-          snippetsPostList={allSnippetsData.slice(
-            0,
-            3
-          )}
-        />
+      <section className="content-container split-pair py-12">
+        <div className="flex-1">
+          <h2 className="title text-4xl mb-4">
+            Snippets
+          </h2>
+        </div>
+        <div className="flex-1">
+          <SnippetsFeedList
+            snippetsPostList={allSnippetsData.slice(
+              0,
+              3
+            )}
+          />
+        </div>
       </section>
     </>
   );

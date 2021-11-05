@@ -4,6 +4,8 @@ import Link from "next/link";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";
 import BaseButton from "../../components/BaseButton";
+import SubPageHero from "../../components/SubPageHero";
+import SnippetsFeedList from "../../components/SnippetsFeedList";
 
 export async function getStaticProps() {
   const allSnippetsData = getSortedSnippetsData();
@@ -18,39 +20,22 @@ export default function Snippets({
   allSnippetsData,
 }) {
   return (
-    <PageBody>
-      <div className="my-12 border-2 border-night px-2 py-3 text-center">
-        <h1>Snippets</h1>
-        <p className="text-center">
-          Belirli problemlere yönelik hemen
-          kullanılabilir kod parçacıkları
+    <>
+      <SubPageHero
+        title="Snippets"
+        intro="Kod Parçacıkları"
+      >
+        <p className="text-white">
+          Popüler işlevler için pratik kod
+          parçacıkları.
         </p>
-      </div>
-      <section>
-        <ul>
-          {allSnippetsData.map(
-            ({ id, date, title }) => (
-              <li key={id} className="my-4">
-                <BaseButton
-                  href={`/snippets/${id}`}
-                  className="group"
-                >
-                  <article className="bg-gray-20 px-2 py-1 rounded-sm">
-                    <h3 className="group-hover:text-night">
-                      {title}
-                    </h3>
-                    <small>
-                      Son Güncelleme:{" "}
-                      <Date dateString={date} />
-                    </small>
-                  </article>
-                </BaseButton>
-              </li>
-            )
-          )}
-        </ul>
+      </SubPageHero>
+      <section className="content-container py-12 min-h-screen">
+        <SnippetsFeedList
+          snippetsPostList={allSnippetsData}
+        />
       </section>
-    </PageBody>
+    </>
   );
 }
 
