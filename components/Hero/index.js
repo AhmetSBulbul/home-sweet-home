@@ -21,12 +21,12 @@ const ContactLink = ({ href, children }) => (
 const SectionHero = ({ children }) => {
   return (
     <div className={styles.outerContainer}>
-      <div className={styles.innerContainer}>
+      <div className="content-container split-pair py-24 pb-32 tablet:pb-48 items-center">
         <div className={styles.fancySide}>
           <MyHeadButFancy />
         </div>
         <div className={styles.intro}>
-          <h1 className="text-xl text-secondary-lightest desktop:mb-2">
+          <h1 className="text-xl text-secondary-lightest">
             Freelance Yazılım Geliştirici
           </h1>
           <h2 className="title text-white">

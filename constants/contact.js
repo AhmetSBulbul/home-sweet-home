@@ -7,7 +7,7 @@ const Contact = {
   instagram:
     "https://www.instagram.com/ahmetsafa.bulbul/",
   mail: "ahmetsafabulbul@gmail.com",
-  phone: "05395173877",
+  phone: "tel:+905395173877",
 };
 
 export default Contact;
