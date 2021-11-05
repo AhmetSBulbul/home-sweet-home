@@ -4,14 +4,14 @@ export default function SnippetsFeedList({
   snippetsPostList,
 }) {
   return (
-    <ul>
+    <ul className="flex flex-col space-y-2">
       {snippetsPostList.map(
         ({ id, date, title }) => (
           <li key={id}>
             <SnippetPostLink
-              id={id}
               date={date}
               title={title}
+              href={`/snippets/${id}`}
             />
           </li>
         )

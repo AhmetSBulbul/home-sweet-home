@@ -70,7 +70,7 @@ export default function Home({
         </div>
       </section>
 
-      <section className="split-pair content-container pb-12 tablet:items-center">
+      <section className="split-pair content-container py-12 tablet:items-center">
         <div className="flex-1 block rounded-md overflow-hidden shadow-xl">
           <Image
             src="/me.png"
@@ -80,7 +80,7 @@ export default function Home({
             height={280}
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col space-y-2">
           <p className="font-display font-medium text-sm uppercase">
             Merhaba, ben Ahmet 👋🏼
           </p>
@@ -93,9 +93,16 @@ export default function Home({
             söylerim. Ayrıca kripto paralar ve
             video oyunları ile ilgileniyorum.
           </p>
+          <ThemeButton
+            withIcon
+            href="/hakkimda"
+            className="ml-auto"
+          >
+            Hakkımda <Arrow />
+          </ThemeButton>
         </div>
       </section>
-      <section className="content-container">
+      <section className="content-container py-12">
         <h2 className="font-display text-3xl font-extrabold antialiased mb-8">
           Son Paylaşılanlar
         </h2>
@@ -106,8 +113,8 @@ export default function Home({
           category=""
         />
       </section>
-      <section className="content-container">
-        <h2 className="title text-4xl">
+      <section className="content-container py-12">
+        <h2 className="title text-4xl mb-4">
           Snippets
         </h2>
         <SnippetsFeedList

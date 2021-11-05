@@ -7,6 +7,12 @@ import * as Icons from '../components/icons'
 export default {
     component: ThemeButton,
     title: 'Components/Button',
+    args: {
+        outlined: false,
+        secondary: false,
+        small: false,
+        withIcon: false,
+    }
 };
 
 const ButtonStory = (args) => <ThemeButton {...args}>{args.label}</ThemeButton>;
@@ -14,7 +20,7 @@ const ButtonStory = (args) => <ThemeButton {...args}>{args.label}</ThemeButton>;
 export const DefaultButton = ButtonStory.bind({});
 DefaultButton.args={
     label: 'Default Button',
-};
+    };
 
 export const SecondaryButton = ButtonStory.bind({});
 SecondaryButton.args={

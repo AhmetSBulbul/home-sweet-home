@@ -1,5 +1,6 @@
 import Image from "next/image";
 import techLogos from "../constants/techs";
+import TechnologyLink from "./TechnologyLink";
 
 const LogoWrap = ({ src, alt }) => (
   <div>
@@ -17,7 +18,7 @@ export default function Technologies() {
   return (
     <div className="grid grid-cols-3 grid-flow-row gap-2 place-items-center tablet:grid-cols-4 laptop:grid-cols-7">
       {techLogos.map((logo, index) => (
-        <LogoWrap
+        <TechnologyLink
           key={`${logo.alt}-${index}`}
           src={logo.src}
           alt={logo.alt}
