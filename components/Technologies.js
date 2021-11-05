@@ -15,7 +15,7 @@ const LogoWrap = ({ src, alt }) => (
 
 export default function Technologies() {
   return (
-    <div className="flex flex-wrap justify-evenly">
+    <div className="grid grid-cols-3 grid-flow-row gap-2 place-items-center tablet:grid-cols-4 laptop:grid-cols-7">
       {techLogos.map((logo, index) => (
         <LogoWrap
           key={`${logo.alt}-${index}`}

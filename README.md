@@ -42,6 +42,7 @@
 - [ ] useMediumFeed hook return value will be object
 - [ ] home screen recent published snippets
 - [ ] line clamp on medium posts
+- [ ] technology pages
 
 ## Re-Factor
 

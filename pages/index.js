@@ -50,6 +50,17 @@ export default function Home({
           </p>
         </div>
       </section>
+      <section className="flex flex-col content-container py-12">
+        <div>
+          <h2 className="text-center">
+            Geliştirmede Kullandığım Yardımcı
+            Teknolojiler
+          </h2>
+        </div>
+        <div>
+          <Technologies />
+        </div>
+      </section>
 
       <section className="split-pair content-container pb-12 tablet:items-center">
         <div className="flex-1 block rounded-md overflow-hidden shadow-xl">
