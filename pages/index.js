@@ -1,18 +1,12 @@
 import SectionHero from "../components/Hero";
-import PageBody from "../components/PageBody";
-import Link from "next/link";
-import Date from "../components/date";
-import ThemeButton from "../components/ThemeButton";
+
 import Head from "next/head";
-import LaunchingSoon from "../components/LaunchingSoon";
-import PostLink from "../components/PostLink";
-import PostListLayout from "../components/PostListLayout";
+
 import MediumFeedList from "../components/MediumFeedList";
 import useMediumFeed from "../hooks/useMediumFeed";
 import Technologies from "../components/Technologies";
 import Image from "next/dist/client/image";
 import Button from "../components/Button";
-import TechLogos from "../constants/techs";
 
 export default function Home() {
   const [
@@ -88,7 +82,6 @@ export default function Home() {
           category=""
         />
       </section>
-      <LaunchingSoon />
     </>
   );
 }

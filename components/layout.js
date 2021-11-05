@@ -1,5 +1,6 @@
 import Header from "./Header";
 import FloatContact from "./FloatContact";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       <Header />
       <FloatContact />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }
