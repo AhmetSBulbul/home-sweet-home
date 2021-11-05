@@ -41,6 +41,7 @@
 - [ ] Logo and hire me buttons hover animations
 - [ ] useMediumFeed hook return value will be object
 - [ ] home screen recent published snippets
+- [ ] line clamp on medium posts
 
 ## Re-Factor
 

@@ -8,7 +8,12 @@ import Technologies from "../components/Technologies";
 import Image from "next/dist/client/image";
 import Button from "../components/Button";
 
-export default function Home() {
+import { getSortedSnippetsData } from "../lib/snippets";
+import SnippetsFeedList from "../components/SnippetsFeedList";
+
+export default function Home({
+  allSnippetsData,
+}) {
   const [
     error,
     isLoaded,
@@ -77,11 +82,31 @@ export default function Home() {
         </h2>
         <MediumFeedList
           isLoaded={isLoaded}
-          posts={blogs.slice(0, 2)}
+          posts={blogs.slice(0, 3)}
           error={error}
           category=""
         />
       </section>
+      <section className="content-container">
+        <h2 className="title text-4xl">
+          Snippets
+        </h2>
+        <SnippetsFeedList
+          snippetsPostList={allSnippetsData.slice(
+            0,
+            3
+          )}
+        />
+      </section>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const allSnippetsData = getSortedSnippetsData();
+  return {
+    props: {
+      allSnippetsData,
+    },
+  };
 }
