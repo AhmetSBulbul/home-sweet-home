@@ -1,6 +1,3 @@
-const colors = require("tailwindcss/colors");
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
   mode: "jit",
   purge: [
@@ -22,18 +19,18 @@ module.exports = {
       night: "#415379",
       transparent: "transparent",
       primary: {
-        lightest: "rgba(23, 178, 181, 1)",
-        light: "rgba(19, 142, 144, 1)",
+        lightest: "#17b2b5",
+        light: "#138e90",
         DEFAULT: "#094748",
-        dark: "rgba(12, 89, 90, 1)",
-        darkest: "rgba(9, 71, 72, 1)",
+        dark: "#0c595a",
+        darkest: "#094748",
       },
       secondary: {
-        lightest: "rgba(246, 159, 142, 1)",
-        light: "rgba(243, 127, 104, 1)",
-        DEFAULT: "rgba(240, 100, 73, 1)",
-        dark: "rgba(238, 79, 47, 1)",
-        darkest: "rgba(237, 63, 29, 1)",
+        lightest: "#f69f8e",
+        light: "#f37f68",
+        DEFAULT: "#f06449",
+        dark: "#ee4f2f",
+        darkest: "#ed3f1d",
       },
       gray: {
         10: "rgba(254, 254, 254, 1)",
@@ -50,14 +47,14 @@ module.exports = {
         110: "rgba(61, 61, 61, 1)",
         120: "rgba(61, 61, 61, 1)",
       },
-      white: "rgba(255, 255, 255, 1)",
+      white: "#fff",
       black: "#000",
       messaging: {
-        success: "rgba(0, 173, 88, 1)",
-        info: "rgba(0, 147, 255, 1)",
-        DEFAULT: "rgba(0, 147, 255, 1)",
-        warning: "rgba(229, 112, 0, 1)",
-        error: "rgba(255, 87, 87, 1)",
+        success: "#00ad58",
+        info: "#0093ff",
+        DEFAULT: "#0093ff",
+        warning: "#e57000",
+        error: "#ff5757",
       },
     },
     extend: {
