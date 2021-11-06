@@ -1,12 +1,12 @@
 ---
 title: 'Medium Yazılarınızı Web Sitenizde Listeleyin'
 date: '2021-10-12'
+description: 'Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.'
 category:
     - Nextjs
     - Hook
 ---
 
-Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.
 
 ### Parameters
 

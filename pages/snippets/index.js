@@ -6,6 +6,7 @@ import PageBody from "../../components/PageBody";
 import BaseButton from "../../components/BaseButton";
 import SubPageHero from "../../components/SubPageHero";
 import SnippetsFeedList from "../../components/SnippetsFeedList";
+import SEO from "../../components/SEO";
 
 export async function getStaticProps() {
   const allSnippetsData = getSortedSnippetsData();
@@ -21,6 +22,7 @@ export default function Snippets({
 }) {
   return (
     <>
+      <SEO metaTitle="Snippets" />
       <SubPageHero
         title="Snippets"
         intro="Kod Parçacıkları"

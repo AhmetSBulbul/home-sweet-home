@@ -1,6 +1,7 @@
 ---
 title: 'Toggle Özellikli useLockBodyScroll'
 date: '2021-10-20'
+description: 'Toggle özellikli useLockBodyScroll hook'
 category:
     - react
     - hook

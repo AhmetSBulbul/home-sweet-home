@@ -1,12 +1,13 @@
 ---
 title: 'Nextjs Base Button Component'
 date: '2021-10-29'
+description: 'Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.'
 category:
     - Nextjs
     - Component
 ---
 
-Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.
+
 
 ### Parameters
 

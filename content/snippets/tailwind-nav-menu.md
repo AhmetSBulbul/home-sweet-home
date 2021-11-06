@@ -1,12 +1,11 @@
 ---
 title: 'Responsive Tailwind Nav Menü'
 date: '2021-11-05'
+description: 'Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.'
 category:
     - Tailwind
     - Responsive Component
 ---
-
-Hem navigasyon için hem de işlevsel fonksiyonlar için kullanılabilen buton. Ek olarak işlevsel link özelliğini de destekliyor.
 
 ### Parameters
 

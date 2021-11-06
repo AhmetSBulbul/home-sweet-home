@@ -1,7 +1,23 @@
 import LaunchingSoon from "../components/LaunchingSoon";
+import SEO from "../components/SEO";
+import SubPageHero from "../components/SubPageHero";
 
-export default function About() {
-  return <LaunchingSoon />;
+export default function Portfolio() {
+  return (
+    <>
+      <SEO metaTitle="Portfolyo" />
+      <SubPageHero
+        title="Portfolyo"
+        intro="Projelerim"
+      >
+        <p className="text-white">
+          Geliştirdiğim veya içerisinde bulunduğum
+          projeler.
+        </p>
+      </SubPageHero>
+      <LaunchingSoon />
+    </>
+  );
 }
 
 /* <section className="container px-8 min-h-screen">

@@ -4,6 +4,8 @@ import categoryFilter from "../utils/categoryFilter";
 import MediumPostLink from "../components/MediumPostLink";
 import MediumFeedList from "../components/MediumFeedList";
 import MediumCategoryList from "../components/MediumCategoryList";
+import SEO from "../components/SEO";
+import SubPageHero from "../components/SubPageHero";
 import { useState } from "react";
 
 import Image from "next/image";
@@ -20,25 +22,36 @@ export default function Writings() {
   const [category, setCategory] = useState("");
 
   return (
-    <div className="post-list-section content-container py-12">
-      <div className="post-list-main-container flex-1">
-        <h1>Yazılarım</h1>
-        <MediumFeedList
-          isLoaded={isLoaded}
-          posts={blogs}
-          error={error}
-          category={category}
-        />
-      </div>
-      <div className="post-list-side-container">
-        {isLoaded && !error && (
-          <MediumCategoryList
-            categories={categories}
+    <>
+      <SEO metaTitle="Yazılarım" />
+      <SubPageHero
+        title="Yazılarım"
+        intro="Blog İçerikleri"
+      >
+        <p className="text-white">
+          Yazılım, kültür sanat ve kripto paralar
+          hakkında paylaştığım içerikler.
+        </p>
+      </SubPageHero>
+      <div className="post-list-section content-container py-12">
+        <div className="post-list-main-container flex-1">
+          <MediumFeedList
+            isLoaded={isLoaded}
+            posts={blogs}
+            error={error}
             category={category}
-            setCategory={setCategory}
           />
-        )}
+        </div>
+        <div className="post-list-side-container">
+          {isLoaded && !error && (
+            <MediumCategoryList
+              categories={categories}
+              category={category}
+              setCategory={setCategory}
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
