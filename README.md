@@ -40,10 +40,9 @@
 - [ ] Storybook components
 - [ ] Logo and hire me buttons hover animations
 - [x] home screen recent published snippets
-- [ ] line clamp on medium posts
 - [x] technology pages
 - [x] favicon
-- [ ] SEO
+- [x] SEO Component
 
 ## Re-Factor
 
