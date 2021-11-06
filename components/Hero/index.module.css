@@ -2,8 +2,7 @@
   @apply w-screen bg-none flex bg-primary-darkest relative;
   &::after,
   &::before {
-    background: url("../../public/wave.svg")
-      repeat-x;
+    background: url("/wave.svg") repeat-x;
     content: " ";
     background-size: contain;
     background-position: bottom;

@@ -1,4 +1,4 @@
-import meinLieblichKopf from "../../public/myHead.png";
+import meinLieblichKopf from "../../images/myHead.png";
 import Image from "next/image";
 import cn from "classnames";
 

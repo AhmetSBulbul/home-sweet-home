@@ -9,8 +9,7 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
     "lint": "next lint",
-    "icons": "svgr icons -d components/icons --icon --replace-attr-values \"#000=currentColor\"",
-    "assets": "svgr assets -d components/assets --icon"
+    "icons": "svgr images/icons -d components/icons --icon --replace-attr-values \"#000=currentColor\""
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",

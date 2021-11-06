@@ -12,6 +12,7 @@ import { Arrow } from "../components/icons";
 import { getSortedSnippetsData } from "../lib/snippets";
 import { getAllTechnologiesData } from "../lib/technologies";
 import SnippetsFeedList from "../components/SnippetsFeedList";
+import handsomePhotoAsAlways from "../images/me1.JPG";
 
 export default function Home({
   allSnippetsData,
@@ -77,7 +78,7 @@ export default function Home({
       <section className="split-pair content-container py-12 tablet:items-center">
         <div className="flex-1 block rounded-md overflow-hidden shadow-xl">
           <Image
-            src="/me.png"
+            src={handsomePhotoAsAlways}
             alt="Ahmet Safa Bülbül"
             layout="responsive"
             width={420}

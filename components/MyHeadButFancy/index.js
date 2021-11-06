@@ -1,6 +1,4 @@
 import styles from "./index.module.css";
-import SvgHeadIllustration from "../assets/HeadIllustration";
-import { HeadShadow } from "../icons";
 import MyLovelyHead from "../Brand/myLovelyHead";
 
 const MyHeadButFancy = () => {
