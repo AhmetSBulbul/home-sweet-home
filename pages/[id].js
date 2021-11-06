@@ -4,15 +4,14 @@ import {
 } from "../lib/technologies";
 import Head from "next/head";
 import SubPageHero from "../components/SubPageHero";
+import SEO from "../components/SEO";
 
 export default function TechnologyPage({
   technologyData,
 }) {
   return (
     <>
-      <Head>
-        <title>{technologyData.title}</title>
-      </Head>
+      <SEO metaTitle={technologyData.title} />
       <SubPageHero
         title="Teknoloji"
         intro={technologyData.title}

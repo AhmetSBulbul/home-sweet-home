@@ -5,13 +5,12 @@ import {
 import Head from "next/head";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";
+import SEO from "../../components/SEO";
 
 export default function Snippet({ snippetData }) {
   return (
     <>
-      <Head>
-        <title>{snippetData.title}</title>
-      </Head>
+      <SEO metaTitle={snippetData.title} />
       <PageBody>
         <article className="prose mx-auto mt-12">
           <h1>{snippetData.title}</h1>
