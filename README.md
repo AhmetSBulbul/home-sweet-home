@@ -31,18 +31,19 @@
 - [x] Contact Form
 - [x] Superpeer link
 - [ ] Comment feature
-- [ ] Tailwind config colors will be hex
+- [x] Tailwind config colors will be hex
 - [ ] Snippet filter
 - [ ] Auth0 integration
 - [x] Medium Feed
-- [ ] Medium Feed Components
+- [x] Medium Feed Components
 - [ ] Medium Post filter
 - [ ] Storybook components
 - [ ] Logo and hire me buttons hover animations
-- [ ] useMediumFeed hook return value will be object
-- [ ] home screen recent published snippets
+- [x] home screen recent published snippets
 - [ ] line clamp on medium posts
-- [ ] technology pages
+- [x] technology pages
+- [x] favicon
+- [ ] SEO
 
 ## Re-Factor
 
@@ -50,6 +51,7 @@
 - [x] Logo
 - [x] Components
 - [ ] useContactForm
+- [ ] library files
 
 
 ---

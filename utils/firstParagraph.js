@@ -1,11 +1,15 @@
 export default function firstParagraph(
   contentHtml
 ) {
-  const index = contentHtml.indexOf("</p>") + 3;
-  const paragraphHtml = contentHtml.substring(
-    0,
-    index
-  );
+  const indentedIndex =
+    contentHtml.indexOf("<p>");
+  const breakIndex =
+    contentHtml.indexOf("</p>") + 3;
+  const firstParagraphHtml =
+    contentHtml.substring(
+      indentedIndex,
+      breakIndex
+    );
 
-  return paragraphHtml;
+  return firstParagraphHtml;
 }
