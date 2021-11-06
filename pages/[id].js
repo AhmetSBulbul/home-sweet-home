@@ -16,6 +16,8 @@ export default function TechnologyPage({
       <SubPageHero
         title="Teknoloji"
         intro={technologyData.title}
+        featuredSrc={technologyData.logoSrc}
+        featuredAlt={technologyData.logoAlt}
       >
         <p className="text-white">
           {technologyData.description}
