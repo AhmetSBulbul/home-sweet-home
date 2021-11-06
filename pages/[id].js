@@ -1,37 +1,39 @@
 import {
-  getAllPostIds,
-  getPostData,
-} from "../lib/posts";
+  getAllTechnologyIds,
+  getTechnologyData,
+} from "../lib/technologies";
 import Head from "next/head";
-import Date from "../components/date";
-import PageBody from "../components/PageBody";
+import SubPageHero from "../components/SubPageHero";
 
-export default function Post({ postData }) {
+export default function TechnologyPage({
+  technologyData,
+}) {
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>{technologyData.title}</title>
       </Head>
-      <PageBody>
-        <article className="prose mx-auto mt-12">
-          <h1>{postData.title}</h1>
-
-          <Date dateString={postData.date} />
-
-          <div
-            dangerouslySetInnerHTML={{
-              __html: postData.contentHtml,
-            }}
-          />
-        </article>
-      </PageBody>
+      <SubPageHero
+        title="Teknoloji"
+        intro={technologyData.title}
+      >
+        <p className="text-white">
+          {technologyData.description}
+        </p>
+      </SubPageHero>
+      <article className="content-container prose">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: technologyData.contentHtml,
+          }}
+        />
+      </article>
     </>
   );
 }
 
 export async function getStaticPaths() {
-  // Return a list of possible value for id
-  const paths = getAllPostIds();
+  const paths = getAllTechnologyIds();
   return {
     paths,
     fallback: false,
@@ -39,11 +41,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const technologyData = await getTechnologyData(
+    params.id
+  );
+
   return {
     props: {
-      postData,
+      technologyData,
     },
   };
 }

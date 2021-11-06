@@ -4,6 +4,8 @@ import BaseButton from "./BaseButton";
 export default function TechnologyLink({
   src,
   alt,
+  title,
+  description,
   ...props
 }) {
   return (

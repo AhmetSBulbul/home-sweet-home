@@ -4,16 +4,18 @@ import Head from "next/head";
 
 import MediumFeedList from "../components/MediumFeedList";
 import useMediumFeed from "../hooks/useMediumFeed";
-import Technologies from "../components/Technologies";
+import TechnologiesFeedList from "../components/TechnologiesFeedList";
 import Image from "next/image";
 import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 
 import { getSortedSnippetsData } from "../lib/snippets";
+import { getAllTechnologiesData } from "../lib/technologies";
 import SnippetsFeedList from "../components/SnippetsFeedList";
 
 export default function Home({
   allSnippetsData,
+  allTechnologiesData,
 }) {
   const [
     error,
@@ -66,7 +68,9 @@ export default function Home({
           </h2>
         </div>
         <div>
-          <Technologies />
+          <TechnologiesFeedList
+            allTechnologies={allTechnologiesData}
+          />
         </div>
       </section>
 
@@ -134,9 +138,12 @@ export default function Home({
 
 export async function getStaticProps() {
   const allSnippetsData = getSortedSnippetsData();
+  const allTechnologiesData =
+    getAllTechnologiesData();
   return {
     props: {
       allSnippetsData,
+      allTechnologiesData,
     },
   };
 }
