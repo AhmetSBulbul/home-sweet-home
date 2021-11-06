@@ -11,7 +11,7 @@ import SEO from "../components/SEO";
 import { getSortedSnippetsData } from "../lib/snippets";
 import { getAllTechnologiesData } from "../lib/technologies";
 import SnippetsFeedList from "../components/SnippetsFeedList";
-import handsomePhotoAsAlways from "../images/me1.JPG";
+import handsomePhotoAsAlways from "../images/me.JPG";
 
 export default function Home({
   allSnippetsData,
@@ -102,7 +102,7 @@ export default function Home({
           </ThemeButton>
         </div>
       </section>
-      <section className="content-container py-12">
+      <section className="content-container flex flex-col py-12">
         <h2 className="font-display text-3xl font-extrabold antialiased mb-8">
           Son Paylaşılanlar
         </h2>
@@ -112,6 +112,13 @@ export default function Home({
           error={error}
           category=""
         />
+        <ThemeButton
+          className="ml-auto mt-4"
+          href="/yazilarim"
+          withIcon
+        >
+          Yazılarım <Arrow />
+        </ThemeButton>
       </section>
       <section className="content-container split-pair py-12">
         <div className="flex-1">
@@ -119,13 +126,20 @@ export default function Home({
             Snippets
           </h2>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <SnippetsFeedList
             snippetsPostList={allSnippetsData.slice(
               0,
               3
             )}
           />
+          <ThemeButton
+            className="ml-auto mt-4"
+            href="/snippets"
+            withIcon
+          >
+            Snippets <Arrow />
+          </ThemeButton>
         </div>
       </section>
     </>
