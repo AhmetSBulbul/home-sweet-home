@@ -27,7 +27,6 @@ const Navigation = ({
   const size = useWindowSize();
   const amIMobile = size.width <= 768;
   useLockBodyScrollToggle(amIMobile && isActive);
-  console.log(amIMobile);
   return (
     <>
       <nav

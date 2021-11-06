@@ -10,7 +10,6 @@ module.exports = {
       body: ["Montserrat", "sans-serif"],
       display: ["Rubik", "sans-serif"],
       link: ["Rubik", "sans-serif"],
-      inter: ["Inter", "sans-serif"],
     },
     container: {
       center: true,
