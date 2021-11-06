@@ -1,9 +1,11 @@
 import SubPageHero from "../components/SubPageHero";
 import LaunchingSoon from "../components/LaunchingSoon";
+import SEO from "../components/SEO";
 
 export default function About() {
   return (
     <>
+      <SEO metaTitle="Hakkımda" />
       <SubPageHero
         title="Hakkımda"
         intro="Selam, Ben Ahmet."

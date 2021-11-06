@@ -1,13 +1,12 @@
 import SectionHero from "../components/Hero";
 
-import Head from "next/head";
-
 import MediumFeedList from "../components/MediumFeedList";
 import useMediumFeed from "../hooks/useMediumFeed";
 import TechnologiesFeedList from "../components/TechnologiesFeedList";
 import Image from "next/image";
 import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
+import SEO from "../components/SEO";
 
 import { getSortedSnippetsData } from "../lib/snippets";
 import { getAllTechnologiesData } from "../lib/technologies";
@@ -28,11 +27,7 @@ export default function Home({
 
   return (
     <>
-      <Head>
-        <title>
-          Ahmet S. Bulbul | Frontend Developer
-        </title>
-      </Head>
+      <SEO metaTitle="Freelance Yazılım Geliştirici" />
       <SectionHero />
       <section className="split-pair content-container py-12">
         <div className="flex-1">
