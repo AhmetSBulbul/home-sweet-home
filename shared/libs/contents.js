@@ -43,7 +43,7 @@ export function getAllContentsDataByFolderName(
       const id = fileName.replace(/\.md$/, "");
 
       const fullPath = path.join(
-        technologiesDirectory,
+        subContentDirectoryByName(folderName),
         fileName
       );
 

@@ -1,4 +1,4 @@
-import useMediumFeed from "../hooks/useMediumFeed";
+import { useMediumFeed } from "../shared/hooks";
 import firstParagraph from "../utils/firstParagraph";
 import categoryFilter from "../utils/categoryFilter";
 import MediumPostLink from "../components/MediumPostLink";

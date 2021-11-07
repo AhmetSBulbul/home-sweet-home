@@ -1,7 +1,7 @@
 import {
   getAllContentIdsByFolderName,
   getContentDataByFolderNameAndId,
-} from "../../shared/libs/contents";
+} from "../../shared/libs";
 import Head from "next/head";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";

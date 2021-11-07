@@ -7,8 +7,11 @@ import {
   NavRoutes,
 } from "../../constants";
 import React from "react";
-import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
-import useWindowSize from "../../hooks/useWindowSize";
+import {
+  useLockBodyScrollToggle,
+  useWindowSize,
+} from "../../shared/hooks";
+
 /*const FunctionalLink = React.forwardRef(
   ({ onClick, href, children }, ref) => {
     return (

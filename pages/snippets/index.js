@@ -1,5 +1,5 @@
 import LaunchingSoon from "../../components/LaunchingSoon";
-import { getSortedSnippetsData } from "../../lib/snippets";
+import { getSortedContentsDataByFolderName } from "../../shared/libs";
 import Link from "next/link";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";
@@ -9,7 +9,8 @@ import SnippetsFeedList from "../../components/SnippetsFeedList";
 import SEO from "../../components/SEO";
 
 export async function getStaticProps() {
-  const allSnippetsData = getSortedSnippetsData();
+  const allSnippetsData =
+    getSortedContentsDataByFolderName("snippets");
   return {
     props: {
       allSnippetsData,

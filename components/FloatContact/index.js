@@ -3,7 +3,7 @@ import BaseButton from "../BaseButton";
 import React, { useState } from "react";
 import cn from "classnames";
 import Form from "./__Form";
-import useLockBodyScrollToggle from "../../hooks/useLockBodyScrollToggle";
+import { useLockBodyScrollToggle } from "../../shared/hooks";
 import Modal from "../Modal";
 import Message from "./__Message";
 

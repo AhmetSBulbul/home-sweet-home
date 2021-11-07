@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 import Logo from "../Logo";
 import BaseButton from "../BaseButton";
 import Navigation from "../Navigation";
-import useToggle from "../../hooks/useToggle";
+import { useToggle } from "../../shared/hooks";
 
 const Header = ({
   children,

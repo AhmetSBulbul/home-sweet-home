@@ -1,7 +1,7 @@
 import {
-  getAllTechnologyIds,
-  getTechnologyData,
-} from "../lib/technologies";
+  getAllContentIdsByFolderName,
+  getContentDataByFolderNameAndId,
+} from "../shared/libs";
 import Head from "next/head";
 import SubPageHero from "../components/SubPageHero";
 import SEO from "../components/SEO";
@@ -34,7 +34,9 @@ export default function TechnologyPage({
 }
 
 export async function getStaticPaths() {
-  const paths = getAllTechnologyIds();
+  const paths = getAllContentIdsByFolderName(
+    "technologies"
+  );
   return {
     paths,
     fallback: false,
@@ -42,9 +44,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const technologyData = await getTechnologyData(
-    params.id
-  );
+  const technologyData =
+    await getContentDataByFolderNameAndId(
+      "technologies",
+      params.id
+    );
 
   return {
     props: {

@@ -1,15 +1,18 @@
+import {
+  getSortedContentsDataByFolderName,
+  getAllContentsDataByFolderName,
+} from "../shared/libs";
+
 import SectionHero from "../components/Hero";
 
 import MediumFeedList from "../components/MediumFeedList";
-import useMediumFeed from "../hooks/useMediumFeed";
+import { useMediumFeed } from "../shared/hooks";
 import TechnologiesFeedList from "../components/TechnologiesFeedList";
 import Image from "next/image";
 import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 import SEO from "../components/SEO";
 
-import { getSortedSnippetsData } from "../lib/snippets";
-import { getAllTechnologiesData } from "../lib/technologies";
 import SnippetsFeedList from "../components/SnippetsFeedList";
 import handsomePhotoAsAlways from "../images/me.JPG";
 
@@ -147,9 +150,12 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const allSnippetsData = getSortedSnippetsData();
+  const allSnippetsData =
+    getSortedContentsDataByFolderName("snippets");
   const allTechnologiesData =
-    getAllTechnologiesData();
+    getAllContentsDataByFolderName(
+      "technologies"
+    );
   return {
     props: {
       allSnippetsData,
