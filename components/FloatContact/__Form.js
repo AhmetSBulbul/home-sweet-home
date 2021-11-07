@@ -1,7 +1,5 @@
 import styles from "./index.module.css";
-import { useRef, useState } from "react";
-import useOnClickOutside from "../../hooks/useOnClickOutside";
-import BaseButton from "../BaseButton";
+import { useState } from "react";
 import FormField from "./__Field";
 
 const CloseBtn = ({ onClick }) => {
@@ -36,8 +34,6 @@ export default function Form({
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  //const ref = useRef();
-  //useOnClickOutside(ref, clickOuter);
 
   //   Form validation state
   const [errors, setErrors] = useState({});

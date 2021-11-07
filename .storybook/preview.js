@@ -1,4 +1,4 @@
-import "../styles/global.css";
+import "../shared/styles/global.css";
 import "./storyStyles.css";
 
 import * as nextImage from "next/image";

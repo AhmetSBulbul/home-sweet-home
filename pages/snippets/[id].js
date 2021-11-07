@@ -1,7 +1,7 @@
 import {
-  getAllSnippetsIds,
-  getSnippetData,
-} from "../../lib/snippets";
+  getAllContentIdsByFolderName,
+  getContentDataByFolderNameAndId,
+} from "../../shared/libs/contents";
 import Head from "next/head";
 import Date from "../../components/date";
 import PageBody from "../../components/PageBody";
@@ -36,7 +36,8 @@ export default function Snippet({ snippetData }) {
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
-  const paths = getAllSnippetsIds();
+  const paths =
+    getAllContentIdsByFolderName("snippets");
   return {
     paths,
     fallback: false,
@@ -45,9 +46,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the blog post using params.id
-  const snippetData = await getSnippetData(
-    params.id
-  );
+  const snippetData =
+    await getContentDataByFolderNameAndId(
+      "snippets",
+      params.id
+    );
   return {
     props: {
       snippetData,
