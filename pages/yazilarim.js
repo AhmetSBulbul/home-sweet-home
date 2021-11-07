@@ -1,14 +1,11 @@
 import { useMediumFeed } from "../shared/hooks";
-import firstParagraph from "../utils/firstParagraph";
-import categoryFilter from "../utils/categoryFilter";
+
 import MediumPostLink from "../components/MediumPostLink";
 import MediumFeedList from "../components/MediumFeedList";
 import MediumCategoryList from "../components/MediumCategoryList";
 import SEO from "../components/SEO";
 import SubPageHero from "../components/SubPageHero";
 import { useState } from "react";
-
-import Image from "next/image";
 
 export default function Writings() {
   const [

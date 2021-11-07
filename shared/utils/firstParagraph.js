@@ -1,4 +1,4 @@
-export default function firstParagraph(
+export default function firstParagraphUtil(
   contentHtml
 ) {
   const indentedIndex =

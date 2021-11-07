@@ -1,4 +1,4 @@
-import categoryFilter from "../../utils/categoryFilter";
+import { categoryFilter } from "../../shared/utils";
 import styles from "./index.module.css";
 import MediumPostLink from "../MediumPostLink";
 

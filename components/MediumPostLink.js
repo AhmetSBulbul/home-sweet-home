@@ -1,4 +1,4 @@
-import firstParagraph from "../utils/firstParagraph";
+import { firstParagraph } from "../shared/utils";
 
 import { Arrow } from "./icons";
 
