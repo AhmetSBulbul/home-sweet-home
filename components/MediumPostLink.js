@@ -2,24 +2,6 @@ import { firstParagraph } from "../shared/utils";
 
 import { Arrow } from "./icons";
 
-const Thumbnail = ({ src }) => {
-  return (
-    <>
-      {!src.includes("medium.com/_/stat?") && (
-        <div>
-          {/* eslint-disable-next-line @next/next/no-img-element*/}
-          <img
-            src={src}
-            width="150px"
-            height="150px"
-            alt="thumbnail"
-          />
-        </div>
-      )}
-    </>
-  );
-};
-
 export default function MediumPostLink({ post }) {
   return (
     <a
