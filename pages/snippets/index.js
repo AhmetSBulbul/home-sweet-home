@@ -1,7 +1,10 @@
 import { getSortedContentsDataByFolderName } from "../../shared/libs";
 
-import { SubPageHero } from "../../modules";
-import SnippetsFeedList from "../../components/SnippetsFeedList";
+import {
+  SubPageHero,
+  SnippetsFeed,
+} from "../../modules";
+
 import SEO from "../../components/SEO";
 
 export async function getStaticProps() {
@@ -30,7 +33,7 @@ export default function Snippets({
         </p>
       </SubPageHero>
       <section className="content-container py-12 min-h-screen">
-        <SnippetsFeedList
+        <SnippetsFeed
           snippetsPostList={allSnippetsData}
         />
       </section>

@@ -1,6 +1,6 @@
-import SnippetPostLink from "./SnippetPostLink";
+import SnippetPostLink from "../../components/SnippetPostLink";
 
-export default function SnippetsFeedList({
+export default function SnippetsFeed({
   snippetsPostList,
 }) {
   return (

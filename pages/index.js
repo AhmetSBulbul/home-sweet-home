@@ -5,14 +5,15 @@ import {
 
 import { useMediumFeed } from "../shared/hooks";
 import TechnologiesFeedList from "../components/TechnologiesFeedList";
-import Image from "next/image";
 import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 import SEO from "../components/SEO";
 import { BreathtakingBeauty } from "../components/figures";
-import { Hero, MediumFeed } from "../modules";
-
-import SnippetsFeedList from "../components/SnippetsFeedList";
+import {
+  Hero,
+  MediumFeed,
+  SnippetsFeed,
+} from "../modules";
 
 export default function Home({
   allSnippetsData,
@@ -120,7 +121,7 @@ export default function Home({
           </h2>
         </div>
         <div className="flex-1 flex flex-col">
-          <SnippetsFeedList
+          <SnippetsFeed
             snippetsPostList={allSnippetsData.slice(
               0,
               3
