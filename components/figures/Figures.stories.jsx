@@ -12,5 +12,5 @@ export default {
 }
 
 export const HeadIllustration = () => <div style={{margin:'auto', width: '200px', height:'200px'}}><MyLovelyHead/></div>
-export const HandSomePhoto = () => <BreathtakingBeauty/>
+export const HandsomePhoto = () => <BreathtakingBeauty/>
 export const HeadIllustrationAnimated = () => <div style={{margin:'auto', width: '100%', height:'100%'}}><MyHeadButFancy/></div>
