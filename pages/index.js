@@ -12,9 +12,9 @@ import Image from "next/image";
 import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 import SEO from "../components/SEO";
+import { BreathtakingBeauty } from "../components/figures";
 
 import SnippetsFeedList from "../components/SnippetsFeedList";
-import handsomePhotoAsAlways from "../images/me.JPG";
 
 export default function Home({
   allSnippetsData,
@@ -74,15 +74,7 @@ export default function Home({
       </section>
 
       <section className="split-pair content-container py-12 tablet:items-center">
-        <div className="flex-1 block rounded-md overflow-hidden shadow-xl">
-          <Image
-            src={handsomePhotoAsAlways}
-            alt="Ahmet Safa Bülbül"
-            layout="responsive"
-            width={420}
-            height={280}
-          />
-        </div>
+        <BreathtakingBeauty wrapperClassName="flex-1" />
         <div className="flex-1 flex flex-col space-y-2">
           <p className="font-display font-medium text-sm uppercase">
             Merhaba, ben Ahmet 👋🏼

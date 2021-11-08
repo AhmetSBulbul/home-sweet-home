@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import BaseButton from "../BaseButton";
 import MenuButton from "../MenuButton";
+import NavButton from "../NavButton";
 import cn from "classnames";
 import {
   Routes,
@@ -40,14 +41,14 @@ const Navigation = ({
       >
         {NavRoutes.map((item) => {
           return (
-            <BaseButton
+            <NavButton
               key={item.key}
               href={item.path}
               onClick={isActive && setToggle}
               className={styles.navLink}
             >
               {item.title}
-            </BaseButton>
+            </NavButton>
           );
         })}
         <BaseButton

@@ -1,0 +1,14 @@
+.navBtn {
+  @apply font-link text-lg antialiased;
+  @screen laptop {
+    @apply text-sm my-auto;
+  }
+}
+
+.smallLink {
+  @apply text-base !important;
+}
+
+.currentLink {
+  @apply text-primary-lightest !important;
+}

@@ -52,6 +52,18 @@ function LinkButton({
   );
 }
 
+function ExternalLinkButton({
+  href,
+  children,
+  ...props
+}) {
+  return (
+    <a href={href} {...props}>
+      {children}
+    </a>
+  );
+}
+
 function Button({ children, ...props }) {
   return (
     <button type="button" {...props}>
@@ -62,10 +74,13 @@ function Button({ children, ...props }) {
 
 const BaseButton = ({
   children,
+  externalLink = false,
   className,
   ...props
 }) => {
-  const CurrBtn = props.href
+  const CurrBtn = externalLink
+    ? ExternalLinkButton
+    : props.href
     ? props.onClick
       ? FunctionalLinkButton
       : LinkButton
