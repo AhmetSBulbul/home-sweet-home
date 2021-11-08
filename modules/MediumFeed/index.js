@@ -1,6 +1,6 @@
 import { categoryFilter } from "../../shared/utils";
 import styles from "./index.module.css";
-import MediumPostLink from "../MediumPostLink";
+import MediumPostLink from "../../components/MediumPostLink";
 
 const Loading = () => (
   <div className="font-display text-black font-black text-2xl text-center">
@@ -31,7 +31,7 @@ const Feed = ({ category, feedList }) => {
   );
 };
 
-export default function MediumFeedList({
+export default function MediumFeedModule({
   isLoaded,
   posts,
   error,

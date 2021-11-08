@@ -3,7 +3,6 @@ import {
   getAllContentsDataByFolderName,
 } from "../shared/libs";
 
-import MediumFeedList from "../components/MediumFeedList";
 import { useMediumFeed } from "../shared/hooks";
 import TechnologiesFeedList from "../components/TechnologiesFeedList";
 import Image from "next/image";
@@ -11,7 +10,7 @@ import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 import SEO from "../components/SEO";
 import { BreathtakingBeauty } from "../components/figures";
-import { Hero } from "../modules";
+import { Hero, MediumFeed } from "../modules";
 
 import SnippetsFeedList from "../components/SnippetsFeedList";
 
@@ -100,7 +99,7 @@ export default function Home({
         <h2 className="font-display text-3xl font-extrabold antialiased mb-8">
           Son Paylaşılanlar
         </h2>
-        <MediumFeedList
+        <MediumFeed
           isLoaded={isLoaded}
           posts={blogs.slice(0, 3)}
           error={error}

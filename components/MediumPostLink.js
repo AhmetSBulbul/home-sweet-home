@@ -1,6 +1,7 @@
 import { firstParagraph } from "../shared/utils";
 
 import { Arrow } from "./icons";
+import Date from "./date";
 
 export default function MediumPostLink({ post }) {
   return (
@@ -15,6 +16,9 @@ export default function MediumPostLink({ post }) {
         <h2 className="text-2xl transition-colors text-gray-110 group-hover:text-primary-lightest">
           {post.title}
         </h2>
+        <small>
+          <Date dateString={post.pubDate} />
+        </small>
         <div
           dangerouslySetInnerHTML={{
             __html: firstParagraph(

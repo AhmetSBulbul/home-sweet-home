@@ -1,4 +1,4 @@
-export default function categoryFilterUtil(
+export default function categoryFilter(
   category,
   posts
 ) {

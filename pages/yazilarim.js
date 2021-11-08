@@ -1,10 +1,11 @@
 import { useMediumFeed } from "../shared/hooks";
 
-import MediumPostLink from "../components/MediumPostLink";
-import MediumFeedList from "../components/MediumFeedList";
 import MediumCategoryList from "../components/MediumCategoryList";
 import SEO from "../components/SEO";
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  MediumFeed,
+} from "../modules";
 import { useState } from "react";
 
 export default function Writings() {
@@ -32,7 +33,7 @@ export default function Writings() {
       </SubPageHero>
       <div className="post-list-section content-container py-12">
         <div className="post-list-main-container flex-1">
-          <MediumFeedList
+          <MediumFeed
             isLoaded={isLoaded}
             posts={blogs}
             error={error}
