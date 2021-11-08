@@ -3,8 +3,6 @@ import {
   getAllContentsDataByFolderName,
 } from "../shared/libs";
 
-import SectionHero from "../components/Hero";
-
 import MediumFeedList from "../components/MediumFeedList";
 import { useMediumFeed } from "../shared/hooks";
 import TechnologiesFeedList from "../components/TechnologiesFeedList";
@@ -13,6 +11,7 @@ import ThemeButton from "../components/ThemeButton";
 import { Arrow } from "../components/icons";
 import SEO from "../components/SEO";
 import { BreathtakingBeauty } from "../components/figures";
+import { Hero } from "../modules";
 
 import SnippetsFeedList from "../components/SnippetsFeedList";
 
@@ -31,7 +30,7 @@ export default function Home({
   return (
     <>
       <SEO metaTitle="Freelance Yazılım Geliştirici" />
-      <SectionHero />
+      <Hero />
       <section className="split-pair content-container py-12">
         <div className="flex-1">
           <h2 className="title">

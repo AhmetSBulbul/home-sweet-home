@@ -1,23 +1,13 @@
 import styles from "./index.module.css";
-import MyHeadButFancy from "../MyHeadButFancy";
-import * as Icon from "../icons";
+import { MyHeadButFancy } from "../../components/figures";
+import * as Icon from "../../components/icons";
+import IconButton from "../../components/IconButton";
 import {
   ContactInfo,
   Routes,
 } from "../../constants";
 
-const ContactLink = ({ href, children }) => (
-  <a
-    href={href}
-    className="transition-transform transform hover:scale-110"
-    target="_blank"
-    rel="noreferrer"
-  >
-    {children}
-  </a>
-);
-
-const SectionHero = ({ children }) => {
+const HeroModule = ({ children }) => {
   return (
     <div className={styles.outerContainer}>
       <div className="content-container split-pair py-24 pb-32 tablet:pb-48 items-center">
@@ -34,31 +24,29 @@ const SectionHero = ({ children }) => {
           </h2>
 
           <div className={styles.socialIcons}>
-            <ContactLink
-              href={ContactInfo.github}
-            >
+            <IconButton href={ContactInfo.github}>
               <Icon.Github />
-            </ContactLink>
-            <ContactLink
+            </IconButton>
+            <IconButton
               href={ContactInfo.linkedin}
             >
               <Icon.Linkedin />
-            </ContactLink>
-            <ContactLink
+            </IconButton>
+            <IconButton
               href={ContactInfo.twitter}
             >
               <Icon.Twitter />
-            </ContactLink>
-            <ContactLink
+            </IconButton>
+            <IconButton
               href={ContactInfo.instagram}
             >
               <Icon.İnstagram />
-            </ContactLink>
-            <ContactLink
+            </IconButton>
+            <IconButton
               href={ContactInfo.codepen}
             >
               <Icon.Codepen />
-            </ContactLink>
+            </IconButton>
           </div>
         </div>
         {children}
@@ -67,4 +55,4 @@ const SectionHero = ({ children }) => {
   );
 };
 
-export default SectionHero;
+export default HeroModule;
