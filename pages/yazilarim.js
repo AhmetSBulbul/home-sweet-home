@@ -4,7 +4,7 @@ import MediumPostLink from "../components/MediumPostLink";
 import MediumFeedList from "../components/MediumFeedList";
 import MediumCategoryList from "../components/MediumCategoryList";
 import SEO from "../components/SEO";
-import SubPageHero from "../components/SubPageHero";
+import { SubPageHero } from "../modules";
 import { useState } from "react";
 
 export default function Writings() {

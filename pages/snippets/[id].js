@@ -2,11 +2,11 @@ import {
   getAllContentIdsByFolderName,
   getContentDataByFolderNameAndId,
 } from "../../shared/libs";
-import Head from "next/head";
+
 import Date from "../../components/date";
-import PageBody from "../../components/PageBody";
+
 import SEO from "../../components/SEO";
-import SubPageHero from "../../components/SubPageHero";
+import { SubPageHero } from "../../modules";
 
 export default function Snippet({ snippetData }) {
   return (

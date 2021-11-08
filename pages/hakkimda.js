@@ -1,4 +1,4 @@
-import SubPageHero from "../components/SubPageHero";
+import { SubPageHero } from "../modules";
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
 

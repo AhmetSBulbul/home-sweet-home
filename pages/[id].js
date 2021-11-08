@@ -2,8 +2,7 @@ import {
   getAllContentIdsByFolderName,
   getContentDataByFolderNameAndId,
 } from "../shared/libs";
-import Head from "next/head";
-import SubPageHero from "../components/SubPageHero";
+import { SubPageHero } from "../modules";
 import SEO from "../components/SEO";
 
 export default function TechnologyPage({

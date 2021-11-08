@@ -1,10 +1,6 @@
-import LaunchingSoon from "../../components/LaunchingSoon";
 import { getSortedContentsDataByFolderName } from "../../shared/libs";
-import Link from "next/link";
-import Date from "../../components/date";
-import PageBody from "../../components/PageBody";
-import BaseButton from "../../components/BaseButton";
-import SubPageHero from "../../components/SubPageHero";
+
+import { SubPageHero } from "../../modules";
 import SnippetsFeedList from "../../components/SnippetsFeedList";
 import SEO from "../../components/SEO";
 

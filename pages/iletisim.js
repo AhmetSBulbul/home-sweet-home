@@ -1,6 +1,6 @@
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
-import SubPageHero from "../components/SubPageHero";
+import { SubPageHero } from "../modules";
 
 export default function Contact() {
   return (

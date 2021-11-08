@@ -13,7 +13,7 @@ const FeaturedImage = ({ src, alt }) => (
   </div>
 );
 
-export default function SubPageHero({
+export default function SubPageHeroModule({
   title,
   intro,
   featuredSrc,
