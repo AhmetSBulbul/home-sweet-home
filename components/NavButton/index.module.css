@@ -12,3 +12,7 @@
 .currentLink {
   @apply text-primary-lightest !important;
 }
+
+.outlinedLink {
+  @apply font-link text-sm font-medium antialiased rounded-md border-2 border-white px-2 py-2 flex justify-center items-center !important;
+}

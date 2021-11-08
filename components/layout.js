@@ -1,6 +1,5 @@
-import Header from "./Header";
 import FloatContact from "./FloatContact";
-import { Footer } from "../modules";
+import { Footer, Header } from "../modules";
 
 export default function Layout({ children }) {
   return (

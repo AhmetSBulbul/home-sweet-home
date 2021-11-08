@@ -5,6 +5,7 @@ import cn from "classnames";
 export default function NavButton({
   current = false,
   small = false,
+  outlined = false,
   children,
   ...props
 }) {
@@ -14,6 +15,7 @@ export default function NavButton({
         styles.navBtn,
         small && styles.smallLink,
         current && styles.currentLink,
+        outlined && styles.outlinedLink,
       ])}
       {...props}
     >

@@ -1,0 +1,20 @@
+.header {
+  @apply bg-primary-darkest;
+}
+
+.itemBgWrap {
+  @apply bg-primary-darkest flex rounded-md;
+}
+
+.navigation {
+  @apply flex flex-col bg-primary-darkest text-white fixed top-16 px-4 py-4 right-0 left-0 bottom-0 gap-4 justify-start items-end translate-y-full h-screen z-50;
+  transition: transform 250ms;
+
+  @screen desktop {
+    @apply flex-row translate-y-0 static px-0 py-0 h-auto;
+  }
+}
+
+.navigationExpand {
+  @apply translate-y-0;
+}
