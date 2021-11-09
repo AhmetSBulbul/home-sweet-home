@@ -1,0 +1,7 @@
+.errorMessage {
+  @apply font-display text-4xl font-black m-auto text-center;
+}
+
+.headIcon {
+  @apply m-auto text-7xl;
+}
