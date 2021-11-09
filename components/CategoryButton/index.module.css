@@ -1,0 +1,7 @@
+.categoryBtn {
+  @apply font-link text-sm font-medium bg-gray-30 rounded-md px-3 py-2 border-2 border-gray-50 capitalize;
+}
+
+.activeCategoryBtn {
+  @apply border-night;
+}
