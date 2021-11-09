@@ -22,7 +22,7 @@ export default function TechnologiesFeedList({
             alt={logoAlt}
             title={title}
             description={description}
-            href={`/${id}`}
+            href={`/teknolojiler/${id}`}
           />
         )
       )}

@@ -1,9 +1,9 @@
 import {
   getAllContentIdsByFolderName,
   getContentDataByFolderNameAndId,
-} from "../shared/libs";
-import { SubPageHero } from "../modules";
-import SEO from "../components/SEO";
+} from "../../shared/libs";
+import { SubPageHero } from "../../modules";
+import SEO from "../../components/SEO";
 
 export default function TechnologyPage({
   technologyData,
