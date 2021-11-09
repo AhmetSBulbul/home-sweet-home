@@ -1,12 +1,12 @@
 import { useMediumFeed } from "../shared/hooks";
-
-import MediumCategoryList from "../components/MediumCategoryList";
 import SEO from "../components/SEO";
 import {
   SubPageHero,
   MediumFeed,
 } from "../modules";
 import { useState } from "react";
+import CategoryButton from "../components/CategoryButton";
+import ThemeButton from "../components/ThemeButton";
 
 export default function Writings() {
   const [
@@ -31,8 +31,33 @@ export default function Writings() {
           hakkında paylaştığım içerikler.
         </p>
       </SubPageHero>
-      <div className="post-list-section content-container py-12">
-        <div className="post-list-main-container flex-1">
+      <section className="content-container">
+        <div className="flex justify-between py-4 items-center">
+          <h2 className="py-3">Kategoriler</h2>
+          {category !== "" && (
+            <ThemeButton
+              small
+              outlined
+              onClick={() => setCategory("")}
+            >
+              Filtreleri Temizle
+            </ThemeButton>
+          )}
+        </div>
+        <div className="flex flex-wrap">
+          {categories.map((item) => (
+            <CategoryButton
+              key={`${item}-listKey`}
+              category={item}
+              isActive={item === category}
+              onClick={() => setCategory(item)}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="content-container py-4">
+        <h2 className="py-3">Medium Yazılarım</h2>
+        <div className="flex flex-col space-y-2 py-3">
           <MediumFeed
             isLoaded={isLoaded}
             posts={blogs}
@@ -40,16 +65,7 @@ export default function Writings() {
             category={category}
           />
         </div>
-        <div className="post-list-side-container">
-          {isLoaded && !error && (
-            <MediumCategoryList
-              categories={categories}
-              category={category}
-              setCategory={setCategory}
-            />
-          )}
-        </div>
-      </div>
+      </section>
     </>
   );
 }
