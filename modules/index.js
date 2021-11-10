@@ -4,3 +4,4 @@ export { default as Header } from "./Header";
 export { default as SubPageHero } from "./SubPageHero";
 export { default as MediumFeed } from "./MediumFeed";
 export { default as SnippetsFeed } from "./SnippetsFeed";
+export { default as ServicesList } from "./ServicesList";

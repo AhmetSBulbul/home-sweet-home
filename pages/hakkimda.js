@@ -41,9 +41,8 @@ export default function About() {
         </div>
       </section>
       <section className="content-container flex flex-col py-12">
-        <h2 className="mb-8 title">Ben Kimim?</h2>
-
         <div>
+          <h2 className="title">Ben Kimim?</h2>
           <div className="split-pair items-center">
             <div className="flex-1">
               <p>

@@ -1,0 +1,14 @@
+.list {
+  @apply grid grid-flow-row grid-cols-1 tablet:grid-cols-2 gap-4;
+  counter-reset: services-counter;
+}
+
+.listItem {
+  @apply relative;
+
+  &::before {
+    @apply block;
+    counter-increment: services-counter;
+    content: "0" counter(services-counter);
+  }
+}

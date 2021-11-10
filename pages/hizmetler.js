@@ -1,4 +1,7 @@
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  ServicesList,
+} from "../modules";
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
 
@@ -34,6 +37,9 @@ export default function Services() {
             olacağım.
           </p>
         </div>
+      </section>
+      <section className="content-container py-12">
+        <ServicesList />
       </section>
       <LaunchingSoon />
     </>
