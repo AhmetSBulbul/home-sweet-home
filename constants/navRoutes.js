@@ -5,6 +5,11 @@ const NavRoutes = [
     title: "Hakkımda",
   },
   {
+    path: "/hizmetler",
+    key: "services",
+    title: "Hizmetler",
+  },
+  {
     path: "/yazilarim",
     key: "writings",
     title: "Yazılarım",
