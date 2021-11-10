@@ -6,6 +6,7 @@ import me from "../images/BeachVibes.png";
 import ImageBox from "../components/ImageBox";
 import childhood from "../images/childhoodclipped.jpg";
 import desktopart from "../images/desktopart.jpg";
+import ContactMe from "../components/ContactMe";
 
 export default function About() {
   return (
@@ -145,6 +146,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <ContactMe />
     </>
   );
 }

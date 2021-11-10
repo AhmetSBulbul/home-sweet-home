@@ -1,5 +1,5 @@
 .list {
-  @apply grid grid-flow-row grid-cols-1 tablet:grid-cols-2 gap-4;
+  @apply grid grid-flow-row grid-cols-1 tablet:grid-cols-2 gap-8;
   counter-reset: services-counter;
 }
 

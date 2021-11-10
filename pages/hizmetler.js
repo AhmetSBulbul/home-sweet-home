@@ -4,6 +4,7 @@ import {
 } from "../modules";
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
+import ContactMe from "../components/ContactMe";
 
 export default function Services() {
   return (
@@ -18,16 +19,16 @@ export default function Services() {
           yazılım hizmeti sunuyorum.
         </p>
       </SubPageHero>
-      <section className="content-container split-pair">
+      <section className="content-container split-pair py-12">
         <div className="flex-1">
-          <h2>
+          <h2 className="title">
             Yazılım Geliştirici ile fikirlerinizi
             ürüne dönüştürün, işletmenizi
             internete taşıyın.
           </h2>
         </div>
         <div className="flex-1">
-          <p>
+          <p className="font-display text-2xl">
             Yazılım Geliştirici olarak, uygulama
             fikrinizi bir ürüne dönüştürmek,
             işletmenizi internete taşımak, web
@@ -38,10 +39,14 @@ export default function Services() {
           </p>
         </div>
       </section>
-      <section className="content-container py-12">
+      <section className="content-container flex flex-col py-12">
+        <h2 className="mx-auto text-xl mb-8 border-b-2 border-gray-50">
+          Ne Yapiyorum?
+        </h2>
         <ServicesList />
+        <div className="w-1/3 h-1 mt-8 block rounded-md bg-gray-50 mx-auto" />
       </section>
-      <LaunchingSoon />
+      <ContactMe />
     </>
   );
 }
