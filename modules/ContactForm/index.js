@@ -125,6 +125,8 @@ export default function ContactForm({
           fullname: fullname,
           subject: subject,
           message: message,
+          service: selectedService,
+          budget: selectedBudget,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -143,13 +145,9 @@ export default function ContactForm({
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
       setButtonText("Gönderildi");
+    } else {
+      alert("*Zorunlu alanlar doldurulmalıdır!");
     }
-    console.log(
-      fullname,
-      email,
-      subject,
-      message
-    );
   };
 
   return (
