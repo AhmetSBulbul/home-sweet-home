@@ -40,6 +40,15 @@ const FieldsetWrap = ({
   </fieldset>
 );
 
+const MessageModal = () => (
+  <div className="fixed w-screen h-screen top-0 left-0 bg-black bg-opacity-25 flex flex-col justify-center items-center">
+    <div className="bg-white bg-opacity-100 px-4 py-8 flex flex-col justify-center text-center">
+      <h3>Başarıyla Gönderildi</h3>
+      <ThemeButton href="/">Tamam</ThemeButton>
+    </div>
+  </div>
+);
+
 export default function ContactForm({
   children,
   ...props
@@ -66,7 +75,6 @@ export default function ContactForm({
   const resetState = () => {
     setShowSuccessMessage(false);
     setShowFailureMessage(false);
-    setModalOpen(false);
   };
   //   Form validation state
   const [errors, setErrors] = useState({});
@@ -152,6 +160,7 @@ export default function ContactForm({
 
   return (
     <section className="content-container">
+      {showSuccessMessage && <MessageModal />}
       <form
         name="contact"
         className={styles.form}
