@@ -1,0 +1,16 @@
+.wrap {
+  @apply flex flex-col space-y-2 focus-within:text-night;
+}
+
+.label {
+  @apply font-link font-light;
+}
+
+.field,
+.fieldArea {
+  @apply ring-2 rounded-md px-2 py-2 focus:outline-none focus:ring-night text-gray-110;
+}
+
+.fieldArea {
+  @apply resize-none h-24;
+}
