@@ -15,6 +15,9 @@ export default function FooterModule({}) {
           <NavButton href="/gizlilik" small>
             Gizlilik
           </NavButton>
+          <NavButton href="/iletisim" small>
+            İletişim
+          </NavButton>
 
           <NavButton
             externalLink
