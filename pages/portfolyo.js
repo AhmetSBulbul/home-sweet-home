@@ -1,6 +1,9 @@
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../modules";
 
 export default function Portfolio() {
   return (
@@ -16,6 +19,7 @@ export default function Portfolio() {
         </p>
       </SubPageHero>
       <LaunchingSoon />
+      <CallToContact />
     </>
   );
 }

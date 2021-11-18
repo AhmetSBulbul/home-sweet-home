@@ -6,3 +6,4 @@ export { default as MediumFeed } from "./MediumFeed";
 export { default as SnippetsFeed } from "./SnippetsFeed";
 export { default as ServicesList } from "./ServicesList";
 export { default as ContactForm } from "./ContactForm";
+export { default as CallToContact } from "./CallToContact";

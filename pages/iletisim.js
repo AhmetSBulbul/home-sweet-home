@@ -1,6 +1,9 @@
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../modules";
 
 export default function Contact() {
   return (
@@ -13,6 +16,7 @@ export default function Contact() {
         <p className="text-white">Tanışalım.</p>
       </SubPageHero>
       <LaunchingSoon />
+      <CallToContact />
     </>
   );
 }

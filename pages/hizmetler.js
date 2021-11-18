@@ -1,6 +1,7 @@
 import {
   SubPageHero,
   ServicesList,
+  CallToContact,
 } from "../modules";
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
@@ -46,7 +47,7 @@ export default function Services() {
         <ServicesList />
         <div className="w-1/3 h-1 mt-8 block rounded-md bg-gray-50 mx-auto" />
       </section>
-      <ContactMe />
+      <CallToContact />
     </>
   );
 }

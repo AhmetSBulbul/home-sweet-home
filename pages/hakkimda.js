@@ -1,4 +1,7 @@
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../modules";
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
 import Image from "next/image";
@@ -146,7 +149,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <ContactMe />
+      <CallToContact />
     </>
   );
 }
