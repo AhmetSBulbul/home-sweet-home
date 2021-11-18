@@ -7,11 +7,13 @@ export default function CallToContact() {
   return (
     <section className="split-pair content-container py-12 tablet:items-center">
       <BreathtakingBeauty wrapperClassName="flex-1" />
-      <div className="flex-1 flex flex-col space-y-2">
+      <div className="flex-1 flex flex-col space-y-4">
         <p className="font-display font-medium text-sm uppercase">
           Bana Ulaşın ☎
         </p>
-        <h2 className="text-4xl">Tanışalım</h2>
+        <h2 className="text-4xl">
+          Size Nasıl Yardımcı Olabilirim?
+        </h2>
         <p>
           It is a long established fact that a
           reader will be distracted by the
@@ -22,7 +24,7 @@ export default function CallToContact() {
           href="/birlikte-calisalim"
           className="ml-auto"
         >
-          Benimle İrtibata Geçin <Arrow />
+          Birlikte Çalışalım! <Arrow />
         </ThemeButton>
       </div>
     </section>
