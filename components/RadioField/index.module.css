@@ -1,5 +1,5 @@
 .radioWrap {
-  @apply block relative;
+  @apply block relative w-full;
 }
 
 .fieldRadio {
@@ -7,7 +7,7 @@
 }
 
 .label {
-  @apply font-link text-center ring-2 px-2 py-2 w-full rounded-md;
+  @apply flex justify-center items-center font-link text-center ring-2 px-2 py-2 w-full rounded-md;
 }
 
 input[type="radio"]:checked + label {

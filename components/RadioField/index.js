@@ -21,7 +21,7 @@ export default function RadioField({
         htmlFor={id}
         className={styles.label}
       >
-        {children}
+        {props.value ? props.value : children}
       </label>
     </div>
   );
