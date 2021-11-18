@@ -49,7 +49,10 @@ export default function HeaderModule() {
               </NavButton>
             );
           })}
-          <NavButton outlined href="/iletisim">
+          <NavButton
+            outlined
+            href="/birlikte-calisalim"
+          >
             Birlikte Çalışalım
           </NavButton>
         </nav>

@@ -1,6 +1,9 @@
 import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  ContactForm,
+} from "../modules";
 
 export default function HireMe() {
   return (
@@ -15,6 +18,7 @@ export default function HireMe() {
           uygun yolu birlikte planlayalım.
         </p>
       </SubPageHero>
+      <ContactForm />
       <LaunchingSoon />
     </>
   );

@@ -154,8 +154,6 @@ export default function ContactForm({
 
   return (
     <section className="content-container">
-      {selectedService}
-      {selectedBudget}
       <form
         name="contact"
         className={styles.form}

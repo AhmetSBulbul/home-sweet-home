@@ -10,6 +10,6 @@
   @apply flex justify-center items-center font-link text-center ring-2 px-2 py-2 w-full rounded-md;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + .label {
   @apply ring-night;
 }
