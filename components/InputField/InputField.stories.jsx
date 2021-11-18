@@ -2,7 +2,7 @@ import React from 'react';
 import InputField from '.';
 
 export default {
-    title: 'Components/FormFields',
+    title: 'Components/FormFields/Inputs',
     component: InputField,
     args: {
         name: 'storyfield',

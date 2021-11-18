@@ -1,0 +1,15 @@
+.radioWrap {
+  @apply block relative;
+}
+
+.fieldRadio {
+  @apply absolute opacity-0;
+}
+
+.label {
+  @apply font-link text-center ring-2 px-2 py-2 w-full rounded-md;
+}
+
+input[type="radio"]:checked + label {
+  @apply ring-night;
+}
