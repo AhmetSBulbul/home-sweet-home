@@ -15,9 +15,12 @@ export default function CallToContact() {
           Size Nasıl Yardımcı Olabilirim?
         </h2>
         <p>
-          It is a long established fact that a
-          reader will be distracted by the
-          readable
+          Şu anda yeni bir iş almak için uygunum!
+          Aynı zamanda ücretsiz danışmanlık
+          hizmeti de sağlamaktayım. Projenizin
+          geliştirilme süreci ile alakalı
+          sorularınızı sorabilir, ürününüz için
+          ikinci bir görüş alabilirsiniz.
         </p>
         <ThemeButton
           withIcon
