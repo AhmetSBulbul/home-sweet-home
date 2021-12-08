@@ -1,0 +1,66 @@
+.device {
+  @apply bg-gray-80 inline-block;
+  padding: 0.2rem;
+  border-radius: 1.7rem;
+}
+
+.screen {
+  @apply bg-white;
+  border-radius: 1.5rem;
+  border: 1.2rem black solid;
+}
+
+.monitor {
+  @apply bg-transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.desktop {
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
+  @screen laptop {
+    width: 48rem;
+    height: 27rem;
+  }
+}
+
+.tablet {
+  width: 30rem;
+  height: 40rem;
+}
+
+.mobile {
+  width: 18rem;
+  height: 39rem;
+  border: 0.5rem black solid;
+  border-radius: 1.5rem;
+}
+
+.feet {
+  @apply relative w-full bg-gray-80;
+  height: 3.2rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+
+  &::before,
+  &::after {
+    @apply absolute;
+    content: " ";
+  }
+
+  &::before {
+    @apply bg-gray-90;
+    top: 100%;
+    width: 20%;
+    height: 5rem;
+    left: 40%;
+  }
+
+  &::after {
+    @apply bg-gray-70;
+    bottom: -6rem;
+    width: 30%;
+    height: 1rem;
+    left: 35%;
+    border-radius: 0 0 0.7rem 0.7rem;
+  }
+}
