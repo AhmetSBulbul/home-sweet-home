@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import cn from "classnames";
+import Image from "next/image";
 
 export default function Mockup({
   children,
@@ -20,7 +21,15 @@ export default function Mockup({
           props.tablet && styles.tablet,
           props.mobile && styles.mobile,
         ])}
-      />
+      >
+        {props.src && (
+          <Image
+            src={props.src}
+            alt=""
+            layout="fill"
+          />
+        )}
+      </div>
       {props.desktop && (
         <div className={styles.feet} />
       )}

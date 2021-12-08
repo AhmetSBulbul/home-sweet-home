@@ -9,6 +9,7 @@ import RotasizLogo from "../images/rotasiz-logo.png";
 import QupoBusinessLogo from "../images/qupo-business-logo.png";
 import TutkalLogo from "../images/tutkal-logo.png";
 import CoffeeCrafterLogo from "../images/coffee-crafter-logo.png";
+import Mockup from "../components/Mockup";
 
 export default function Portfolio() {
   return (

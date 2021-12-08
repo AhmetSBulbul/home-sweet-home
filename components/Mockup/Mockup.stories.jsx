@@ -6,6 +6,6 @@ export default {
     component: Mockup,
 }
 
-export const DesktopMockup = () => <Mockup desktop/>
-export const TabletMockup = () => <Mockup tablet/>
-export const MobileMockup = () => <Mockup mobile/>
+export const DesktopMockup = () => <Mockup desktop src="/portfolio/rotasizkaravan/desktop.png"/>
+export const TabletMockup = () => <Mockup tablet src="/portfolio/rotasizkaravan/tablet.png"/>
+export const MobileMockup = () => <Mockup mobile src="/portfolio/rotasizkaravan/mobile.png"/>
