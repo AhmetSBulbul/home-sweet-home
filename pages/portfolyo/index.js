@@ -1,4 +1,4 @@
-import LaunchingSoon from "../../components/LaunchingSoon";
+import { getSortedContentsDataByFolderName } from "../../shared/libs";
 import SEO from "../../components/SEO";
 import {
   SubPageHero,
@@ -7,7 +7,9 @@ import {
 import { PortfolioPostList } from "../../modules";
 import PortfolioPostLink from "../../components/PortfolioPostLink";
 
-export default function Portfolio() {
+export default function Portfolio({
+  allWorksData,
+}) {
   return (
     <>
       <SEO metaTitle="Portfolyo" />
@@ -20,27 +22,20 @@ export default function Portfolio() {
           projeler.
         </p>
       </SubPageHero>
-      <PortfolioPostList />
+      <PortfolioPostList
+        worksPostList={allWorksData}
+      />
       <CallToContact />
     </>
   );
 }
 
-/* <section className="container px-8 min-h-screen">
-        <h2> Blog</h2>
-        <ul className="flex flex-col">
-          {allPostsData.map(
-            ({ id, date, title }) => (
-              <li key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <br />
-                <small>
-                  <Date dateString={date} />
-                </small>
-              </li>
-            )
-          )}
-        </ul>
-      </section> */
+export async function getStaticProps() {
+  const allWorksData =
+    getSortedContentsDataByFolderName("works");
+  return {
+    props: {
+      allWorksData,
+    },
+  };
+}

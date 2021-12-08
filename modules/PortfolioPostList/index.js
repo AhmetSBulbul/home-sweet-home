@@ -5,50 +5,35 @@ import PortfolioPostLink from "../../components/PortfolioPostLink";
 
 export default function PortfolioPostList({
   children,
+  worksPostList,
   ...props
 }) {
   return (
     <section className="content-container py-12">
       <div className={styles.listLayout}>
-        <div className={styles.span2x}>
-          <PortfolioPostLink
-            title="Rotasız Karavan"
-            folderName="rotasiz-karavan"
-          />
-        </div>
-        <div>
-          <PortfolioPostLink
-            title="Qupo Business"
-            folderName="qupo-business"
-            mobile
-          />
-        </div>
-        <div>
-          <PortfolioPostLink
-            title="Coffee Crafter"
-            folderName="coffee-crafter"
-            mobile
-          />
-        </div>
-
-        <div className={styles.span2x}>
-          <PortfolioPostLink
-            title="Kuzey Mutfak Aydin"
-            folderName="kuzey-mutfak-aydin"
-          />
-        </div>
-        <div className={styles.span2x}>
-          <PortfolioPostLink
-            title="Tutkal.app"
-            folderName="tutkal-app"
-          />
-        </div>
-        <div className={styles.span2x}>
-          <PortfolioPostLink
-            title="Home Sweet Home"
-            folderName="home-sweet-home"
-          />
-        </div>
+        {worksPostList.map(
+          ({
+            id,
+            folderName,
+            title,
+            platform,
+          }) => (
+            <div
+              key={id}
+              className={cn(
+                platform === "web" &&
+                  styles.span2x
+              )}
+            >
+              <PortfolioPostLink
+                title={title}
+                folderName={folderName}
+                href={`/portfolyo/${id}`}
+                mobile={platform !== "web"}
+              />
+            </div>
+          )
+        )}
       </div>
     </section>
   );

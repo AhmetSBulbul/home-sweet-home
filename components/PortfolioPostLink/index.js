@@ -9,18 +9,22 @@ export default function PortfolioPostLink({
   children,
   folderName,
   title,
+  mobile = false,
   className,
   ...props
 }) {
   const featuredSrc = `/portfolio/${folderName}/featured.png`;
   const logoSrc = `/portfolio/${folderName}/logo.png`;
   return (
-    <BaseButton className={styles.cardLink}>
+    <BaseButton
+      className={styles.cardLink}
+      {...props}
+    >
       <div className={styles.featuredWrapper}>
         <Image
           src={featuredSrc}
           alt=""
-          width={props.mobile ? 499 : 1920}
+          width={mobile ? 499 : 1920}
           height={1080}
           layout="responsive"
         />
