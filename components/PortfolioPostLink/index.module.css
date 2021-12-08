@@ -25,7 +25,6 @@
 
 .featuredWrapper {
   @apply relative w-full;
-  max-height: 1080px;
 }
 
 .mobileFeatured {
