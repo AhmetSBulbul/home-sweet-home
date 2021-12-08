@@ -1,0 +1,33 @@
+.titleWrapper {
+  @apply flex flex-row justify-between w-full justify-items-center items-center mt-2;
+}
+
+.arrow {
+  @apply transition-transform transform translate-x-0;
+  font-size: 30px;
+}
+
+.cardLink {
+  @apply flex flex-col transition-colors w-full;
+  .logoWrapper {
+    @apply absolute w-full h-full bg-black top-0 flex justify-center items-center bg-opacity-50 opacity-0 transition-opacity;
+  }
+  &:hover {
+    @apply text-primary-lightest;
+    .arrow {
+      @apply transform translate-x-2;
+    }
+    .logoWrapper {
+      @apply opacity-100;
+    }
+  }
+}
+
+.featuredWrapper {
+  @apply relative w-full;
+  max-height: 1080px;
+}
+
+.mobileFeatured {
+  height: 3rem;
+}
