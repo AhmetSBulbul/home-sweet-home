@@ -8,7 +8,7 @@ export default function PortfolioPostList({
   ...props
 }) {
   return (
-    <section className="content-container">
+    <section className="content-container py-12">
       <div className={styles.listLayout}>
         <div className={styles.span2x}>
           <PortfolioPostLink
@@ -30,6 +30,7 @@ export default function PortfolioPostList({
             mobile
           />
         </div>
+
         <div className={styles.span2x}>
           <PortfolioPostLink
             title="Kuzey Mutfak Aydin"
