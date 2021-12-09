@@ -86,12 +86,22 @@ export default function About() {
             sunmaya başladım ve bir çok projede
             yer alma fırsatı buldum.
           </p>
-          <p>
+          <small>
             Pratikte kullanıcı dostu, erişilebilir
             ve çözüm sunabilen, teknik tarafta ise
             stabil, sürdürülebilir ve cihaz
             performansını en optimal şekilde
             kullanan uygulamalar geliştiriyorum.
+            Geliştirmiş olduğum ürünleri web sitem
+            üzerinden inceleyebilirsiniz.
+          </small>
+          <p>
+            Ana hedefi pratikte kullanıcı dostu,
+            erişilebilir ve çözüm sunabilen,
+            teknik tarafta ise stabil,
+            sürdürülebilir ve cihaz performansını
+            en optimal şekilde kullanan
+            uygulamalar geliştiriyorum.
             Geliştirmiş olduğum ürünleri web sitem
             üzerinden inceleyebilirsiniz.
           </p>
