@@ -47,7 +47,7 @@ export default function About() {
         </div>
         <div className="flex-1">
           <p>
-            Araştırmak ve öğrenmek, hep içerisinde
+            Araştırmak ve öğrenmek; hep içerisinde
             bulunduğum, bulunmaktan çok keyif
             aldığım, daima devam ettirmeyi
             hedeflediğim bir süreç. Aynı zamanda
@@ -62,7 +62,10 @@ export default function About() {
             It is a long established fact that a
             reader will be distracted by the
             readable content of a page when
-            looking at its layout.
+            looking at its layout. The point of
+            using Lorem Ipsum is that it has a
+            more-or-less normal distribution of
+            letters, as opposed to using 'Content.
           </p>
         </div>
       </section>
@@ -73,15 +76,15 @@ export default function About() {
             Öğrenciliğimin ilk yıllarından
             itibaren arayüz geliştirme hep ana
             odağım oldu. WPF ile masaüstü
-            uygulamaları geliştirerek başlayan
+            uygulamaları geliştirerek başlayan bu
             ilgim web ve mobil platformlarında
             devam etti. 2019 yılının son
             çeyreğinde freelance olarak hizmetler
-            sunmaya başladım ve bir çok projede
-            yer alma fırsatı buldum.
+            sunmaya başladım ve birçok projede yer
+            alma fırsatı buldum.
           </p>
           <p>
-            Geliştirdiğim uygulamaların, beklenen
+            Geliştirdiğim uygulamaların beklenen
             işlevselliği en iyi şekilde yerine
             getirmesinin yanında pratikte
             kullanıcı dostu,{" "}
@@ -94,11 +97,11 @@ export default function About() {
               erişilebilirlik standartlarını
             </a>{" "}
             takip ederek engelsiz kullanım
-            sunabilen ve estetik anlamda başarılı,
+            sunabilen ve estetik anlamda başarılı;
             teknik tarafta ise öngörülebilir,
-            sürdürülebilir olmalarını ve cihaz
-            performansını en iyi şekilde
-            kullanabilmelerini hedefliyorum.
+            sürdürülebilir ve cihaz performansını
+            en iyi şekilde kullanıyor olmalarını
+            hedefliyorum.
           </p>
           <ThemeButton
             withIcon
@@ -170,16 +173,16 @@ export default function About() {
                 hep hevesliydim. Meraklı kişiliğim
                 ve teknolojiye olan ilgim bu
                 hevesle buluşunca ailem
-                çocukluğumu hep, içinde ne
-                olduğunu görmek için kullanılamaz
-                hale getirdiğim elektronik
-                cihazlar ve elimde çekiç ile
-                sürekli bir şeyler yapmaya
-                çalıştığım anılarla anlatırlar.
-                Bozuk cihaz koleksiyonum ile
-                birlikte bugün hala cihaz tamir
-                etmek ve işlevleriyle oynamak en
-                keyif aldığım hobimdir.
+                çocukluğumu, içinde ne olduğunu
+                görmek için kullanılamaz hale
+                getirdiğim elektronik cihazlar ve
+                elimde çekiç ile sürekli bir
+                şeyler yapmaya çalıştığım anılarla
+                anlatırlar. Bozuk cihaz
+                koleksiyonum ile birlikte bugün
+                hala cihaz tamir etmek ve
+                işlevleriyle oynamak en keyif
+                aldığım hobimdir.
               </p>
               <p>
                 İlk bilgisayarım ile ilkokul 1.
@@ -203,11 +206,10 @@ export default function About() {
                 ile birlikte nasıl karakter
                 yaratacağını bilmeyen bir
                 arkadaşım için para karşılığı
-                karakter yaratmıştım. Arkadaşım
-                birkaç kişiye anlatınca insanlar
-                için üyelik oluşturarak bi dönem
-                harçlığımı bilgisayardan üyelik
-                açarak çıkarmıştım.
+                karakter yaratmıştım. Arkadaşımın
+                birkaç kişiye anlatmasıyla artan
+                ilgi sonucunda kısa bir süreliğine
+                harçlığımı bu şekilde çıkarmıştım.
               </p>
             </div>
             <ImageBox
