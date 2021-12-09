@@ -152,7 +152,9 @@ export default function About() {
               MCBÜ Bilişim Topluluğunda yer aldım.
               Süreç dahilinde çeşitli
               konferanslara katılma ve sorumluluk
-              alma fırsatı yakaladım.
+              alma fırsatı yakaladım. Bu da teknik
+              ve sosyal becerilerimin gelişmesine
+              katkıda bulundu.
             </p>
           </div>
         </div>
