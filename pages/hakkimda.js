@@ -150,10 +150,9 @@ export default function About() {
               2019-2020 yılları arasında Etkinlik
               ve Organizasyon Sorumlusu olarak
               MCBÜ Bilişim Topluluğunda yer aldım.
-              Çok aktif olduğum bir süreç olmasa
-              da bu dönemde çeşitli konferanslara
-              katılma ve görev üstlenme fırsatı
-              buldum.
+              Süreç dahilinde çeşitli
+              konferanslara katılma ve sorumluluk
+              alma fırsatı yakaladım.
             </p>
           </div>
         </div>
