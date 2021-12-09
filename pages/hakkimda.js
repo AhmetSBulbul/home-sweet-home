@@ -59,10 +59,9 @@ export default function About() {
             başarılıyım.
           </p>
           <p>
-            It is a long established fact that a
-            reader will be distracted by the
-            readable content of a page when
-            looking at its layout.
+            Yeteneklerim doğrultusunda, sürekli
+            değişim içerisinde olan ve bilginin
+            çok hızlı güncellendiği
           </p>
           <p>
             It is a long established fact that a
@@ -121,9 +120,10 @@ export default function About() {
             takip ederek engelsiz kullanım
             sunabilen ve estetik anlamda başarılı,
             teknik tarafta ise öngörülebilir,
-            sürdürülebilir ve cihaz performansını
-            en iyi şekilde kullanabiliyor
-            olmalarını hedefliyorum.
+            sürdürülebilir olmalarını ve cihaz
+            performansını en iyi şekilde
+            kullanabiliyor olmalarını
+            hedefliyorum.
           </p>
           <ThemeButton
             withIcon
