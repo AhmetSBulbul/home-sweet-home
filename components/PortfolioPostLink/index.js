@@ -3,7 +3,8 @@ import styles from "./index.module.css";
 import cn from "classnames";
 import Image from "next/image";
 import BaseButton from "../BaseButton";
-import { Arrow } from "../icons";
+import { Arrow, Live } from "../icons";
+import LiveSignal from "../LiveSignal";
 
 export default function PortfolioPostLink({
   children,

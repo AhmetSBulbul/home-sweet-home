@@ -1,6 +1,7 @@
 .icons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   color: #000;
   gap: 12px;
   padding: 4px;

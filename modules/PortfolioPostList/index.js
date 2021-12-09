@@ -8,6 +8,7 @@ export default function PortfolioPostList({
   worksPostList,
   ...props
 }) {
+  console.log(worksPostList);
   return (
     <section className="content-container py-12">
       <div className={styles.listLayout}>

@@ -4,6 +4,9 @@ import PortfolioPostLink from '.';
 export default {
     title: 'Components/PostLink/PortfolioPostLink',
     component: PortfolioPostLink,
+    parameters: {
+        layout: 'centered'
+    },
     args: {
         title: "Rotasız Karavan",
         folderName: "rotasiz-karavan"

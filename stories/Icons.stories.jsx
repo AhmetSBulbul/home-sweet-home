@@ -21,6 +21,15 @@ export const Icons = () => <div className='icons'>
   <Icon.Linkedin/>
   <Icon.Twitter/>
   <Icon.İnstagram/>
+  <Icon.Live/>
+  <Icon.Close/>
+  <Icon.Arrow/>
+  <Icon.Head/>
+  <Icon.Magnifier/>
+  <Icon.Mail/>
+  <Icon.Twitter/>
+  <Icon.Call/>
+  <Icon.Chat/>
 </div>
 
 

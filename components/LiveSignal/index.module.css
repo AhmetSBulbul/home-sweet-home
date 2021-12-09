@@ -1,0 +1,10 @@
+.wrapper {
+  @apply flex justify-center items-center rounded-md px-2 py-1 font-link font-semibold border-2;
+}
+
+.live {
+  @apply text-messaging-error text-sm;
+  svg {
+    @apply text-xl mr-1 animate-pulse;
+  }
+}
