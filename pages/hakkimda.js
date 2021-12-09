@@ -95,8 +95,6 @@ export default function About() {
             Geliştirmiş olduğum ürünleri web sitem
             üzerinden inceleyebilirsiniz.
           </small>
-          <br />
-          <br />
           <small>
             Ana hedefi, pratikte kullanıcı dostu,
             erişilebilir ve çözüm sunabilen,
@@ -113,6 +111,7 @@ export default function About() {
             getirmesinin yanında pratikte
             kullanıcı dostu,{" "}
             <a
+              className="underline"
               href="https://dijitalakademi.bilgem.tubitak.gov.tr/kamis/erisilebilirlik/erisilebilirlik"
               target="_blank"
               rel="noreferrer"
