@@ -95,15 +95,36 @@ export default function About() {
             Geliştirmiş olduğum ürünleri web sitem
             üzerinden inceleyebilirsiniz.
           </small>
-          <p>
-            Ana hedefi pratikte kullanıcı dostu,
+          <br />
+          <br />
+          <small>
+            Ana hedefi, pratikte kullanıcı dostu,
             erişilebilir ve çözüm sunabilen,
             teknik tarafta ise stabil,
             sürdürülebilir ve cihaz performansını
-            en optimal şekilde kullanan
+            en optimal şekilde kullanmak olan
             uygulamalar geliştiriyorum.
             Geliştirmiş olduğum ürünleri web sitem
             üzerinden inceleyebilirsiniz.
+          </small>
+          <p>
+            Geliştirdiğim uygulamaların, beklenen
+            işlevselliği en iyi şekilde yerine
+            getirmesinin yanında pratikte
+            kullanıcı dostu,{" "}
+            <a
+              href="https://dijitalakademi.bilgem.tubitak.gov.tr/kamis/erisilebilirlik/erisilebilirlik"
+              target="_blank"
+              rel="noreferrer"
+            >
+              erişilebilirlik standartlarını
+            </a>{" "}
+            takip ederek engelsiz kullanım
+            sunabilen ve estetik anlamda başarılı,
+            teknik tarafta ise öngörülebilir,
+            sürdürülebilir ve cihaz performansını
+            en iyi şekilde kullanabiliyor
+            olmalarını hedefliyorum.
           </p>
           <ThemeButton
             withIcon
