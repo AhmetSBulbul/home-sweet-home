@@ -122,8 +122,7 @@ export default function About() {
             teknik tarafta ise öngörülebilir,
             sürdürülebilir olmalarını ve cihaz
             performansını en iyi şekilde
-            kullanabiliyor olmalarını
-            hedefliyorum.
+            kullanabilmelerini hedefliyorum.
           </p>
           <ThemeButton
             withIcon
