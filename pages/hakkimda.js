@@ -54,7 +54,7 @@ export default function About() {
             en güçlü yeteneklerim arasında.
             Bunların yanında etkili iletişim
             kurabilme, kolay uyum sağlama ve
-            edinilen bilgiyi anlaşılır şekilde
+            edindiğim bilgileri anlaşılır şekilde
             karşıya aktarma konularında
             başarılıyım.
           </p>
