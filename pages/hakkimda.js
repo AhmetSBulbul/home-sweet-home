@@ -74,14 +74,24 @@ export default function About() {
         <div className="flex-1 flex flex-col">
           <h2 className="title mb-4">Deneyim</h2>
           <p>
-            It is a long established fact that a
-            reader will be distracted by the
-            readable content of a page when
-            looking at its layout. The point of
-            using Lorem Ipsum is that it has a
-            more-or-less normal distribution of
-            letters, as opposed to using Content
-            here, content here,
+            Öğrenciliğimin ilk yıllarından
+            itibaren arayüz geliştirme hep ana
+            odağım oldu. WPF ile masaüstü
+            uygulamaları ile başlayan ilgim web ve
+            mobil uygulama geliştirme ile devam
+            etti. 2019 yılının son çeyreğinde
+            freelance olarak hizmetler sunmaya
+            başladım ve bir çok projede yer alma
+            fırsatı buldum.
+          </p>
+          <p>
+            Pratikte kullanıcı dostu, erişilebilir
+            ve çözüm sunabilen, teknik tarafta ise
+            stabil, sürdürülebilir ve cihaz
+            performansını en optimal şekilde
+            kullanan uygulamalar geliştiriyorum.
+            Geliştirmiş olduğum ürünleri web sitem
+            üzerinden inceleyebilirsiniz.
           </p>
           <ThemeButton
             withIcon
@@ -140,24 +150,45 @@ export default function About() {
       </section>
       <section className="content-container flex flex-col py-12">
         <div>
-          <h2 className="title">Ben Kimim?</h2>
+          <h2 className="title">Hikayem</h2>
           <div className="split-pair items-center">
             <div className="flex-1">
               <p>
-                It is a long established fact that
-                a reader will be distracted by the
-                readable content of a page when
-                looking at its layout. The point
-                of using Lorem Ipsum is that it
-                has a more-or-less normal
-                <br />
-                <br />
-                It is a long established fact that
-                a reader will be distracted by the
-                readable content of a page when
-                looking at its layout. The point
-                of using Lorem Ipsum is that it
-                has a more-or-less normal
+                Haziran 1999, Antalya doğumluyum.
+                7 kuşak Antalyalı bir ailede
+                bulunmanın getirisi olarak lise
+                yıllarıma kadar yazlarımı Feslikan
+                Yaylası'nda geçirdim.
+                Küçüklüğümden itibaren alet edevat
+                kullanmaya ve bir şeyler üretmeye
+                hep hevesliydim. Meraklı kişiliğim
+                ve teknolojiye olan ilgim bu
+                hevesle buluşunca ailem
+                çocukluğumu hep, içinde ne
+                olduğunu görmek için kullanılamaz
+                hale getirdiğim elektronik
+                cihazlar ve elimde çekiç ile
+                sürekli bir şeyler yapmaya
+                çalıştığım anılarla anlatırlar.
+                Bozuk cihaz koleksiyonum ile
+                birlikte bugün hala cihaz tamir
+                etmek ve işlevleriyle oynamak en
+                keyif aldığım hobimdir.
+              </p>
+              <p>
+                İlk bilgisayarım ile ilkokul 1.
+                sınıfta tanıştım. Ticarete ilgim
+                de yine ilkokul 3. sınıf
+                zamanlarında matematiği öğrenmem
+                ile başladı. Başlarda evdeki
+                kalemleri satarak başladığım
+                ticaret serüvenim kalem stoğumun
+                bitmesiyle sonuçlanınca boyama
+                kitapları satın alıp sayfalarını
+                satmamla devam etti. Daha
+                sonrasında gelen veli şikayetleri
+                sebebiyle sınıf öğretmenimim
+                uyarısı ile son buldu.
               </p>
             </div>
             <ImageBox
