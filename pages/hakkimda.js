@@ -79,12 +79,12 @@ export default function About() {
             Öğrenciliğimin ilk yıllarından
             itibaren arayüz geliştirme hep ana
             odağım oldu. WPF ile masaüstü
-            uygulamaları ile başlayan ilgim web ve
-            mobil uygulama geliştirme ile devam
-            etti. 2019 yılının son çeyreğinde
-            freelance olarak hizmetler sunmaya
-            başladım ve bir çok projede yer alma
-            fırsatı buldum.
+            uygulamaları geliştirerek başlayan
+            ilgim web ve mobil platformlarında
+            devam etti. 2019 yılının son
+            çeyreğinde freelance olarak hizmetler
+            sunmaya başladım ve bir çok projede
+            yer alma fırsatı buldum.
           </p>
           <p>
             Pratikte kullanıcı dostu, erişilebilir
