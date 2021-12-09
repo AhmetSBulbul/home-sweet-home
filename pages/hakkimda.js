@@ -85,25 +85,6 @@ export default function About() {
             sunmaya başladım ve bir çok projede
             yer alma fırsatı buldum.
           </p>
-          <small>
-            Pratikte kullanıcı dostu, erişilebilir
-            ve çözüm sunabilen, teknik tarafta ise
-            stabil, sürdürülebilir ve cihaz
-            performansını en optimal şekilde
-            kullanan uygulamalar geliştiriyorum.
-            Geliştirmiş olduğum ürünleri web sitem
-            üzerinden inceleyebilirsiniz.
-          </small>
-          <small>
-            Ana hedefi, pratikte kullanıcı dostu,
-            erişilebilir ve çözüm sunabilen,
-            teknik tarafta ise stabil,
-            sürdürülebilir ve cihaz performansını
-            en optimal şekilde kullanmak olan
-            uygulamalar geliştiriyorum.
-            Geliştirmiş olduğum ürünleri web sitem
-            üzerinden inceleyebilirsiniz.
-          </small>
           <p>
             Geliştirdiğim uygulamaların, beklenen
             işlevselliği en iyi şekilde yerine
@@ -150,19 +131,17 @@ export default function About() {
               2020-2021 yılları arasında Manisa
               Celal Bayar Üniversitesi Oyun
               Geliştiricileri Kulübünün
-              başkanlığını üstlendim. Oyun
-              geliştiriciliği ilgi alanımda olmasa
-              da başkanlık yaptığım dönemde ben ve
-              kulübün kurucu üyesi olan iki
-              arkadaşım ile birlikte algoritma,
-              nesneye yönelik programlama, mobil
-              uygulama geliştirme ve Unity ile
-              oyun geliştirme üzerine dönemlik
+              başkanlığını üstlendim. Kulübün
+              kurucu üyesi olan iki arkadaşım ile
+              birlikte, başkanlık yaptığım süre
+              içerisinde, algoritma, nesneye
+              yönelik programlama, mobil uygulama
+              geliştirme ve Unity ile oyun
+              geliştirme üzerine dönemlik
               müfredatlar hazırlayarak eğitimler
-              verdik. Bu süreçte yönetim,
-              organizasyon ve bilgi aktarma
-              kabiliyetlerimi geliştirme fırsatı
-              buldum.
+              verdik. Bu süreçte yönetme, organize
+              etme ve eğitmenlik yeteneklerimi
+              geliştirme fırsatı buldum.
             </p>
           </div>
           <div className="flex-1 flex flex-col space-y-4">
