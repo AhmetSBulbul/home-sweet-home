@@ -50,11 +50,13 @@ export default function About() {
             Araştırmak ve öğrenmek, hep içerisinde
             bulunduğum, bulunmaktan çok keyif
             aldığım, daima devam ettirmeyi
-            hedeflediğim bir süreç ve en güçlü
-            yeteneklerim arasındadır. Bunların
-            yanında etkili iletişim kurabilme,
-            uyum sağlama ve bilgi aktarabilme
-            kabiliyetlerine sahibim.
+            hedeflediğim bir süreç. Aynı zamanda
+            en güçlü yeteneklerim arasında.
+            Bunların yanında etkili iletişim
+            kurabilme, kolay uyum sağlama ve
+            edinilen bilgiyi anlaşılır şekilde
+            karşıya aktarma konularında
+            başarılıyım.
           </p>
           <p>
             It is a long established fact that a
