@@ -59,11 +59,6 @@ export default function About() {
             başarılıyım.
           </p>
           <p>
-            Yeteneklerim doğrultusunda, sürekli
-            değişim içerisinde olan ve bilginin
-            çok hızlı güncellendiği
-          </p>
-          <p>
             It is a long established fact that a
             reader will be distracted by the
             readable content of a page when
@@ -201,6 +196,19 @@ export default function About() {
                 sebebiyle sınıf öğretmenimim
                 uyarısı ile son buldu.
               </p>
+              <p>
+                Ortaokul dönemlerimde
+                bilgisayardan ilk paramı kazandım.
+                Online oyunların popülerleşmesi
+                ile birlikte nasıl karakter
+                yaratacağını bilmeyen bir
+                arkadaşım için para karşılığı
+                karakter yaratmıştım. Arkadaşım
+                birkaç kişiye anlatınca insanlar
+                için üyelik oluşturarak bi dönem
+                harçlığımı bilgisayardan üyelik
+                açarak çıkarmıştım.
+              </p>
             </div>
             <ImageBox
               src={childhood}
@@ -211,24 +219,24 @@ export default function About() {
         </div>
         <div className="my-8">
           <p>
-            It is a long established fact that a
-            reader will be distracted by the
-            readable content of a page when
-            looking at its layout. The point of
-            using Lorem Ipsum is that it has a
-            more-or-less normal distribution of
-            letters, as opposed to using 'Content
-            here, content here', making it look
-            like readable English. Many desktop
-            publishing packages and web page
-            editors now use Lorem Ipsum as their
-            default model text, and a search for
-            'lorem ipsum' will uncover many web
-            sites still in their infancy. Various
-            versions have evolved over the years,
-            sometimes by accident, sometimes on
-            purpose (injected humour and the
-            like).
+            Liseye Metin Nuran Çakallıklı Anadolu
+            Lisesi'nde başladım. Son senemde Fen
+            Bilimleri Temel Lisesi'ne geçerek
+            oradan mezun oldum. O dönemlere kadar
+            hedefim hep bilgisayar mühendisliği
+            hedefliyordum. Bir öğretmenimin
+            yönlendirmesi ile yazılım mühendisliği
+            daha çok ilgimi çekti ve tercihimi bu
+            bölümden yana kullandım.
+          </p>
+          <p>
+            Eğitim hayatıma Manisa Celal Bayar
+            Üniversitesi Yazılım Mühendisliği
+            Bölümünde devam etmekteyim. Üniversite
+            hayatımın bir dönemini Turgutlu'da
+            geçirdikten sonra şu anda İzmir'de
+            freelancer olarak yazılım hizmeti
+            vermekteyim.
           </p>
         </div>
       </section>
