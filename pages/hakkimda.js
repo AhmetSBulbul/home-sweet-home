@@ -10,6 +10,8 @@ import ImageBox from "../components/ImageBox";
 import childhood from "../images/childhoodclipped.jpg";
 import desktopart from "../images/desktopart.jpg";
 import ContactMe from "../components/ContactMe";
+import { ThemeButton } from "../components";
+import { Arrow } from "../components/icons";
 
 export default function About() {
   return (
@@ -24,24 +26,116 @@ export default function About() {
           yazılım hizmeti sunuyorum.
         </p>
       </SubPageHero>
-      <section className="content-container split-pair items-center py-12">
+      <section className="content-container flex flex-col space-y-4 items-center text-center py-24">
+        <h2 className="font-display font-bold text-3xl">
+          Freelance Yazılım Geliştirici, Müzik
+          Tutkunu, Kripto Para Tüccarı.
+        </h2>
+        <p className="font-display font-bold text-3xl">
+          Mobil Uygulamalar ve Web Arayüzleri
+          geliştiriyorum. Aynı zamanda Manisa
+          Celal Bayar Üniversitesi Yazılım
+          Mühendisliği Bölümünde öğrenimime devam
+          etmekteyim.
+        </p>
+      </section>
+      <section className="content-container split-pair py-12">
+        <div className="flex-1">
+          <h2 className="font-display font-bold text-3xl">
+            Yeteneklerim, Hedeflerim ve Vizyonum.
+          </h2>
+        </div>
+        <div className="flex-1">
+          <p>
+            Araştırmak ve öğrenmek, hep içerisinde
+            bulunduğum, bulunmaktan çok keyif
+            aldığım, daima devam ettirmeyi
+            hedeflediğim bir süreç ve en güçlü
+            yeteneklerim arasındadır. Bunların
+            yanında etkili iletişim kurabilme,
+            uyum sağlama ve bilgi aktarabilme
+            kabiliyetlerine sahibim.
+          </p>
+          <p>
+            It is a long established fact that a
+            reader will be distracted by the
+            readable content of a page when
+            looking at its layout.
+          </p>
+          <p>
+            It is a long established fact that a
+            reader will be distracted by the
+            readable content of a page when
+            looking at its layout.
+          </p>
+        </div>
+      </section>
+      <section className="content-container split-pair py-12">
+        <div className="flex-1 flex flex-col">
+          <h2 className="title mb-4">Deneyim</h2>
+          <p>
+            It is a long established fact that a
+            reader will be distracted by the
+            readable content of a page when
+            looking at its layout. The point of
+            using Lorem Ipsum is that it has a
+            more-or-less normal distribution of
+            letters, as opposed to using Content
+            here, content here,
+          </p>
+          <ThemeButton
+            withIcon
+            href="/portfolyo"
+            className="ml-auto mt-4"
+          >
+            İşlerimi İnceleyin{" "}
+            <Arrow className="text-2xl" />
+          </ThemeButton>
+        </div>
         <ImageBox
           className="flex-1"
-          src={me}
+          src={desktopart}
           alt=""
         />
-        <div className="tablet:w-7/12 flex flex-col space-y-4">
-          <h2 className="font-display font-bold text-3xl">
-            Freelance Yazılım Geliştirici, Müzik
-            Tutkunu, Kripto Para Tüccarı.
-          </h2>
-          <p className="font-display font-bold text-3xl">
-            Mobil Uygulamalar ve Web Arayüzleri
-            geliştiriyorum. Aynı zamanda Manisa
-            Celal Bayar Üniversitesi Yazılım
-            Mühendisliği Bölümünde öğrenimime
-            devam etmekteyim.
-          </p>
+      </section>
+      <section className="content-container flex flex-col py-12">
+        <h2 className="title mx-auto mb-12">
+          Gönüllü İşler
+        </h2>
+        <div className="split-pair">
+          <div className="flex-1 flex flex-col space-y-4">
+            <h3>Oyun Geliştiricileri Kulübü</h3>
+            <p>
+              2020-2021 yılları arasında Manisa
+              Celal Bayar Üniversitesi Oyun
+              Geliştiricileri Kulübünün
+              başkanlığını üstlendim. Oyun
+              geliştiriciliği ilgi alanımda olmasa
+              da başkanlık yaptığım dönemde ben ve
+              kulübün kurucu üyesi olan iki
+              arkadaşım ile birlikte algoritma,
+              nesneye yönelik programlama, mobil
+              uygulama geliştirme ve Unity ile
+              oyun geliştirme üzerine dönemlik
+              müfredatlar hazırlayarak eğitimler
+              verdik. Bu süreçte yönetim,
+              organizasyon ve bilgi aktarma
+              kabiliyetlerimi geliştirme fırsatı
+              buldum.
+            </p>
+          </div>
+          <div className="flex-1 flex flex-col space-y-4">
+            <h3>MCBÜ Bilişim Topluluğu</h3>
+            <p>
+              2019-2020 yılları arasında Etkinlik
+              ve Organizasyon Sorumlusu olarak
+              MCBÜ Bilişim Topluluğunda yer aldım.
+              Çok aktif olduğum bir süreç olmasa
+              da bu dönemde çeşitli konferanslara
+              katılma ve görev üstlenme fırsatı
+              buldum.
+            </p>
+          </div>
         </div>
       </section>
       <section className="content-container flex flex-col py-12">
@@ -50,20 +144,20 @@ export default function About() {
           <div className="split-pair items-center">
             <div className="flex-1">
               <p>
-                Ben Ahmet Safa Bülbül. 1999
-                yılında Antalya'da dünyaya geldim
-                ve bu şehre aşık oldum.
-                Üniversiteye kadar olan öğrenim
-                hayatımı Antalya'da tamamladım.
-              </p>
-              <br />
-              <p>
-                Bilgisayarlar ile ilkokul birinci
-                sınıfta tanıştım. Mesleğime karar
-                verişim de yine ilkokulda "Nasıl
-                bilgisayarlar ile daha çok vakit
-                geçirebilirim?" sorusunun cevabı
-                olarak gerçekleşti.
+                It is a long established fact that
+                a reader will be distracted by the
+                readable content of a page when
+                looking at its layout. The point
+                of using Lorem Ipsum is that it
+                has a more-or-less normal
+                <br />
+                <br />
+                It is a long established fact that
+                a reader will be distracted by the
+                readable content of a page when
+                looking at its layout. The point
+                of using Lorem Ipsum is that it
+                has a more-or-less normal
               </p>
             </div>
             <ImageBox
@@ -96,59 +190,7 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className="content-container split-pair py-12 items-center">
-        <div className="flex-1">
-          <h2 className="title">Deneyim</h2>
-          <p>
-            It is a long established fact that a
-            reader will be distracted by the
-            readable content of a page when
-            looking at its layout. The point of
-            using Lorem Ipsum is that it has a
-            more-or-less normal distribution of
-            letters, as opposed to using Content
-            here, content here,
-          </p>
-        </div>
-        <ImageBox
-          className="flex-1"
-          src={desktopart}
-          alt=""
-        />
-      </section>
-      <section className="content-container flex flex-col">
-        <h2 className="title mx-auto">
-          Gönüllü İşler
-        </h2>
-        <div className="split-pair">
-          <div className="flex-1">
-            <h3>Oyun Geliştiricileri Kulübü</h3>
-            <p>
-              It is a long established fact that a
-              reader will be distracted by the
-              readable content of a page when
-              looking at its layout. The point of
-              using Lorem Ipsum is that it has a
-              more-or-less normal distribution of
-              letters, as opposed to using
-              'Content here, content here,
-            </p>
-          </div>
-          <div className="flex-1">
-            <h3>MCBÜ Bilişim Topluluğu</h3>
-            <p>
-              It is a long established fact that a
-              reader will be distracted by the
-              readable content of a page when
-              looking at its layout. The point of
-              using Lorem Ipsum is that it has a
-              more-or-less normal distribution of
-              letters, as opposed to using Content
-              here, content here,
-            </p>
-          </div>
-        </div>
-      </section>
+
       <CallToContact />
     </>
   );

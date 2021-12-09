@@ -58,7 +58,7 @@
   }
 
   p {
-    @apply text-xl text-gray-120 font-semibold font-body;
+    @apply text-xl text-gray-120 font-semibold font-body my-4;
   }
 
   a {
