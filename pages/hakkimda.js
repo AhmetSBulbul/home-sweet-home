@@ -12,6 +12,7 @@ import desktopart from "../images/desktopart.jpg";
 import ContactMe from "../components/ContactMe";
 import { ThemeButton } from "../components";
 import { Arrow } from "../components/icons";
+import BaseButton from "../components/BaseButton";
 
 export default function About() {
   return (
@@ -42,7 +43,7 @@ export default function About() {
       <section className="content-container split-pair py-12">
         <div className="flex-1">
           <h2 className="font-display font-bold text-3xl">
-            Yeteneklerim, Hedeflerim ve Vizyonum.
+            Yeteneklerim ve Görevlerim.
           </h2>
         </div>
         <div className="flex-1">
@@ -59,13 +60,15 @@ export default function About() {
             başarılıyım.
           </p>
           <p>
-            It is a long established fact that a
-            reader will be distracted by the
-            readable content of a page when
-            looking at its layout. The point of
-            using Lorem Ipsum is that it has a
-            more-or-less normal distribution of
-            letters, as opposed to using 'Content.
+            <BaseButton href="/yazilim-muhendisligi-etik-kurallari">
+              Yazılım Mühendisliği Etik Kuralları
+            </BaseButton>{" "}
+            doğrultusunda, işletmelerin
+            hizmetlerini internete taşımasına
+            olanak sağlayan, verimliliğini ve
+            karlılığını artırmaya yönelik çözümler
+            sunan web ve mobil yazılım ürünleri
+            geliştiriyorum.
           </p>
         </div>
       </section>
