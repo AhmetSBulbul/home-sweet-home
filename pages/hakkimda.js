@@ -77,7 +77,7 @@ export default function About() {
       </section>
       <section className="content-container split-pair py-12">
         <div className="flex-1 flex flex-col">
-          <h2 className="title mb-4">Deneyim</h2>
+          <h2 className="title mb-4">Uzmanlık</h2>
           <p>
             Öğrenciliğimin ilk yıllarından
             itibaren arayüz geliştirme hep ana
