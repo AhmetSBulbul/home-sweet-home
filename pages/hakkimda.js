@@ -56,11 +56,14 @@ export default function About() {
             Bunların yanında etkili iletişim
             kurabilme, kolay uyum sağlama ve
             edindiğim bilgileri anlaşılır şekilde
-            karşıya aktarma konularında
+            karşıya aktarma konularında da
             başarılıyım.
           </p>
           <p>
-            <BaseButton href="/yazilim-muhendisligi-etik-kurallari">
+            <BaseButton
+              href="/yazilim-muhendisligi-etik-kurallari"
+              className="underline"
+            >
               Yazılım Mühendisliği Etik Kuralları
             </BaseButton>{" "}
             doğrultusunda, işletmelerin
