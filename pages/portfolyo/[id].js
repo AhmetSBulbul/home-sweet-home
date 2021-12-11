@@ -7,6 +7,7 @@ import Date from "../../components/date";
 
 import SEO from "../../components/SEO";
 import { SubPageHero } from "../../modules";
+import BaseButton from "../../components/BaseButton";
 
 export default function PortfolioPost({
   workData,
@@ -32,6 +33,15 @@ export default function PortfolioPost({
           }}
         />
       </article>
+
+      {workData.url && (
+        <BaseButton
+          externalLink
+          href={workData.url}
+        >
+          Sayfaya Git
+        </BaseButton>
+      )}
     </>
   );
 }

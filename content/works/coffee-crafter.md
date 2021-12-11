@@ -9,6 +9,9 @@ tools:
 excerpt: 'Coffee Crafter mobil uygulaması.'
 isLive: true
 date: '2020-10-20'
+url: 'https://coffeecrafter.baysin.com.tr/'
+preview:
+    - '/mobile.png'
 ---
 
 ## İş Tanımı

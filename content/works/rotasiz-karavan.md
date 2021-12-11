@@ -12,6 +12,7 @@ tools:
 excerpt: 'Rotasız Karavan web sitesi.'
 isLive: true
 date: '2021-10-24'
+url: 'https://www.rotasizkaravan.com/'
 ---
 
 ## İş Tanımı

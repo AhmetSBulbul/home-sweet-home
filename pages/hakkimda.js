@@ -43,7 +43,7 @@ export default function About() {
       <section className="content-container split-pair py-12">
         <div className="flex-1">
           <h2 className="font-display font-bold text-3xl">
-            Yeteneklerim ve Görevlerim.
+            Sosyal Yetenekler
           </h2>
         </div>
         <div className="flex-1">
@@ -59,55 +59,105 @@ export default function About() {
             karşıya aktarma konularında da
             başarılıyım.
           </p>
+        </div>
+      </section>
+      <section className="content-container py-12">
+        <h2 className="font-display font-bold text-3xl text-center mb-12">
+          Ne Sunuyorum?
+        </h2>
+        <div className="split-pair">
+          <div className="flex-1 flex flex-col">
+            <p>
+              <BaseButton
+                href="/yazilim-muhendisligi-etik-kurallari"
+                className="underline"
+              >
+                Yazılım Mühendisliği Etik
+                Kuralları
+              </BaseButton>{" "}
+              çerçevesinde, işletmelerin
+              hizmetlerini internete taşımasına
+              olanak sağlayan, verimliliğini ve
+              karlılığını artırmaya yönelik
+              çözümler sunan web ve mobil yazılım
+              ürünleri geliştiriyorum.
+            </p>
+
+            <p>
+              Geliştirdiğim uygulamaların beklenen
+              işlevselliği en iyi şekilde yerine
+              getirmesinin yanında pratikte
+              kullanıcı dostu,{" "}
+              <a
+                className="underline"
+                href="https://dijitalakademi.bilgem.tubitak.gov.tr/kamis/erisilebilirlik/erisilebilirlik"
+                target="_blank"
+                rel="noreferrer"
+              >
+                erişilebilirlik standartlarını
+              </a>{" "}
+              takip ederek engelsiz kullanım
+              sunabiliyor ve estetik anlamda
+              başarılı; teknik tarafta ise
+              öngörülebilir, sürdürülebilir ve
+              cihaz performansını en iyi şekilde
+              kullanabiliyor olmalarına özen
+              gösteriyorum.
+            </p>
+
+            <p>
+              Birlikte çalışalım sayfası üzerinden
+              süreç hakkında fikir almak veya
+              merak ettiklerinizi sormak için
+              ücretsiz görüşme randevusu
+              alabilirsiniz.
+            </p>
+            <ThemeButton
+              withIcon
+              href="/portfolyo"
+              className="ml-auto mt-4"
+            >
+              Birlikte Çalışalım{" "}
+              <Arrow className="text-2xl" />
+            </ThemeButton>
+          </div>
+          <ImageBox
+            className="flex-1"
+            src={desktopart}
+            alt=""
+          />
+        </div>
+      </section>
+      <section className="content-container split-pair py-12">
+        <div className="flex-1">
+          <h2 className="font-display font-bold text-3xl">
+            Teknik Yetenekler ve Deneyim
+          </h2>
+        </div>
+        <div className="flex-1">
           <p>
+            2 yılı aşkın süredir web ve mobil
+            uygulama geliştiriciliği yapıyorum.
+            Flutter, React, Nextjs ve Gatsbyjs
+            frameworklerini aktif olarak
+            kullanmaktayım. Bunların yanında
+            jamstack mimarisi, component-driven
+            development ve state management
+            konularına hakimim.
+          </p>
+          <p>
+            Detaylı bilgiye{" "}
             <BaseButton
               href="/yazilim-muhendisligi-etik-kurallari"
               className="underline"
             >
-              Yazılım Mühendisliği Etik Kuralları
+              özgeçmişim
             </BaseButton>{" "}
-            doğrultusunda, işletmelerin
-            hizmetlerini internete taşımasına
-            olanak sağlayan, verimliliğini ve
-            karlılığını artırmaya yönelik çözümler
-            sunan web ve mobil yazılım ürünleri
-            geliştiriyorum.
-          </p>
-        </div>
-      </section>
-      <section className="content-container split-pair py-12">
-        <div className="flex-1 flex flex-col">
-          <h2 className="title mb-4">Uzmanlık</h2>
-          <p>
-            Öğrenciliğimin ilk yıllarından
-            itibaren arayüz geliştirme hep ana
-            odağım oldu. WPF ile masaüstü
-            uygulamaları geliştirerek başlayan bu
-            ilgim web ve mobil platformlarında
-            devam etti. 2019 yılının son
-            çeyreğinde freelance olarak hizmetler
-            sunmaya başladım ve birçok projede yer
-            alma fırsatı buldum.
-          </p>
-          <p>
-            Geliştirdiğim uygulamaların beklenen
-            işlevselliği en iyi şekilde yerine
-            getirmesinin yanında pratikte
-            kullanıcı dostu,{" "}
-            <a
-              className="underline"
-              href="https://dijitalakademi.bilgem.tubitak.gov.tr/kamis/erisilebilirlik/erisilebilirlik"
-              target="_blank"
-              rel="noreferrer"
-            >
-              erişilebilirlik standartlarını
-            </a>{" "}
-            takip ederek engelsiz kullanım
-            sunabilen ve estetik anlamda başarılı;
-            teknik tarafta ise öngörülebilir,
-            sürdürülebilir ve cihaz performansını
-            en iyi şekilde kullanıyor olmalarını
-            hedefliyorum.
+            üzerinden ulaşabilirsiniz. İşlerimi
+            inceleyin butonuna tıklayarak da
+            geliştirmiş olduğum ürünler ve
+            içerikleri hakkında bilgi
+            edinebilirsiniz.
           </p>
           <ThemeButton
             withIcon
@@ -118,11 +168,6 @@ export default function About() {
             <Arrow className="text-2xl" />
           </ThemeButton>
         </div>
-        <ImageBox
-          className="flex-1"
-          src={desktopart}
-          alt=""
-        />
       </section>
       <section className="content-container flex flex-col py-12">
         <h2 className="title mx-auto mb-12">
@@ -165,57 +210,42 @@ export default function About() {
       </section>
       <section className="content-container flex flex-col py-12">
         <div>
-          <h2 className="title">Hikayem</h2>
+          <h2 className="font-display font-bold text-3xl">
+            Hakkımda
+          </h2>
           <div className="split-pair items-center">
             <div className="flex-1">
               <p>
                 Haziran 1999, Antalya doğumluyum.
-                7 kuşak Antalyalı bir ailede
-                bulunmanın getirisi olarak lise
-                yıllarıma kadar yazlarımı Feslikan
-                Yaylası'nda geçirdim.
-                Küçüklüğümden itibaren alet edevat
-                kullanmaya ve bir şeyler üretmeye
-                hep hevesliydim. Meraklı kişiliğim
-                ve teknolojiye olan ilgim bu
-                hevesle buluşunca ailem
-                çocukluğumu, içinde ne olduğunu
-                görmek için kullanılamaz hale
-                getirdiğim elektronik cihazlar ve
-                elimde çekiç ile sürekli bir
-                şeyler yapmaya çalıştığım anılarla
-                anlatırlar. Bozuk cihaz
-                koleksiyonum ile birlikte bugün
-                hala cihaz tamir etmek ve
-                işlevleriyle oynamak en keyif
-                aldığım hobimdir.
+                Antalyalı olmanın bir getirisi
+                olarak lise yıllarıma kadar
+                yazlarımı Feslikan Yaylası'nda
+                geçirdim. Küçüklüğümden itibaren
+                alet edevat kullanmaya ve bir
+                şeyler üretmeye hep hevesliydim.
+                Meraklı kişiliğim ve teknoloiye
+                olan ilgim bu hevesle buluşunca
+                ailem çocukluğumu, içinde ne
+                olduğunu görmek için kullanılamaz
+                hale getirdiğim elektronik
+                cihazlar ve elimden düşürmediğim
+                çekiç ile yapmaya çalıştığım
+                şeyler ile anlatırlar.
               </p>
               <p>
-                İlk bilgisayarım ile ilkokul 1.
-                sınıfta tanıştım. Ticarete ilgim
-                de yine ilkokul 3. sınıf
-                zamanlarında matematiği öğrenmem
-                ile başladı. Başlarda evdeki
-                kalemleri satarak başladığım
-                ticaret serüvenim kalem stoğumun
-                bitmesiyle sonuçlanınca boyama
-                kitapları satın alıp sayfalarını
-                satmamla devam etti. Daha
-                sonrasında gelen veli şikayetleri
-                sebebiyle sınıf öğretmenimim
-                uyarısı ile son buldu.
-              </p>
-              <p>
-                Ortaokul dönemlerimde
-                bilgisayardan ilk paramı kazandım.
-                Online oyunların popülerleşmesi
-                ile birlikte nasıl karakter
-                yaratacağını bilmeyen bir
-                arkadaşım için para karşılığı
-                karakter yaratmıştım. Arkadaşımın
-                birkaç kişiye anlatmasıyla artan
-                ilgi sonucunda kısa bir süreliğine
-                harçlığımı bu şekilde çıkarmıştım.
+                Para kazanmak ve ticaret yapmak
+                kavramlarıyla çok erken yaşta
+                tanıştım. İlkokul zamanlarında
+                kırtasiyeden aldığım boyama
+                kitaplarının sayfalarını satarak
+                başladığım bu serüven hayatımın
+                her döneminde çeşitli şekillerde
+                var oldu. Bilgisayar aracılığıyla
+                kazandığım ilk parayı da ortaokul
+                zamanlarımda nasıl yapacağını
+                bilmeyen arkadaşlarım için oyun
+                karakterleri oluşturarak elde
+                etmiştim.
               </p>
             </div>
             <ImageBox
@@ -227,15 +257,34 @@ export default function About() {
         </div>
         <div className="my-8">
           <p>
-            Liseye Metin Nuran Çakallıklı Anadolu
-            Lisesi'nde başladım. Son senemde Fen
-            Bilimleri Temel Lisesi'ne geçerek
-            oradan mezun oldum. O dönemlere kadar
-            hedefim hep bilgisayar mühendisliği
-            hedefliyordum. Bir öğretmenimin
-            yönlendirmesi ile yazılım mühendisliği
-            daha çok ilgimi çekti ve tercihimi bu
-            bölümden yana kullandım.
+            Lise yillarimda ve Müzik t is a long
+            established fact that a reader will be
+            distracted by the readable content of
+            a page when looking at its layout. The
+            point of using Lorem Ipsum is that it
+            has a more-or-less normal distribution
+            of letters, as opposed to using
+            'Content here, content here', making
+            it look like readable English.
+          </p>
+          <p>
+            Bilgisayar ile alakalı bir meslek
+            yapmak küçüklüğümden beri tek
+            hedefimdi. Bilgisayar öğretmenliği ile
+            başlayan bu hayal önce bilgisayar
+            mühendisliği hemen ardından da yazılım
+            mühendisliğine evrildi.
+          </p>
+          <p>
+            Öğrenciliğimin ilk yıllarından
+            itibaren arayüz geliştirme hep ana
+            odağım oldu. WPF ile masaüstü
+            uygulamaları geliştirerek başlayan bu
+            ilgim web ve mobil platformlarında
+            devam etti. 2019 yılının son
+            çeyreğinde freelance olarak hizmetler
+            sunmaya başladım ve birçok projede yer
+            alma fırsatı buldum.
           </p>
           <p>
             Eğitim hayatıma Manisa Celal Bayar

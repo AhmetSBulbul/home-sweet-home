@@ -8,6 +8,9 @@ tools:
 excerpt: 'Tutkal.app web sitesi.'
 isLive: false
 date: '2020-02-03'
+preview: 
+    - '/tablet.png'
+    - '/desktop.png'
 ---
 
 ## İş Tanımı
