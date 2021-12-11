@@ -24,6 +24,16 @@ export default function HireMe() {
           İş fikrinizden bahsedin sizin için en
           uygun yolu birlikte planlayalım.
         </p>
+        <small>
+          Tasarım dosyası veya proje
+          dökümantasyonu gibi belgelere sahipseniz
+          ahmetsafabulbul@gmail.com adresi
+          üzerinden ulaşabilirsiniz.
+        </small>
+        <small>
+          Kısa sorularınız için whatsapp üzerinden
+          iletişime geçebilirsiniz.
+        </small>
       </SubPageHero>
 
       <ContactForm />
