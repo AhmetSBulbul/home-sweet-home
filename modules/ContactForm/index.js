@@ -134,6 +134,7 @@ export default function ContactForm({
           subject: subject,
           message: message,
           service: selectedService,
+          phone: phone,
           budget: selectedBudget,
         }),
         headers: {

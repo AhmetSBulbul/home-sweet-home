@@ -19,7 +19,6 @@ export default function HireMe() {
         </p>
       </SubPageHero>
       <ContactForm />
-      <LaunchingSoon />
     </>
   );
 }
