@@ -12,6 +12,10 @@ date: '2020-10-20'
 url: 'https://coffeecrafter.baysin.com.tr/'
 preview:
     - '/mobile.png'
+    - '/canvas.png'
+    - '/craft.png'
+    - '/edit.png'
+    - '/home.png'
 ---
 
 ## İş Tanımı

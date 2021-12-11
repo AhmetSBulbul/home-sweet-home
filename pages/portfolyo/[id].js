@@ -8,6 +8,7 @@ import Date from "../../components/date";
 import SEO from "../../components/SEO";
 import { SubPageHero } from "../../modules";
 import BaseButton from "../../components/BaseButton";
+import Image from "next/image";
 
 export default function PortfolioPost({
   workData,
@@ -34,13 +35,19 @@ export default function PortfolioPost({
         />
       </article>
 
-      {workData.url && (
-        <BaseButton
-          externalLink
-          href={workData.url}
-        >
-          Sayfaya Git
-        </BaseButton>
+      {workData.preview && (
+        <div className="content-container grid grid-cols-2 gap-y-4 laptop:grid-cols-3">
+          {workData.preview.map((imgName) => (
+            <Image
+              key={`${workData.id}-${imgName}-preview`}
+              src={`/portfolio/${workData.id}${imgName}`}
+              alt=""
+              height={500}
+              width={500}
+              objectFit="contain"
+            />
+          ))}
+        </div>
       )}
     </>
   );

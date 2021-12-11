@@ -8,9 +8,13 @@ tools:
 excerpt: 'Qupo Business mobil uygulaması.'
 isLive: false
 date: '2021-02-03'
-images:
+preview:
     - '/mobile.png'
+    - '/profile.png'
+    - '/rate-us.png'
     - '/tablet.png'
+    - '/tablet-menu.png'
+    - '/tablet-profile.png'
 ---
 
 ## İş Tanımı
