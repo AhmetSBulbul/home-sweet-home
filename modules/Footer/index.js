@@ -1,5 +1,6 @@
 import { ContactInfo } from "../../constants";
 import NavButton from "../../components/NavButton";
+import BaseButton from "../../components/BaseButton";
 
 export default function FooterModule({}) {
   return (
@@ -12,10 +13,10 @@ export default function FooterModule({}) {
           </p>
         </div>
         <nav className="flex space-x-4">
-          <NavButton href="/gizlilik" small>
+          <NavButton href="/gizlilik">
             Gizlilik
           </NavButton>
-          <NavButton href="/iletisim" small>
+          <NavButton href="/iletisim">
             İletişim
           </NavButton>
 
@@ -28,9 +29,16 @@ export default function FooterModule({}) {
 
           <NavButton
             externalLink
-            href={ContactInfo.instagram}
+            href={ContactInfo.github}
           >
-            Instagram
+            Github
+          </NavButton>
+
+          <NavButton
+            externalLink
+            href={ContactInfo.codepen}
+          >
+            Codepen
           </NavButton>
 
           <NavButton
@@ -43,8 +51,15 @@ export default function FooterModule({}) {
       </div>
       <div className="mx-auto py-4">
         <p className="text-sm">
-          📌 Bu sitenin kodlarına github üzerinden
-          erişebilirsiniz.{" "}
+          📌 Bu sitenin kodlarına{" "}
+          <BaseButton
+            externalLink
+            className="underline"
+            href="https://github.com/AhmetSBulbul/home-sweet-home"
+          >
+            github
+          </BaseButton>{" "}
+          üzerinden erişebilirsiniz.{" "}
         </p>
       </div>
     </footer>

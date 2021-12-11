@@ -6,6 +6,7 @@ export default function NavButton({
   current = false,
   small = false,
   outlined = false,
+  className,
   children,
   ...props
 }) {

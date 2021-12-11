@@ -58,7 +58,12 @@ function ExternalLinkButton({
   ...props
 }) {
   return (
-    <a href={href} {...props}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      {...props}
+    >
       {children}
     </a>
   );

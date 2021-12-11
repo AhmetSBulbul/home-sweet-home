@@ -15,7 +15,19 @@ export default function Contact() {
       >
         <p className="text-white">Tanışalım.</p>
       </SubPageHero>
-      <LaunchingSoon />
+      <section className="content-container split-pair py-12">
+        <div className="flex-1">
+          <h2 className="font-display font-semibold text-3xl">
+            İletişim Bilgileri
+          </h2>
+        </div>
+        <div className="flex-1 font-link font-medium">
+          <ul>
+            <li>📧 ahmetsafabulbul@gmail.com</li>
+            <li>📞 +90 (539) 517 38 77</li>
+          </ul>
+        </div>
+      </section>
       <CallToContact />
     </>
   );

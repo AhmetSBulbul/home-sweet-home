@@ -1,5 +1,5 @@
 .navBtn {
-  @apply font-link text-lg antialiased;
+  @apply font-link text-lg antialiased transition-opacity hover:opacity-80;
   @screen laptop {
     @apply text-sm my-auto;
   }
