@@ -30,19 +30,19 @@
 - [x] Snippets
 - [x] Contact Form
 - [x] Superpeer link
-- [ ] Comment feature
 - [x] Tailwind config colors will be hex
-- [ ] Snippet filter
-- [ ] Auth0 integration
+- [x] Snippet filter
 - [x] Medium Feed
 - [x] Medium Feed Components
-- [ ] Medium Post filter
-- [ ] Storybook components
-- [ ] Logo and hire me buttons hover animations
+- [x] Medium Post filter
+- [x] Storybook components
+- [x] Logo and hire me buttons hover animations
 - [x] home screen recent published snippets
 - [x] technology pages
 - [x] favicon
 - [x] SEO Component
+- [ ] Accesibility
+- [ ] Re-factor
 
 ## Re-Factor
 
