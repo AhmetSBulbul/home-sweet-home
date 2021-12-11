@@ -45,7 +45,6 @@ export default function Services() {
           Ne Yapiyorum?
         </h2>
         <ServicesList />
-        <div className="w-1/3 h-1 mt-8 block rounded-md bg-gray-50 mx-auto" />
       </section>
       <CallToContact />
     </>
