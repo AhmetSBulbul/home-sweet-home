@@ -9,6 +9,12 @@ import SEO from "../../components/SEO";
 import { SubPageHero } from "../../modules";
 import BaseButton from "../../components/BaseButton";
 import Image from "next/image";
+import { ThemeButton } from "../../components";
+import {
+  Repository,
+  Link as LinkIcon,
+  Live,
+} from "../../components/icons";
 
 export default function PortfolioPost({
   workData,
@@ -19,13 +25,42 @@ export default function PortfolioPost({
       <SubPageHero
         title="Portfolyo"
         intro={workData.title}
+        featuredSrc={`/portfolio/${workData.id}/logo.png`}
+        featuredAlt={`${workData.title} Logo`}
       >
         <p className="text-white">
           {workData.excerpt}
         </p>
-        <small>
-          <Date dateString={workData.date} />
-        </small>
+        <ul>
+          {workData.url && (
+            <li>
+              <BaseButton
+                externalLink
+                href={workData.url}
+              >
+                <LinkIcon className="inline-block mr-2" />
+                {workData.url}
+              </BaseButton>
+            </li>
+          )}
+          {workData.repo && (
+            <li>
+              <BaseButton
+                externalLink
+                href={workData.repo}
+              >
+                <Repository className="inline-block mr-2" />
+                {workData.repo}
+              </BaseButton>
+            </li>
+          )}
+          <li>
+            <small>
+              Geliştirilme Tarihi:{" "}
+              <Date dateString={workData.date} />
+            </small>
+          </li>
+        </ul>
       </SubPageHero>
       <article className="prose content-container">
         <div
@@ -36,7 +71,7 @@ export default function PortfolioPost({
       </article>
 
       {workData.preview && (
-        <div className="content-container grid grid-cols-2 gap-y-4 laptop:grid-cols-3">
+        <div className="content-container grid grid-cols-2 gap-y-4 laptop:grid-cols-3 relative py-12">
           {workData.preview.map((imgName) => (
             <Image
               key={`${workData.id}-${imgName}-preview`}
@@ -47,6 +82,16 @@ export default function PortfolioPost({
               objectFit="contain"
             />
           ))}
+          {workData.drive && (
+            <div className="absolute bg-gradient-to-b from-transparent to-white bottom-0 w-full flex flex-col justify-items-center items-center py-12">
+              <ThemeButton
+                externalLink
+                href={workData.drive}
+              >
+                Demo Videolarını İncele
+              </ThemeButton>
+            </div>
+          )}
         </div>
       )}
     </>

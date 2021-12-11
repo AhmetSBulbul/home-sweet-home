@@ -10,6 +10,8 @@ excerpt: 'Coffee Crafter mobil uygulaması.'
 isLive: true
 date: '2020-10-20'
 url: 'https://coffeecrafter.baysin.com.tr/'
+drive: https://drive.google.com/drive/folders/1-JTI0oRnGDeAX3fTtqYw9zTmvRajhKeF?usp=sharing
+
 preview:
     - '/mobile.png'
     - '/canvas.png'

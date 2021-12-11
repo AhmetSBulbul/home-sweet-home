@@ -8,6 +8,7 @@ tools:
 excerpt: 'Qupo Business mobil uygulaması.'
 isLive: false
 date: '2021-02-03'
+drive: https://drive.google.com/drive/folders/1-4YeJ2PH7ovN2OR6zHoO44MBSE5Rkodb?usp=sharing
 preview:
     - '/mobile.png'
     - '/profile.png'

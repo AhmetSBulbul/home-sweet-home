@@ -30,6 +30,8 @@ export const Icons = () => <div className='icons'>
   <Icon.Twitter/>
   <Icon.Call/>
   <Icon.Chat/>
+  <Icon.Link/>
+  <Icon.Repository/>
 </div>
 
 

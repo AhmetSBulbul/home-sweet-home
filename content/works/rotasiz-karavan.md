@@ -13,6 +13,7 @@ excerpt: 'Rotasız Karavan web sitesi.'
 isLive: true
 date: '2021-10-24'
 url: 'https://www.rotasizkaravan.com/'
+repo: https://github.com/AhmetSBulbul/rotasizkaravandotcom
 preview: 
     - '/desktop.png'
     - '/tablet.png'
