@@ -16,16 +16,12 @@ date: '2021-10-24'
 
 ## İş Tanımı
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Rotasız Karavan Şirketi için işletmelerini tanıtabilecekleri, yapılan işleri sergileyebilecekleri ve içerik paylaşabilecekleri bir web site.
 
 ## Kullanılan Teknolojiler
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Jamstack mimarisi ile gatsbyjs framework'ü kullanılarak geliştirildi. İçerik yönetimini Graphql ile sağladığım bu projede stillendirme tarafında tailwindCSS framework'ü kullanıldı.
 
-## Yapılan İşler ve Kazanımlar
+## Kazanımlar
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-
-## Sonuç
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Görsel fazlalığı sebebiyle gatsbyjs'i seçtiğim bu projede jamstack mimarisini profesyonel bir üründe deneyimleme fırsatı buldum. Bunun yanında graphql, tailwindcss gibi teknolojileri tecrübe edindim.

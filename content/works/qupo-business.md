@@ -1,7 +1,7 @@
 ---
 title: 'Qupo Business'
 folderName: 'qupo-business'
-platform: 'IOS & Android'
+platform: 'Mobile'
 tools: 
     - Flutter
     - Bloc State Management
@@ -12,16 +12,17 @@ date: '2021-02-03'
 
 ## İş Tanımı
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+IOS & Android platformları için qupo uygulamasında hizmet veren işletmelerin siparişlerini, kampanyalarını, ürün stokları/fiyatlarını ve bilgilerini yönetebilmelerine imkan veren bir mobil uygulama.
 
 ## Kullanılan Teknolojiler
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Uygulama flutter framework'ü ve bloc mimarisi ile geliştirildi. 
 
-## Yapılan İşler ve Kazanımlar
+## Yapılan İşler
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Kampanyalar için qr kod oluşturan bir sistem yazıldı. Kampanyaların okundu bilgisi ve sipariş bildirimleri için socket yapısı ile anlık iletişim sağlandı. Çoklu dil desteği eklendi.
 
-## Sonuç
+## Kazanımlar
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+İşletme ve ürün çeşitliliği, geliştirme sürecinde birçok kararsız veri ile karşılaşmamıza sebep oldu. Bu gibi durumların sebep olacağı hataların kontrolünü gerçekleştirirken null-safety konseptini tecrübe edinme fırsatı buldum.
+

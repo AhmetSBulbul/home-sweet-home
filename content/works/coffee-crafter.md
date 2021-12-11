@@ -1,7 +1,7 @@
 ---
 title: 'Coffee Crafter'
 folderName: 'coffee-crafter'
-platform: 'IOS & Android'
+platform: 'Mobile'
 tools: 
     - Flutter
     - Google Maps Api
@@ -13,16 +13,16 @@ date: '2020-10-20'
 
 ## İş Tanımı
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+IOS & Android platformları için kullanıcıların uygulama içerisinden kahve sipariş edebileceği, dilerlerse kahvelerinin üzerine bastırılacak görseller hazırlayabileceği ve aynı zamanda anlaşmalı kahveleri harita üzerinden görüntüleyebileceği bir mobil uygulama.
 
 ## Kullanılan Teknolojiler
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Flutter ile geliştirdiğim bu uygulamada harita ve konum hizmetleri için google maps apisi kullanıldı.
 
-## Yapılan İşler ve Kazanımlar
+## Yapılan İşler
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Yakın çevrede bulunan kahvecilerin görüntülenebilmesi için sunucudan gelen konum bilgileri ile haritaya işaretçiler yerleştirildi. Anlık konum takibi için cihazın konum servisleri kullanıldı. Kullanıcıların çektikleri fotoğrafın veya boş bir canvasın üzerine yazı yazabilmelerine, emoji ekleyebilmelerin ve filtre uygulayabilmelerine olanak sağlayan bir sistem yazıldı.
 
-## Sonuç
+## Kazanımlar
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+Geliştirme sürecinde görsel manipüle etme ve konum servisleri üzerine çok değerli tecrübeler edindim.
