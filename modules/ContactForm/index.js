@@ -256,6 +256,11 @@ export default function ContactForm({
           >
             Mesaj
           </InputField>
+          <small>
+            ✍🏽 Projenin sahip olacağı işlevleri
+            detaylandırarak anlatmak çok yardımcı
+            olacaktır.{" "}
+          </small>
         </fieldset>
         <br />
         <FieldsetWrap

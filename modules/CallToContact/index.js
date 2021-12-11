@@ -9,7 +9,7 @@ export default function CallToContact() {
       <BreathtakingBeauty wrapperClassName="flex-1" />
       <div className="flex-1 flex flex-col space-y-4">
         <p className="font-display font-medium text-sm uppercase">
-          Bana Ulaşın ☎
+          Bana Ulaşın ☎️
         </p>
         <h2 className="text-4xl">
           Size Nasıl Yardımcı Olabilirim?
