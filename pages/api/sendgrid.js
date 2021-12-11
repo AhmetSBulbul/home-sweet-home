@@ -28,8 +28,8 @@ async function sendEmail(req, res) {
   <div class="container" style="margin-left: 20px;margin-right: 20px;">
     <h3>You've got a new mail from ${req.body.fullname}, their email is: ✉️${req.body.email} </h3>
     <div style="font-size: 16px;">
-      <p>Business Type: <strong>Android</strong></p>
-      <p>Platform: <strong>Android</strong></p>
+      <p>Business Type: <strong>${req.body.businessType}</strong></p>
+      <p>Platform: <strong>${req.body.service}</strong></p>
       <p>Budget: <strong>${req.body.budget}</strong></p>
       <br>
       <p>Message:</p>
@@ -40,7 +40,7 @@ async function sendEmail(req, res) {
     <div style="font-size: 16px;">
       <p>E-Mail: <strong>${req.body.email}</strong></p>
       <p>Phone: <strong>${req.body.phone}</strong></p>
-      <p>Preffered Contact Adress: <strong>Whatsapp</strong></p>
+      <p>Preffered Contact Adress: <strong>${req.body.channelType}</strong></p>
       <br>
     </div>
     <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Ahmet Safa Bülbül<br>Software Developer<br>+90 539 517 38 77</p>

@@ -1,5 +1,35 @@
 export const serviceType = [
   {
+    id: "mobile",
+    value: "Mobil Uygulama Geliştirme",
+  },
+  {
+    id: "web",
+    value: "Web Geliştirme",
+  },
+  {
+    id: "tech support",
+    value: "Teknik Destek",
+  },
+];
+
+export const channel = [
+  {
+    id: "call",
+    value: "Telefon",
+  },
+  {
+    id: "whatsapp",
+    value: "Whatsapp",
+  },
+  {
+    id: "email",
+    value: "E-Posta",
+  },
+];
+
+export const businessType = [
+  {
     id: "retailer",
     value: "Bireysel",
   },
@@ -8,8 +38,8 @@ export const serviceType = [
     value: "Şirket",
   },
   {
-    id: "outsource",
-    value: "Dış Kaynak",
+    id: "startup",
+    value: "Start-Up",
   },
 ];
 

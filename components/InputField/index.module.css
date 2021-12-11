@@ -3,12 +3,12 @@
 }
 
 .label {
-  @apply font-link font-light;
+  @apply font-link font-medium;
 }
 
 .field,
 .fieldArea {
-  @apply ring-2 rounded-md px-2 py-2 focus:outline-none focus:ring-night text-gray-110;
+  @apply ring-2 ring-gray-110 rounded-md px-2 py-2 focus:outline-none focus:ring-secondary-light text-gray-110;
 }
 
 .fieldArea {

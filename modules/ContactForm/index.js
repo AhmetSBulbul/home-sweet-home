@@ -9,6 +9,8 @@ import { Arrow } from "../../components/icons";
 import {
   serviceType,
   forecastBudgets,
+  businessType,
+  channel,
 } from "./constants";
 
 const FieldsetWrap = ({
@@ -62,6 +64,12 @@ export default function ContactForm({
     useState("");
   const [selectedBudget, setSelectedBudget] =
     useState("");
+  const [selectedChannel, setSelectedChannel] =
+    useState("E-Posta");
+  const [
+    selectedBusinessType,
+    setSelectedBusinessType,
+  ] = useState("");
 
   const [
     showSuccessMessage,
@@ -133,9 +141,11 @@ export default function ContactForm({
           fullname: fullname,
           subject: subject,
           message: message,
+          businessType: selectedBusinessType,
           service: selectedService,
           phone: phone,
           budget: selectedBudget,
+          channelType: selectedChannel,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -160,13 +170,23 @@ export default function ContactForm({
   };
 
   return (
-    <section className="content-container">
+    <section className="content-container py-12">
       {showSuccessMessage && <MessageModal />}
       <form
         name="contact"
         className={styles.form}
         onSubmit={handleSubmit}
       >
+        <FieldsetWrap
+          id="business-type"
+          optionsList={businessType}
+          label="Ne Tür Bir İşletme Sahibisiniz? "
+          onClick={(e) =>
+            setSelectedBusinessType(
+              e.target.value
+            )
+          }
+        />
         <FieldsetWrap
           id="service-type"
           optionsList={serviceType}
@@ -237,13 +257,33 @@ export default function ContactForm({
             Mesaj
           </InputField>
         </fieldset>
-        <ThemeButton
-          type="submit"
-          withIcon
-          className="ml-auto mt-4"
-        >
-          {buttonText} <Arrow />
-        </ThemeButton>
+        <br />
+        <FieldsetWrap
+          id="contactChannel"
+          optionsList={channel}
+          label="Size Nasıl Ulaşmamı İstersiniz? "
+          onClick={(e) =>
+            setSelectedChannel(e.target.value)
+          }
+        />
+        {selectedChannel !== "E-Posta" &&
+        phone.length <= 0 ? (
+          <small className="text-right">
+            <strong className="text-right">
+              Telefon veya Whatsapp'tan size
+              ulaşabilmem için lütfen numaranızı
+              yazdığınızdan emin olun.
+            </strong>
+          </small>
+        ) : (
+          <ThemeButton
+            type="submit"
+            withIcon
+            className="ml-auto mt-4"
+          >
+            {buttonText} <Arrow />
+          </ThemeButton>
+        )}
       </form>
     </section>
   );
