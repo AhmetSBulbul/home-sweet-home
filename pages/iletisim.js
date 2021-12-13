@@ -3,6 +3,9 @@ import {
   SubPageHero,
   CallToContact,
 } from "../modules";
+import { BreathtakingBeauty } from "../components/figures";
+import SocialMediaContact from "../components/SocialMediaContact";
+import BaseButton from "../components/BaseButton";
 
 export default function Contact() {
   return (
@@ -11,23 +14,44 @@ export default function Contact() {
       <SubPageHero
         title="İletişim"
         intro="Bana Ulaşın"
-      >
-        <p className="text-white">Tanışalım.</p>
-      </SubPageHero>
+      />
       <section className="content-container split-pair py-12">
-        <div className="flex-1">
-          <h2 className="font-display font-semibold text-3xl">
+        <BreathtakingBeauty wrapperClassName="flex-1" />
+        <div className="flex-1 flex flex-col">
+          <h2 className="font-display font-semibold text-3xl mb-6">
             İletişim Bilgileri
           </h2>
-        </div>
-        <div className="flex-1 font-link font-medium">
-          <ul>
-            <li>📧 ahmetsafabulbul@gmail.com</li>
-            <li>📞 +90 (539) 517 38 77</li>
+          <ul className="flex flex-col space-y-2 font-link font-medium">
+            <li>
+              <strong>Telefon</strong>:{" "}
+              <a
+                className="underline font-link font-normal"
+                href="tel:+905395173877"
+              >
+                +90 (539) 517 38 77
+              </a>
+            </li>
+            <li>
+              <strong>E-Posta:</strong>{" "}
+              <a
+                className="underline font-link font-normal"
+                href="mailto:ahmetsafabulbul@gmail.com"
+              >
+                ahmetsafabulbul@gmail.com
+              </a>
+            </li>
+            <li>
+              <strong>Adres:</strong>{" "}
+              <span>
+                Basın Sitesi Mahallesi, Gazeteci
+                Hasan Tahsin Caddesi,
+                Karabağlar/İzmir
+              </span>
+            </li>
           </ul>
+          <SocialMediaContact className="text-black" />
         </div>
       </section>
-      <CallToContact />
     </>
   );
 }

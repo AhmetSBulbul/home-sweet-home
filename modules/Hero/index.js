@@ -6,6 +6,7 @@ import {
   ContactInfo,
   Routes,
 } from "../../constants";
+import SocialMediaContact from "../../components/SocialMediaContact";
 
 const HeroModule = ({ children }) => {
   return (
@@ -23,31 +24,7 @@ const HeroModule = ({ children }) => {
             Geliştiricisi.
           </h2>
 
-          <div className={styles.socialIcons}>
-            <IconButton href={ContactInfo.github}>
-              <Icon.Github />
-            </IconButton>
-            <IconButton
-              href={ContactInfo.linkedin}
-            >
-              <Icon.Linkedin />
-            </IconButton>
-            <IconButton
-              href={ContactInfo.twitter}
-            >
-              <Icon.Twitter />
-            </IconButton>
-            <IconButton
-              href={ContactInfo.instagram}
-            >
-              <Icon.İnstagram />
-            </IconButton>
-            <IconButton
-              href={ContactInfo.codepen}
-            >
-              <Icon.Codepen />
-            </IconButton>
-          </div>
+          <SocialMediaContact className="text-white" />
         </div>
         {children}
       </div>
