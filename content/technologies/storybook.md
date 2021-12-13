@@ -3,6 +3,7 @@ title: 'Storybook'
 logoSrc: '/technologies/storybook.svg'
 logoAlt: 'Storybook Logo'
 description: 'Componentleri bağımsız olarak görüntülemeye yarayan yardımcı araç.'
+url: 'https://storybook.js.org/'
 projects:
     - 'rotasiz-karavan'
     - 'home-sweet-home'

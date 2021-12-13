@@ -13,6 +13,7 @@ export default function TechnologiesFeedList({
             logoSrc,
             logoAlt,
             description,
+            url,
           },
           index
         ) => (
@@ -22,10 +23,13 @@ export default function TechnologiesFeedList({
             alt={logoAlt}
             title={title}
             description={description}
-            href={`/teknolojiler/${id}`}
+            externalLink
+            href={url}
           />
         )
       )}
     </div>
   );
 }
+
+//href={`/teknolojiler/${id}`}

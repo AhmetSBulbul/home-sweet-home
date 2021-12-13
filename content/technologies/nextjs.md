@@ -3,6 +3,7 @@ title: 'Nextjs'
 logoSrc: '/technologies/nextjs.svg'
 logoAlt: 'Nextjs Logo'
 description: 'Jamstack mimarisini kullanan react frameworkü.'
+url: 'https://nextjs.org/'
 projects:
     - 'rotasiz-karavan'
     - 'home-sweet-home'

@@ -7,10 +7,18 @@ category:
     - hook
 ---
 
+## İşlevi
+
+Toggle özelliği ile web sitenin body elementinde scroll özelliğini açıp kapatıyor.
+
+## Kod
+
+
+
 ```javascript
 import { useEffect } from "react";
 
-export default function useLockBodyScroll(
+export default function useLockBodyScrollToggle(
   toggle
 ) {
   useEffect(() => {

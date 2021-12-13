@@ -3,6 +3,7 @@ title: 'TailwindCSS'
 logoSrc: '/technologies/tailwind.svg'
 logoAlt: 'TailwindCSS Logo'
 description: 'CSS Framework'
+url: 'https://tailwindcss.com/'
 projects:
     - 'rotasiz-karavan'
     - 'home-sweet-home'

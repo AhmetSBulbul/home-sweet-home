@@ -1,5 +1,4 @@
 import Link from "next/link";
-import cn from "classnames";
 import React from "react";
 
 /* Nextjs Base Button Component */

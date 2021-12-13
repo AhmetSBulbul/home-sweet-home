@@ -3,6 +3,7 @@ title: 'Flutter'
 logoSrc: '/technologies/flutter.svg'
 logoAlt: 'Flutter Logo'
 description: 'Mobil Geliştirme'
+url: "https://flutter.dev/"
 projects:
     - 'coffee-crafter'
     - 'qupo-business'

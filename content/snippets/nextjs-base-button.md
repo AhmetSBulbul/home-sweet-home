@@ -7,30 +7,32 @@ category:
     - Component
 ---
 
+## İşlevi
 
+Nextjs framework'ü için "button", "a", "next/link" ve "functional next/link" componentlerinden ihtiyaç duyulan componenti döndürüyor. Kullanımdaki karmaşıklığı azaltmak amacıyla yazıldı.
 
 ### Parameters
 
-- onClick
-- href
+- externalLink(default: false)
 - className
+- props
 
 
 ### Nasıl Çalışıyor?
 
-Eğer href parametresi kullanılırsa link, onClick parametresi kullanılırsa button componentlerini geri döndürüyor. Hem href hem de onClick parametreleri kullanılırsa Nextjs Link componentinin [dökümanına](https://nextjs.org/docs/api-reference/next/link) göre oluşturulmuş FunctionalLink componentini döndürüyor.
+Eğer href parametresi kullanılırsa link, onClick parametresi kullanılırsa button componentlerini geri döndürüyor. Hem href hem de onClick parametreleri kullanılırsa Nextjs Link componentinin [dökümanına](https://nextjs.org/docs/api-reference/next/link) göre oluşturulmuş FunctionalLink componentini döndürüyor. ExternalLink parametresi true değer taşıyor ise a tagi döndürüyor.
 
 ### Bağımlılıklar
 
-- [ClassNames](https://github.com/JedWatson/classnames)
+- [Next/Link](https://nextjs.org/docs/api-reference/next/link)
 
 ### Kod
 
 ```javascript
 import Link from "next/link";
-import cn from "classnames";
 import React from "react";
 
+/* Nextjs Base Button Component */
 
 const FunctionalLink = React.forwardRef(
   (
@@ -80,6 +82,23 @@ function LinkButton({
   );
 }
 
+function ExternalLinkButton({
+  href,
+  children,
+  ...props
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      {...props}
+    >
+      {children}
+    </a>
+  );
+}
+
 function Button({ children, ...props }) {
   return (
     <button type="button" {...props}>
@@ -90,10 +109,13 @@ function Button({ children, ...props }) {
 
 const BaseButton = ({
   children,
+  externalLink = false,
   className,
   ...props
 }) => {
-  const CurrBtn = props.href
+  const CurrBtn = externalLink
+    ? ExternalLinkButton
+    : props.href
     ? props.onClick
       ? FunctionalLinkButton
       : LinkButton
