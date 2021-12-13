@@ -1,3 +1,4 @@
+import { getSortedContentsDataByFolderName } from "../shared/libs";
 import { useMediumFeed } from "../shared/hooks";
 import SEO from "../components/SEO";
 import {
@@ -7,8 +8,22 @@ import {
 import { useState } from "react";
 import CategoryButton from "../components/CategoryButton";
 import ThemeButton from "../components/ThemeButton";
+import SimplePostLink from "../components/SimplePostLink";
+import { CallToContact } from "../modules";
 
-export default function Writings() {
+export async function getStaticProps() {
+  const allPostsData =
+    getSortedContentsDataByFolderName("posts");
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Writings({
+  allPostsData,
+}) {
   const [
     error,
     isLoaded,
@@ -66,6 +81,21 @@ export default function Writings() {
           />
         </div>
       </section>
+      <section className="content-container py-8">
+        <h2 className="font-display font-bold text-2xl">
+          Burada Paylaşılanlar
+        </h2>
+        <div className="flex flex-col space-y-2 py-4">
+          {allPostsData.map((post) => (
+            <SimplePostLink
+              key={`postlist-${post.id}`}
+              title={post.title}
+              href={`${post.id}`}
+            />
+          ))}
+        </div>
+      </section>
+      <CallToContact />
     </>
   );
 }

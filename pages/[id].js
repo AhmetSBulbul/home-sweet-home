@@ -6,7 +6,10 @@ import {
 import Date from "../components/date";
 
 import SEO from "../components/SEO";
-import { SubPageHero } from "../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../modules";
 
 export default function Snippet({ snippetData }) {
   return (
@@ -30,6 +33,7 @@ export default function Snippet({ snippetData }) {
           }}
         />
       </article>
+      <CallToContact />
     </>
   );
 }

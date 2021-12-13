@@ -2,7 +2,10 @@ import {
   getAllContentIdsByFolderName,
   getContentDataByFolderNameAndId,
 } from "../../shared/libs";
-import { SubPageHero } from "../../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../../modules";
 import SEO from "../../components/SEO";
 import BaseButton from "../../components/BaseButton";
 import SimplePostLink from "../../components/SimplePostLink";
@@ -83,6 +86,7 @@ export default function TechnologyPage({
           </div>
         )}
       </section>
+      <CallToContact />
     </>
   );
 }

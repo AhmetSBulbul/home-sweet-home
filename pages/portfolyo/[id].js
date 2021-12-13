@@ -6,7 +6,10 @@ import {
 import Date from "../../components/date";
 
 import SEO from "../../components/SEO";
-import { SubPageHero } from "../../modules";
+import {
+  SubPageHero,
+  CallToContact,
+} from "../../modules";
 import BaseButton from "../../components/BaseButton";
 import Image from "next/image";
 import { ThemeButton } from "../../components";
@@ -94,6 +97,7 @@ export default function PortfolioPost({
           )}
         </div>
       )}
+      <CallToContact />
     </>
   );
 }

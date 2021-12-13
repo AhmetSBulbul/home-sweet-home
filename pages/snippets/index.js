@@ -3,6 +3,7 @@ import { getSortedContentsDataByFolderName } from "../../shared/libs";
 import {
   SubPageHero,
   SnippetsFeed,
+  CallToContact,
 } from "../../modules";
 
 import SEO from "../../components/SEO";
@@ -32,11 +33,12 @@ export default function Snippets({
           parçacıkları.
         </p>
       </SubPageHero>
-      <section className="content-container py-12 min-h-screen">
+      <section className="content-container py-12">
         <SnippetsFeed
           snippetsPostList={allSnippetsData}
         />
       </section>
+      <CallToContact />
     </>
   );
 }
