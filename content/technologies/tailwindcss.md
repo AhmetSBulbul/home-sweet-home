@@ -1,11 +1,13 @@
 ---
-title: 'Flutter'
-logoSrc: '/technologies/flutter.svg'
-logoAlt: 'Flutter Logo'
-description: 'Mobil Geliştirme'
+title: 'TailwindCSS'
+logoSrc: '/technologies/tailwind.svg'
+logoAlt: 'TailwindCSS Logo'
+description: 'CSS Framework'
 projects:
-    - 'coffee-crafter'
-    - 'qupo-business'
+    - 'rotasiz-karavan'
+    - 'home-sweet-home'
+snippets:
+    - 'tailwind-nav-menu'
 ---
 
 ## Flutter Nedir?

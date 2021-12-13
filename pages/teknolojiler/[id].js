@@ -4,6 +4,12 @@ import {
 } from "../../shared/libs";
 import { SubPageHero } from "../../modules";
 import SEO from "../../components/SEO";
+import BaseButton from "../../components/BaseButton";
+
+function formatLabel(id) {
+  const formattedLabel = id.replace("-", " ");
+  return formattedLabel;
+}
 
 export default function TechnologyPage({
   technologyData,
@@ -28,6 +34,52 @@ export default function TechnologyPage({
           }}
         />
       </article>
+      <section className="content-container grid grid-cols-1 grid-flow-row laptop:grid-cols-3 laptop:grid-flow-col">
+        {technologyData.projects && (
+          <div>
+            <h2>İlgili Projeler</h2>
+            <ul>
+              {technologyData.projects.map(
+                (item) => {
+                  return (
+                    <li key={`projelist-${item}`}>
+                      <BaseButton
+                        href={`/portfolyo/${item}`}
+                        className="capitalize"
+                      >
+                        {item.replace(/-/g, " ")}
+                      </BaseButton>
+                    </li>
+                  );
+                }
+              )}
+            </ul>
+          </div>
+        )}
+        {technologyData.snippets && (
+          <div>
+            <h2>İlgili Snippetslar</h2>
+            <ul>
+              {technologyData.snippets.map(
+                (item) => {
+                  return (
+                    <li
+                      key={`snippetslist-${item}`}
+                    >
+                      <BaseButton
+                        href={`/snippets/${item}`}
+                        className="capitalize"
+                      >
+                        {item.replace(/-/g, " ")}
+                      </BaseButton>
+                    </li>
+                  );
+                }
+              )}
+            </ul>
+          </div>
+        )}
+      </section>
     </>
   );
 }

@@ -1,11 +1,11 @@
 ---
-title: 'Flutter'
-logoSrc: '/technologies/flutter.svg'
-logoAlt: 'Flutter Logo'
-description: 'Mobil Geliştirme'
+title: 'Storybook'
+logoSrc: '/technologies/storybook.svg'
+logoAlt: 'Storybook Logo'
+description: 'Componentleri bağımsız olarak görüntülemeye yarayan yardımcı araç.'
 projects:
-    - 'coffee-crafter'
-    - 'qupo-business'
+    - 'rotasiz-karavan'
+    - 'home-sweet-home'
 ---
 
 ## Flutter Nedir?

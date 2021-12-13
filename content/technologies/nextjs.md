@@ -1,11 +1,11 @@
 ---
-title: 'Flutter'
-logoSrc: '/technologies/flutter.svg'
-logoAlt: 'Flutter Logo'
-description: 'Mobil Geliştirme'
+title: 'Nextjs'
+logoSrc: '/technologies/nextjs.svg'
+logoAlt: 'Nextjs Logo'
+description: 'Jamstack mimarisini kullanan react frameworkü.'
 projects:
-    - 'coffee-crafter'
-    - 'qupo-business'
+    - 'rotasiz-karavan'
+    - 'home-sweet-home'
 ---
 
 ## Flutter Nedir?
