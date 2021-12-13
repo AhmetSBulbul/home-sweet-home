@@ -170,8 +170,9 @@ export default function ContactForm({
   };
 
   return (
-    <section className="content-container py-12">
+    <section className="content-container">
       {showSuccessMessage && <MessageModal />}
+
       <form
         name="contact"
         className={styles.form}
@@ -257,9 +258,10 @@ export default function ContactForm({
             Mesaj
           </InputField>
           <small>
-            ✍🏽 Projenin sahip olacağı işlevleri
-            detaylandırarak anlatmak çok yardımcı
-            olacaktır.{" "}
+            ✍🏽 Projenin hedefi, hedeflenen
+            kullanıcı sayısı, beklenen işlevsellik
+            gibi bilgileri detaylarıyla aktarmanız
+            projeyi anlamama yardımcı olacaktır.{" "}
           </small>
         </fieldset>
         <br />

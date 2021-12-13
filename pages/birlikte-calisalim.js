@@ -19,22 +19,28 @@ export default function HireMe() {
           bulunan buton aracılığıyla superpeer
           üzerinden randevu alabilirsiniz.
         </p>
-        <p className="text-white">
+      </SubPageHero>
+      <section className="content-container py-12">
+        <h2 className="font-link font-bold text-3xl laptop:w-1/2 mb-8 tracking-tight">
           İş fikrinizden bahsedin sizin için en
           uygun yolu birlikte planlayalım.
-        </p>
-        <small>
-          Tasarım dosyası veya proje
-          dökümantasyonu gibi belgelere sahipseniz
-          ahmetsafabulbul@gmail.com adresi
-          üzerinden ulaşabilirsiniz.
+        </h2>
+        <small className="block laptop:w-1/2">
+          📌{" "}
+          <strong>
+            Tasarım dosyası veya proje
+            dökümantasyonu gibi belgelere
+            sahipseniz{" "}
+            <a
+              className="underline font-link font-medium"
+              href="mailto:ahmetsafabulbul@gmail.com"
+            >
+              ahmetsafabulbul@gmail.com
+            </a>{" "}
+            adresi üzerinden ulaşabilirsiniz.
+          </strong>
         </small>
-        <small>
-          Kısa sorularınız için whatsapp üzerinden
-          iletişime geçebilirsiniz.
-        </small>
-      </SubPageHero>
-
+      </section>
       <ContactForm />
       <strong className="text-center block">
         ya da
@@ -44,7 +50,7 @@ export default function HireMe() {
           href="https://superpeer.com/ahmetsbulbul/-/bana-soru-sor"
           target="_blank"
           rel="noreferrer"
-          className="w-full bg-night text-white text-center p-8 rounded-xl"
+          className="w-full transition-opacity bg-night text-white text-center p-8 rounded-xl hover:opacity-80"
           externalLink
         >
           Superpeer üzerinden ücretsiz görüşme
