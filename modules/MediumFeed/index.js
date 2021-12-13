@@ -1,6 +1,7 @@
 import { categoryFilter } from "../../shared/utils";
 import styles from "./index.module.css";
 import MediumPostLink from "../../components/MediumPostLink";
+import NothingToSee from "../../components/NothingToSee";
 
 const Loading = () => (
   <div className="font-display text-black font-black text-2xl text-center">
@@ -39,17 +40,21 @@ export default function MediumFeedModule({
 }) {
   return (
     <div>
-      {isLoaded ? (
-        error ? (
-          <Error message={error} />
+      {posts.length > 0 ? (
+        isLoaded ? (
+          error ? (
+            <Error message={error} />
+          ) : (
+            <Feed
+              category={category}
+              feedList={posts}
+            />
+          )
         ) : (
-          <Feed
-            category={category}
-            feedList={posts}
-          />
+          <Loading />
         )
       ) : (
-        <Loading />
+        <NothingToSee />
       )}
     </div>
   );

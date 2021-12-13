@@ -1,4 +1,3 @@
-import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
 import {
   SubPageHero,

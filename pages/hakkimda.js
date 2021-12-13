@@ -2,14 +2,10 @@ import {
   SubPageHero,
   CallToContact,
 } from "../modules";
-import LaunchingSoon from "../components/LaunchingSoon";
 import SEO from "../components/SEO";
-import Image from "next/image";
-import me from "../images/BeachVibes.png";
 import ImageBox from "../components/ImageBox";
 import childhood from "../images/childhoodclipped.jpg";
 import desktopart from "../images/desktopart.jpg";
-import ContactMe from "../components/ContactMe";
 import { ThemeButton } from "../components";
 import { Arrow } from "../components/icons";
 import BaseButton from "../components/BaseButton";

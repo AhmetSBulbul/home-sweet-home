@@ -9,6 +9,11 @@ export default function useMediumFeedHook() {
     []
   );
 
+  const productionLink =
+    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40AhmetSBulbul";
+  const testLink =
+    "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40ahmets.bulbul";
+
   const allCategories = (posts) => {
     let tags = [];
     posts.forEach((item, index) => {
@@ -25,9 +30,7 @@ export default function useMediumFeedHook() {
   };
 
   useEffect(() => {
-    fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40ahmets.bulbul"
-    )
+    fetch(testLink)
       .then((res) => res.json())
       .then(
         (data) => {

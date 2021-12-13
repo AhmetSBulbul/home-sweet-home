@@ -3,9 +3,8 @@ import {
   ServicesList,
   CallToContact,
 } from "../modules";
-import LaunchingSoon from "../components/LaunchingSoon";
+
 import SEO from "../components/SEO";
-import ContactMe from "../components/ContactMe";
 
 export default function Services() {
   return (
