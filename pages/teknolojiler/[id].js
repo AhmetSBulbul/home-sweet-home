@@ -5,6 +5,7 @@ import {
 import { SubPageHero } from "../../modules";
 import SEO from "../../components/SEO";
 import BaseButton from "../../components/BaseButton";
+import SimplePostLink from "../../components/SimplePostLink";
 
 function formatLabel(id) {
   const formattedLabel = id.replace("-", " ");
@@ -34,7 +35,7 @@ export default function TechnologyPage({
           }}
         />
       </article>
-      <section className="content-container grid grid-cols-1 grid-flow-row laptop:grid-cols-3 laptop:grid-flow-col">
+      <section className="content-container grid grid-cols-1 gap-8 grid-flow-row laptop:grid-cols-3 laptop:grid-flow-col">
         {technologyData.projects && (
           <div>
             <h2>İlgili Projeler</h2>
@@ -43,12 +44,13 @@ export default function TechnologyPage({
                 (item) => {
                   return (
                     <li key={`projelist-${item}`}>
-                      <BaseButton
+                      <SimplePostLink
                         href={`/portfolyo/${item}`}
-                        className="capitalize"
-                      >
-                        {item.replace(/-/g, " ")}
-                      </BaseButton>
+                        title={item.replace(
+                          /-/g,
+                          " "
+                        )}
+                      />
                     </li>
                   );
                 }
@@ -66,12 +68,13 @@ export default function TechnologyPage({
                     <li
                       key={`snippetslist-${item}`}
                     >
-                      <BaseButton
+                      <SimplePostLink
                         href={`/snippets/${item}`}
-                        className="capitalize"
-                      >
-                        {item.replace(/-/g, " ")}
-                      </BaseButton>
+                        title={item.replace(
+                          /-/g,
+                          " "
+                        )}
+                      />
                     </li>
                   );
                 }
