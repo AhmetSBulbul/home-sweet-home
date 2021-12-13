@@ -19,13 +19,14 @@ export default function Home({
   allSnippetsData,
   allTechnologiesData,
 }) {
-  const [
+  /*const [
     error,
     isLoaded,
     feed,
     blogs,
     categories,
   ] = useMediumFeed();
+  */
 
   return (
     <>
@@ -96,6 +97,7 @@ export default function Home({
           </ThemeButton>
         </div>
       </section>
+      {/*
       <section className="content-container flex flex-col py-12">
         <h2 className="font-display text-3xl font-extrabold antialiased mb-8">
           Son Paylaşılanlar
@@ -114,6 +116,7 @@ export default function Home({
           Yazılarım <Arrow />
         </ThemeButton>
       </section>
+       */}
       <section className="content-container split-pair py-12">
         <div className="flex-1">
           <h2 className="title text-4xl mb-4">

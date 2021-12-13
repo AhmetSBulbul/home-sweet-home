@@ -9,11 +9,6 @@ const NavRoutes = [
     key: "services",
     title: "Hizmetler",
   },
-  {
-    path: "/yazilarim",
-    key: "writings",
-    title: "Yazılarım",
-  },
 
   {
     path: "/snippets",
