@@ -12,7 +12,7 @@ export default function FooterModule({}) {
             Freelance Yazılım Geliştirici
           </p>
         </div>
-        <nav className="flex space-x-4">
+        <nav className="flex space-x-4 flex-wrap">
           <NavButton href="/gizlilik">
             Gizlilik
           </NavButton>
