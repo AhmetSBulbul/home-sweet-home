@@ -76,11 +76,11 @@ export default function About() {
                 Kuralları
               </BaseButton>{" "}
               çerçevesinde, işletmelerin
-              hizmetlerini internete taşımasına
-              olanak sağlayan, verimliliğini ve
-              karlılığını artırmaya yönelik
-              çözümler sunan web ve mobil yazılım
-              ürünleri geliştiriyorum.
+              hizmetlerini internete taşımasına,
+              verimliliğini ve karlılığını
+              artırmalarına yönelik çözümler sunan
+              web ve mobil yazılım ürünleri
+              geliştiriyorum.
             </p>
 
             <p>
@@ -148,7 +148,8 @@ export default function About() {
           <p>
             Detaylı bilgiye{" "}
             <BaseButton
-              href="/yazilim-muhendisligi-etik-kurallari"
+              href="https://www.kariyer.net/ozgecmis/ahmetsafabulbul"
+              externalLink
               className="underline"
             >
               özgeçmişim
@@ -260,15 +261,19 @@ export default function About() {
         </div>
         <div className="my-8">
           <p>
-            Lise yillarimda ve Müzik t is a long
-            established fact that a reader will be
-            distracted by the readable content of
-            a page when looking at its layout. The
-            point of using Lorem Ipsum is that it
-            has a more-or-less normal distribution
-            of letters, as opposed to using
-            'Content here, content here', making
-            it look like readable English.
+            Müzik ile aktif olarak ilgilenmeye
+            lise yıllarımda sokak müzisyenlerinin
+            yanında insanları bahşiş atmaya
+            yönelten kişi olarak başladım.
+            Dinleyici olarak müzik hep hayatımda
+            vardı ancak müzisyenlerin tarafında
+            bulunduktan sonra bu ilgim bir hayli
+            arttı. Üniversitenin ilk yıllarında
+            internet üzerinden vokallik üzerine
+            eğitici yazı ve video içerikleri ile
+            önce vokallik ardından gitar, ukulele
+            gibi müzik aletlerinin kullanımı gibi
+            yetenekleri edindim.
           </p>
           <p>
             Bilgisayar ile alakalı bir meslek
@@ -295,8 +300,8 @@ export default function About() {
             Bölümünde devam etmekteyim. Üniversite
             hayatımın bir dönemini Turgutlu'da
             geçirdikten sonra şu anda İzmir'de
-            freelancer olarak yazılım hizmeti
-            vermekteyim.
+            eğitimimi sürdürürken freelancer
+            olarak yazılım hizmetleri veriyorum.
           </p>
         </div>
       </section>
