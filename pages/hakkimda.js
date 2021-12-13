@@ -169,7 +169,10 @@ export default function About() {
           </ThemeButton>
         </div>
       </section>
-      <section className="content-container flex flex-col py-12">
+      <section
+        id="gonullu-isler"
+        className="content-container flex flex-col py-12"
+      >
         <h2 className="title mx-auto mb-12">
           Gönüllü İşler
         </h2>
