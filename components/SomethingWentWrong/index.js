@@ -8,15 +8,14 @@ export default function SomethingWentWrong({
   ...props
 }) {
   return (
-    <div className="content-container split-pair py-14 border-2 border-black">
-      <div className="flex-1 flex">
-        <Head className={styles.headIcon} />
-      </div>
-      <div className="flex-1 flex">
-        <span className={styles.errorMessage}>
-          {message}
-        </span>
-      </div>
+    <div className="content-container flex">
+      <Head className={styles.headIcon} />
+
+      <span className={styles.errorMessage}>
+        {message
+          ? message
+          : "Hay aksi, bir şeyler ters gitti!"}
+      </span>
     </div>
   );
 }

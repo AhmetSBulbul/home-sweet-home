@@ -5,7 +5,7 @@ export default {
     title: 'Components/Messages/Error',
     component: SomethingWentWrong,
     args: {
-        message: "Bir Şeyler Yanlış Gitti"
+        
     }
 }
 
